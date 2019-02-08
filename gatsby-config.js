@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `valdezDev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A portfolio and blog showcasing my work and all sorts of information.`,
     author: `Paul Valdez`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-sass',
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
