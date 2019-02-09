@@ -30,3 +30,18 @@
   font-size: 1.25rem;
   text-align: center;
 }
+
+// Projects Page
+.project {
+  background: $dark-gray;
+  &__title {
+    font-size: 2rem;
+    color: $yellow;
+  }
+  &__desc {
+    color: $rose;
+  }
+}
+.page-title {
+  color: $yellow;
+}

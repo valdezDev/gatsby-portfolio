@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Img from 'gatsby-image';
+//import Img from 'gatsby-image'; come back to this.
 import PaulImage from '../images/paul.jpg';
 
 const IndexPage = () => (
