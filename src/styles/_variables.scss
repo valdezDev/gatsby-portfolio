@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-$site-font: 'Lato', sans-serif;
+$Lato: 'Lato', sans-serif;
+$Roboto: 'Roboto', sans-serif;
 
-$light-gray: rgb(240, 240, 240);
-$dark-gray: rgb(80, 80, 80);
-$white: white;
+
 /* Colors:
 #FFE57C -- yellow
 #33AFC4 -- blue
 #0C0203 -- a tinted black
 #FEB3A9 -- rosado
+#6e5494 -- github purple
 */
+
+$dark-gray: #0C0203;
+$white: white;
+$rose: #FEB3A9;
+$blue: #33AFC4;
+$git-violet: #6e5494;
+$yellow: #FFE57C;

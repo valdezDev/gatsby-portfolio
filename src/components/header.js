@@ -27,10 +27,10 @@ class Header extends React.Component{
   render() {
     return (
       <div>
-        <Navbar fixed="top" light expand="sm">
+        <Navbar fixed="top" dark expand="sm">
           <div className="container">
           <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler className="nav-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

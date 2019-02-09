@@ -2,7 +2,7 @@
   margin-top: 60px;
 }
 body {
-  background-color: $light-gray;
+  background-color: $dark-gray;
 }
 a {
   color: #0056b3;
@@ -12,26 +12,27 @@ a {
   }
 }
 body {
-  font-family: $site-font;
+  font-family: $Lato;
 }
+
 h1 {
   margin-bottom: 20px;
   text-align: center;
 }
 .navbar {
-  background-color: white;
-  // border-right: 1px solid rgba(0, 0, 0, 0.4);
-  // border-left: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: $dark-gray;
   line-height: 1;
+  color: $rose;
 }
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-brand {
-  color: #0056b3;
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: $blue;
+  transition: color 0.5s ease;
   &:hover {
-    color: #007bff;
+    color: lighten($blue, 30%);
   }
 }
+
 ul {
   list-style: none;
   padding: 0;

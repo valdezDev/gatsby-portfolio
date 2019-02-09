@@ -7,3 +7,26 @@
 @import './card';
 @import './links';
 @import './sidebar';
+
+.index-header {
+  color: $rose;
+}
+
+.index-skills {
+  color: $yellow;
+  font-family: $Roboto;
+}
+
+.paul-pic {
+    display: block;
+    border-radius: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.about-me {
+  color: $rose;
+  font-size: 1.25rem;
+  text-align: center;
+}
