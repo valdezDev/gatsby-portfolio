@@ -29,6 +29,7 @@ const Project = (props) => {
               <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, illum.</li>
             </ul>
             <Button>Go somewhere</Button>
+            <Button>Go somewhere</Button>
           </Card>
         </Col>
       </Row>

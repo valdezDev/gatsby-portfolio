@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Project from '../components/Project';
 
-
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
