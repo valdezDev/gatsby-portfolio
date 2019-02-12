@@ -27,7 +27,7 @@ const SingleProject = ({ data }) => {
     </Layout>
   )
 }
-
+/*
 export const projQuery = graphql`
   query projectBySlug($slug: String!, $imageUrl: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -52,6 +52,6 @@ export const projQuery = graphql`
       }
     }
   }
-`
+`*/
 
 export default SingleProject;

@@ -4,52 +4,43 @@ import SEO from "../components/seo";
 import { graphql, StaticQuery } from 'gatsby';
 import Project from '../components/Project';
 
-const ProjectsPage = () => {
-  return (
+const ProjectsPage = () => (
   <Layout pageTitle="Projects">
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <StaticQuery query={projectQuery} render={data => {
+    <h1>Projects</h1>
+    <StaticQuery
+      query={projectQuery}
+      render={data => {
         return (
           <div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <Project
-                key={node.id}
                 title={node.frontmatter.title}
                 path={node.frontmatter.path}
-                slug={node.fields.slug}
                 body={node.excerpt}
               />
             ))}
           </div>
         )
-      }}/>
-  </Layout>
-  )  
-};
+      }}
+    />
+  </Layout>  
+);
 
 const projectQuery = graphql`
-query projectQuery {
-  allMarkdownRemark {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          image {
-            childImageSharp {
-              fluid(maxWidth: 600){
-                ...GatsbyImageSharpFluid
-              }
-            }
+  query projectQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
           }
+          excerpt
         }
-        fields {
-          slug
-        }
-        excerpt
       }
     }
   }
-}
 `
 export default ProjectsPage;

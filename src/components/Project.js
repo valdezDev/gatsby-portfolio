@@ -5,11 +5,10 @@ import Img from 'gatsby-image';
 //import { slugify } from '../util/utilityFunctions';
 import '../styles/index.scss';
 
-const Project = ({ title, slug, body, fluid, path }) => (
+const Project = ({ title, body, fluid, path }) => (
   <Card>
-    {/*<Link to={slug}>
-      <Img className="card-image-top" fluid={fluid} alt="proj-img"/>
-</Link>*/}
+
+      {/*<Img className="card-image-top" fluid={fluid} alt="proj-img"/>*/}
     <CardBody>
       <CardTitle>
         <Link to={path}>
