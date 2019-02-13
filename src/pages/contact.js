@@ -12,7 +12,7 @@ const ContactPage = () => (
 						</header>
 						<div className="content">
 							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-							<form action="POST" data-netlify="true">
+							<form method="POST" data-netlify="true">
 								<div className="fields">
 									<div className="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
