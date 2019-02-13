@@ -48,8 +48,7 @@
 
 // Blog Page
 .post-card {
-  background-color: $yellow;
-  border-color: $rose;
+  border-width: 0;
 
   &__body {
     background-color: $dark-gray;
