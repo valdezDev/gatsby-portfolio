@@ -7,7 +7,7 @@ import Post from '../components/Post';
 const BlogPage = () => (
   <Layout>
     <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Blog</h1>
+    <h1 className="page-header">Blog</h1>
     <StaticQuery
       query={postQuery}
       render={data => {
@@ -17,7 +17,10 @@ const BlogPage = () => (
               <Post
                 title={node.frontmatter.title}
                 path={node.frontmatter.path}
+                author={node.frontmatter.author}
                 body={node.excerpt}
+                date={node.frontmatter.date}
+                fluid={node.frontmatter.image.childImageSharp.fluid}
               />
             ))}
           </div>
@@ -29,13 +32,22 @@ const BlogPage = () => (
 
 const postQuery = graphql`
   query postQuery {
-    allMarkdownRemark {
+    allMarkdownRemark (sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
           frontmatter {
             title
+            date(formatString: "MMM Do YYYY")
+            author
             path
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           excerpt
         }
