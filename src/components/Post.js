@@ -6,25 +6,25 @@ import Img from 'gatsby-image';
 import '../styles/index.scss';
 
 const Post = ({ title, author, path, date, body, fluid }) => (
-  <Card>
+  <Card className="post-card">
     <Link to={path}>
       <Img className="card-image-top" fluid={fluid} alt="proj-img"/>
     </Link>
-    <CardBody>
+    <CardBody className="post-card__body">
       <CardTitle>
-        <Link to={path}>
+        <Link className="post-card__post-links" to={path}>
           {title}
         </Link>
       </CardTitle>
-      <CardSubtitle>
-        <span className="text-info">{date}</span> by {' '}
-        <span className="text-in">{author}</span>
+      <CardSubtitle className="post-card__info">
+        <span className="post-info">Posted on {date}</span> by {' '}
+        <span className="post-info">{author}</span>
       </CardSubtitle>
-      <CardText>{body}</CardText>
+      <CardText className="post-card__text">{body}</CardText>
       <Link
         to={path}
-        className="btn btn-outline-primary float-right">
-        Click to see more.
+        className="btn btn-outline float-right">
+        Click to read more.
       </Link>
     </CardBody>
   </Card>

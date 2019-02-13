@@ -46,4 +46,39 @@
   color: $yellow;
 }
 
+// Blog Page
+.post-card {
+  background-color: $yellow;
+  border-color: $rose;
+
+  &__body {
+    background-color: $dark-gray;
+  }
+  
+  &__post-links{
+    color: $blue;
+  }
+
+  &__info {
+    color: $yellow;
+  }
+
+  &__text {
+    color: $rose;
+  }
+}
+
+.btn-outline {
+  color: $blue;
+  border-color: $blue;
+  border-radius: 2px;
+}
+
+.btn-outline:hover {
+  border-color: $blue;
+  background-color: $blue;
+  color: white;
+}
+
+
 // Contact Page
