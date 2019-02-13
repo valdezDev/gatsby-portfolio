@@ -39,7 +39,7 @@ const ContactPage = () => (
 							<ul className="items">
 								<li>
 									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
+									<a href="google.com">information@untitled.ext</a>
 								</li>
 							</ul>
 						</footer>
