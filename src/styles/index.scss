@@ -79,4 +79,16 @@
   color: white;
 }
 
+// Sidebar
+.sidecard {
+  border-width: 0px;
+  &__body {
+    background-color: $tinted-card;
+    
+  }
+  &__title {
+    color: white;
+  }
+}
+
 // Contact Page
