@@ -2,13 +2,7 @@
 title: 'Second Post - HTML'
 date: 2019-01-10 05:19:00
 author: 'Paul Valdez'
-path: '/second-post'
 image: ../../images/proj.jpg
-tags:
-- code
-- web design
-- web development
-- javascript
 ---
 
 Today, I am going to tell you how I first experienced using HTML. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at. Ut aliquam purus sit amet. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. A scelerisque purus semper eget duis at tellus. Id aliquet risus feugiat in ante metus dictum. At imperdiet dui accumsan sit amet nulla. Ut pharetra sit amet aliquam id diam maecenas ultricies. Morbi enim nunc faucibus a. Non blandit massa enim nec dui.
