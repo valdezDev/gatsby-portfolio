@@ -11,9 +11,7 @@ import { DiscussionEmbed } from 'disqus-react';
 const SinglePost = ({ data, pageContext }) => {
   
   const post = data.markdownRemark.frontmatter;
-
   const baseUrl = 'https://valdezdev.tech/';
-
   const disqusShortname = 'https-valdezdev-tech';
   const disqusConfig = {
     identifier: data.markdownRemark.id,
@@ -27,17 +25,17 @@ const SinglePost = ({ data, pageContext }) => {
       <h1 className="page-header">{post.title}</h1>
       <Row>
         <Col md="8">
-          <Card className="post-card">
+          <Card className="single-post-card">
             <Img
               className="card-image-top"
               fluid={post.image.childImageSharp.fluid}
             />
-            <CardBody className="post-card__body">
-              <CardSubtitle className="post-card__info">
+            <CardBody className="single-post-card__body">
+              <CardSubtitle className="single-post-card__info">
                 <span className="text-info">Posted on {post.date}</span> by {' '}
                 <span className="text-info">{post.author}</span>
               </CardSubtitle>
-              <div className="post-card__text" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+              <div className="single-post-card__text" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </CardBody>
           </Card>
         </Col>
@@ -46,7 +44,7 @@ const SinglePost = ({ data, pageContext }) => {
         </Col>
       </Row>
 
-      <h3 className="text-center">
+      <h3 className="text-center share-header">
               Share this post
       </h3>
       <div className="text-center social-share-links">

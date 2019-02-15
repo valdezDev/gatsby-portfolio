@@ -8,6 +8,9 @@
 @import './links';
 @import './sidebar';
 
+
+// Index Page
+
 .page-header {
   color: $rose;
 }
@@ -79,15 +82,62 @@
   color: white;
 }
 
+// Single-Post template Page
+.single-post-card {
+  border-width: 0px;
+
+  &__title {
+    color: $yellow;
+  }
+
+  &__body {
+    color: $rose;
+    background-color: lighten($dark-gray, 2%);
+  }
+
+  &__info {
+    color: $rose;
+  }
+
+  &__text {
+    color: $rose;
+  }
+}
+
+.share-header {
+  color: $yellow;
+}
+
 // Sidebar
 .sidecard {
   border-width: 0px;
   &__body {
-    background-color: $tinted-card;
-    
+    background-color: darken($blue, 42%);
   }
+  
   &__title {
+    color: $yellow;
+  }
+
+  &__querycard {
+    background: darken($blue, 42%);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__minibody{
+    transition: color 0.5s ease;
+    &:hover {
     color: white;
+    }
+  }
+
+  &__img {
+    border-radius: 4px;
+  }
+
+  &__link {
+    color: $blue;
   }
 }
 

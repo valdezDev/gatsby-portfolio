@@ -23,16 +23,16 @@ const Sidebar = () => (
           render={data => (
             <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Card key={node.id}>
-                  <Link to={node.fields.slug}>
+                <Card className="sidecard__querycard" key={node.id}>
+                  <Link to={node.fields.slug} >
                     <Img
-                      className="card-image-top"
+                      className="card-image-top sidecard__img"
                       fluid={node.frontmatter.image.childImageSharp.fluid}
                     />
                   </Link>
-                  <CardBody>
+                  <CardBody className="sidecard__minibody">
                     <CardTitle>
-                      <Link to={node.fields.slug}>
+                      <Link className="sidecard__link" to={node.fields.slug}>
                         {node.frontmatter.title}
                       </Link>
                     </CardTitle>
