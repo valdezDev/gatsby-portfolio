@@ -22,7 +22,7 @@ const SinglePost = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={post.title} />
-      <h1 className="page-header">{post.title}</h1>
+      <h1 className="page-header" id="test">{post.title}</h1>
       <Row>
         <Col md="8">
           <Card className="single-post-card">
@@ -32,8 +32,8 @@ const SinglePost = ({ data, pageContext }) => {
             />
             <CardBody className="single-post-card__body">
               <CardSubtitle className="single-post-card__info">
-                <span className="text-info">Posted on {post.date}</span> by {' '}
-                <span className="text-info">{post.author}</span>
+                <span className="text-info single-post-card__info">Posted on {post.date}</span> by {' '}
+                <span className="text-info single-post-card__info">{post.author}</span>
               </CardSubtitle>
               <div className="single-post-card__text" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </CardBody>
