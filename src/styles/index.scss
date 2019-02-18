@@ -79,6 +79,13 @@
     margin-left: 10px;
   }
 
+  &__button-link {
+    color: white;
+    &:hover{
+      color: white;
+    }
+  }
+
   &__demo-button {
     background-color: $blue;
     box-shadow: 4px 8px darken($blue, 40%);
@@ -97,6 +104,10 @@
     &:hover {
       background-color: lighten($git-violet, 10%);
     }
+  }
+  
+  &__code-icon {
+    margin-right: 8px;
   }
 }
 
