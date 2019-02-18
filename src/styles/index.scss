@@ -37,6 +37,86 @@
 }
 
 // Projects Page
+.container-card {
+  background-color: darken($blue, 34%);
+}
+
+.proj-img {
+  border-width: 0px;
+  margin: 1rem;
+  box-shadow: 4px 8px darken($blue, 40%);
+
+  &__img {
+    border-radius: 4px;
+    display: flex;
+  }
+}
+
+.proj-desc {
+  border-radius: 0px;
+  background-color: darken($blue, 24%);
+  margin: 1rem;
+  box-shadow: 4px 8px darken($blue, 40%);
+
+  &__body {
+    color: $blue;
+  }
+
+  &__title {
+    color: lighten($rose, 8%);
+    font-size: 2.25rem;
+    text-shadow: 4px 4px darken($blue, 35%);
+  }
+  
+  &__subtitle {
+    color: lighten($yellow, 15%);
+    font-size: 1.25rem;
+  }
+  
+  &__list {
+    color: lighten($blue, 30%);
+    list-style-type: square;
+    margin-left: 10px;
+  }
+
+  &__demo-button {
+    background-color: $blue;
+    box-shadow: 4px 8px darken($blue, 40%);
+    margin: 12px;
+    display: inline-block;
+    &:hover {
+      background-color: lighten($blue, 10%);
+    }
+  }
+
+  &__git-button {
+    background-color: $git-violet;
+    box-shadow: 4px 8px darken($blue, 40%);
+    margin: 12px;
+    display: inline-block;
+    &:hover {
+      background-color: lighten($git-violet, 10%);
+    }
+  }
+}
+
+
+// Project Modals
+.proj-modal {
+  background-color: $rose;
+  width: 100% !important;
+}
+
+.proj-card-button {
+  background-color: $blue;
+  box-shadow: 4px 8px darken($blue, 40%);
+  margin-left: 1rem;
+  display: inline-block;
+
+  &:hover {
+    background-color: lighten($blue, 10%);
+  }
+}
 
 
 // Blog Page
