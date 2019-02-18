@@ -20,13 +20,14 @@ const Project = () => (
     <Row>
       <Col sm="6">
         <Card className="proj-img">
-          <CardImg
+          {/*<CardImg
             top
             className="proj-img__img"
             width="100%"
             height="100%"
             src="https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2015/11/RTXZ3DT-e1487891078282-1024x629.jpg"
-          />
+          />*/}
+          <Video />
         </Card>
       </Col>
       <Col sm="6">
