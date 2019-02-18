@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Sidebar from '../components/sidebar';
+import Sidebar from '../components/Sidebar';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import { Card, CardBody, CardSubtitle, Row, Col } from 'reactstrap';
