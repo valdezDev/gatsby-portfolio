@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 $Lato: 'Lato', sans-serif;
 $Roboto: 'Roboto', sans-serif;
+$Merienda: 'Merienda', cursive;
 
 
 /* Colors:
@@ -19,3 +21,5 @@ $rose: #feb3a9;
 $blue: #33AFC4;
 $git-violet: #6e5494;
 $yellow: #FFE57C;
+
+$hero-background: url(../images/hero-background.jpg);
