@@ -1,15 +1,15 @@
-.site-footer {
-  //background-color: darken($blue, 40%);
+.social-buttons {
   margin-top: 20px;
   padding: 10px;
   text-align: center;
+  text-shadow: 4px 8px darken($blue, 50%);
 
-  .footer-social-links {
+  .social-links {
     text-align: center;
 
     ul.social-links-list {
       li {
-        margin-right: 25px;
+        margin: 12px;
         display: inline-block;
 
         a {

@@ -20,16 +20,18 @@ h1 {
   text-align: center;
 }
 .navbar {
-  background: rgba(darken($blue, 38%), 0.60);
+  background: rgba(darken($blue, 39%), 0.40);
   line-height: 1;
   color: $rose;
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-brand {
   color: $blue;
-  transition: color 0.5s ease;
+  transition: color 0.5s ease-in-out, all 0.2s ease-in-out;
+  
   &:hover {
     color: lighten($blue, 30%);
+    transform: scale(1.2);
   }
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const SocialButtons = () => (
-  <div className="site-footer">
-    <div className="footer-social-links">
+  <div className="social-buttons">
+    <div className="social-links">
       <ul className="social-links-list">
         <li>
           <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="github">

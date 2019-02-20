@@ -19,7 +19,7 @@ const IndexPage = () => (
         <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
         <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
         <NavItem>
-          <Button className="col-md-3 index-intro__button">
+          <Button className="col-md-2 index-intro__button">
             <NavLink className="index-intro__link" href="/contact">Get in Touch!</NavLink>
           </Button>
         </NavItem>
