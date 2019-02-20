@@ -20,7 +20,7 @@ h1 {
   text-align: center;
 }
 .navbar {
-  background-color: darken($blue, 32%);
+  background: rgba(darken($blue, 38%), 0.60);
   line-height: 1;
   color: $rose;
 }
