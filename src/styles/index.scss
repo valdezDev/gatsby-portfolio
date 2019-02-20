@@ -19,25 +19,7 @@
   background-position: center;
   height: 100%;
   opacity: 0.12;
-  margin-top: 45px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
-
-.hero-background-1 {
-  background: darken($blue, 20%)
-  no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.3;
-  height: 100%;
-  margin-top: 45px;
+  //margin-top: 42px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -46,41 +28,45 @@
   z-index: -1;
 }
 
-.index-page-header {
-  font-family: 'Merienda', cursive;
-  color: $rose;
-  font-size: 3rem;
+.hero-background-1 {
+  background-image: linear-gradient(to bottom, darken($blue, 32%), lighten($dark-gray, 3%));
+  background-size: cover;
+  opacity: 0.4;
+  height: 100%;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
+// Applies to most pages
 .page-header {
   color: $rose;
 }
 
 .index-intro {
+  background: rgba($blue, 0.01);
+  margin-top: 12rem;
   &__page-header {
     font-family: 'Merienda', cursive;
     color: $yellow;
     font-size: 3rem;
   }
 
-  &__paul-img {
-    display: block;
-    border-radius: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-  }
-
   &__profession {
     color: $rose;
+    font-size: 1.25rem;
   }
 
   &__button {
     background-image: linear-gradient(to right, darken($blue, 15%), darken($blue, 5%));
     display: block;
     border-radius: 24px;
-    margin-top: -20px;
-    margin-bottom: 20rem;
+    //margin-top: 20px;
+    //margin-bottom: 12rem;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 4px 8px darken($blue, 50%);
@@ -97,6 +83,18 @@
       color: white;
       font-weight: bold;
     }
+  }
+}
+
+.about {
+  background-image: linear-gradient(to right, lighten($dark-gray, 1%), lighten($dark-gray, 1.5%));
+  
+  border-radius: 24px;
+  &__header {
+    color: $yellow
+  }
+  &__text {
+    color: $rose;
   }
 }
 

@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: darken($blue, 40%);
+  //background-color: darken($blue, 40%);
   margin-top: 20px;
   padding: 10px;
   text-align: center;
@@ -15,7 +15,6 @@
         a {
           color: $yellow;
           transition: color 0.5s ease;
-
           &.github:hover {
             color: $git-violet;
           }
