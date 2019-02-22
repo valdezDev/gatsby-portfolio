@@ -1,0 +1,26 @@
+// Single-Post template Page
+.single-post-card {
+  border-width: 0px;
+
+  &__title {
+    color: $yellow;
+  }
+
+  &__body {
+    color: $rose;
+    background-color: lighten($dark-gray, 1%);
+  }
+
+  &__info {
+    color: $yellow !important;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    color: $rose;
+  }
+}
+
+.share-header {
+  color: $yellow;
+}

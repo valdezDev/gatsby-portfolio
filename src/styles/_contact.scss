@@ -1,0 +1,73 @@
+// Contact Page
+.contact-container {
+  background-color: $dark-gray;
+}
+
+.contact-card {
+  background: linear-gradient(
+    to bottom, 
+    rgba(darken($blue, 42%), 0.8), 
+    rgba(darken($blue, 41%), 0.8)
+  );
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darken($rose, 12%);
+  }
+
+  &__subtitle {
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    //background-color: darken($blue, 30%);
+  }
+
+  &__name {
+    display: block;
+    margin: 0 auto;
+    background-color: darken(white, 4%);
+  }
+  
+  &__email {
+    display: block;
+    margin: 1.25rem auto;
+    background-color: darken(white, 4%);
+  }
+
+  &__message {
+    justify-content: center;
+    display: block;
+    margin: 2rem auto;
+    //background-color: darken(white, 4%);
+  }
+
+  &__send-message {
+    justify-content: center;
+    display: block;
+    margin: 1rem auto;
+    border-color: $blue !important;
+  }
+
+  & textarea {
+    background-color: darken(white, 4%);
+    color: $rose;
+  }
+}
+
+.follow-card {
+  background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
+
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: darken($blue, 42%);
+  }
+  &__body {
+    background-image: linear-gradient(to bottom, darken($rose, 18%), darken($rose, 17%));
+  }
+}

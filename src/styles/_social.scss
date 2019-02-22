@@ -2,7 +2,7 @@
   margin-top: 20px;
   padding: 10px;
   text-align: center;
-  text-shadow: 4px 8px darken($blue, 50%);
+  text-shadow: 1px 1px darken($blue, 50%);
 
   .social-links {
     text-align: center;
@@ -13,7 +13,7 @@
         display: inline-block;
 
         a {
-          color: $yellow;
+          color: darken($yellow, 6%);
           transition: color 0.5s ease;
           &.github:hover {
             color: $git-violet;

@@ -1,0 +1,32 @@
+// Blog Page
+.post-card {
+  border-width: 0;
+
+  &__body {
+    background-color: lighten($dark-gray, 1%);
+  }
+  
+  &__post-links{
+    color: $blue;
+  }
+
+  &__info {
+    color: $yellow;
+  }
+
+  &__text {
+    color: $rose;
+  }
+}
+
+.btn-outline {
+  color: $blue;
+  border-color: $blue;
+  border-radius: 2px;
+}
+
+.btn-outline:hover {
+  border-color: $blue;
+  background-color: $blue;
+  color: white;
+}

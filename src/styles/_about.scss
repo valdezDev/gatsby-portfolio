@@ -1,0 +1,81 @@
+// About Page
+.about-card {
+  border-width: 0px !important;
+  background: linear-gradient(
+    to bottom, 
+    rgba(darken($blue, 42%), 0.8), 
+    rgba(darken($blue, 41%), 0.8)
+  );
+}
+.about-img {
+  background: rgba($blue, 0.001);
+  border-width: 0px;
+  &__img {
+    border-radius: 320px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.about-me {
+  background-color: lighten($dark-gray, 0.2%);
+  border-radius: 6px;
+  &__title {
+    color: lighten($yellow, 5%);
+    font-size: 32px;
+  }
+  
+  &__text {
+    color: $rose;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.skills {
+  background-image: linear-gradient(to bottom, darken($blue, 24%), darken($blue, 20%));
+  margin: auto;
+  width: 90%;
+  &__title {
+    text-shadow: 2px 2px darken($blue, 50%);
+    font-size: 24px;
+    color: lighten($rose, 4%);
+  }
+  
+  &__list {
+    font-size: 18px;
+    color: $white;
+    margin-left: 50px;
+    margin-top: 12px;
+  }
+}
+
+.tools {
+  background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
+  margin: auto;
+  width: 90%;
+  &__title {
+    text-shadow: 1px 1px darken($blue, 50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: darken($blue, 10%);
+  }
+  
+  &__list {
+    font-size: 18px;
+    color: $white;
+    list-style-type: square;
+    margin-left: 50px;
+    margin-top: 12px;
+    & a {
+      color: darken($blue, 10%);
+      text-decoration: underline;
+      transition: color 0.5s ease;
+      &:hover {
+        color: darken($blue, 2%);
+      }
+    }
+  }
+}
+

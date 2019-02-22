@@ -28,3 +28,36 @@
     }
   }
 }
+
+
+.sidecard {
+  border-width: 0px;
+  &__body {
+    background-color: darken($blue, 42%);
+  }
+  
+  &__title {
+    color: $yellow;
+  }
+
+  &__querycard {
+    background: darken($blue, 42%);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__minibody{
+    transition: color 0.5s ease;
+    &:hover {
+    color: white;
+    }
+  }
+
+  &__img {
+    border-radius: 4px;
+  }
+
+  &__link {
+    color: $blue;
+  }
+}
