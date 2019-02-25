@@ -22,7 +22,12 @@ const Contact = () => (
             All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
             </CardSubtitle>
           <CardBody className="contact-card__body">
-            <form className="contact-card__form" method="POST" data-netlify="true">
+            <form
+              method="POST"
+              className="contact-card__form"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              name="contact">
               <div className="contact-card__fields">
                 <div className="contact-card__field half">
                   <input className="contact-card__name col-md-3" type="text" name="name" id="name" placeholder="Name" />
