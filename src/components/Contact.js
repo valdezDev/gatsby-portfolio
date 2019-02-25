@@ -46,18 +46,27 @@ const Contact = () => (
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
             </form>*/}
-             <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-  <p>
-    <label>Email: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-card__form">
+            {/* You still need to add the hidden input with the form name to your JSX form */}
+            <input type="hidden" name="contact-form" value="contact" />
+            <div className="contact-card__fields">
+                <div className="contact-card__field half">
+                  <input className="contact-card__name col-md-3" type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div className="contact-card__field half">
+                  <input className="contact-card__email col-md-3" type="email" name="email" id="email" placeholder="email@email.com" />
+                </div>
+                <div className="contact-card__field">
+                  <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+              </div>
+              <div className="contact-card__field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              </div>
+              <ul className="contact-card__actions">
+                <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+              </ul>
+          </form>
           </CardBody>
         </Card>
       </Col>
