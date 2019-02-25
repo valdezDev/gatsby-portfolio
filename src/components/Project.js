@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import {
   Button,
   Card,
@@ -17,36 +16,36 @@ const Project = () => (
 
   <Card className="container-card">
     
-    <Row>
+    <Row className="row-a">
       <Col sm="6">
         <Card className="proj-video">
           <ProjVideo />
         </Card>
       </Col>
       <Col sm="6">
-        <Card className="proj-desc">
-          <CardBody className="proj-desc__body">
-            <CardTitle className="proj-desc__title text-center">DevGab</CardTitle>
-            <CardSubtitle className="proj-desc__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
-            <ul className="proj-desc__list">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+        <Card className="proj-desc-a">
+          <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
+          <CardBody className="proj-desc-a__body">
+            <CardSubtitle className="proj-desc-a__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
+            <ul className="proj-desc-a__list">
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
             </ul>
-            <Button className="proj-desc__demo-button">
+            <Button className="proj-desc-a__demo-button">
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-a__button-link"
                 href="https://afternoon-waters-74578.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
               </a>
             </Button>
-            <Button className="proj-desc__git-button">
-              <i class="fas fa-code proj-desc__code-icon" />
+            <Button className="proj-desc-a__git-button">
+              <i class="fas fa-code proj-desc-a__code-icon" />
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-a__button-link"
                 href="https://github.com/valdezDev/devgab"
                 target="_blank"
                 rel="noopener noreferrer" >
@@ -65,29 +64,30 @@ const Project = () => (
         </Card>
       </Col>
       <Col sm="6">
-        <Card className="proj-desc">
-          <CardBody className="proj-desc__body">
-            <CardTitle className="proj-desc__title text-center">Hacker News Search</CardTitle>
-            <CardSubtitle className="proj-desc__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
-            <ul className="proj-desc__list">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+        <Card className="proj-desc-b">
+        <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
+          <CardBody className="proj-desc-b__body">
+            
+            <CardSubtitle className="proj-desc-b__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
+            <ul className="proj-desc-b__list">
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
             </ul>
-            <Button className="proj-desc__demo-button">
+            <Button className="proj-desc-b__demo-button">
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-b__button-link"
                 href="https://placeholder.com/"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
               </a>
             </Button>
-            <Button className="proj-desc__git-button">
-              <i class="fas fa-code proj-desc__code-icon" />
+            <Button className="proj-desc-b__git-button">
+              <i class="fas fa-code proj-desc-b__code-icon" />
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-b__button-link"
                 href="https://github.com/valdezDev/hacker-news-search-app"
                 target="_blank"
                 rel="noopener noreferrer" >
@@ -99,36 +99,36 @@ const Project = () => (
       </Col>
     </Row>
 
-    <Row>
+    <Row className="row-a">
       <Col sm="6">
         <Card className="proj-video">
           <ProjVideo />
         </Card>
       </Col>
       <Col sm="6">
-        <Card className="proj-desc">
-          <CardBody className="proj-desc__body">
-            <CardTitle className="proj-desc__title text-center">Developer Blog</CardTitle>
-            <CardSubtitle className="proj-desc__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
-            <ul className="proj-desc__list">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+        <Card className="proj-desc-a">
+        <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
+          <CardBody className="proj-desc-a__body">
+            <CardSubtitle className="proj-desc-a__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
+            <ul className="proj-desc-a__list">
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
+              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
             </ul>
-            <Button className="proj-desc__demo-button">
+            <Button className="proj-desc-a__demo-button">
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-a__button-link"
                 href="https://unruffled-bartik-96bf86.netlify.com/"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
               </a>
             </Button>
-            <Button className="proj-desc__git-button">
-              <i class="fas fa-code proj-desc__code-icon" />
+            <Button className="proj-desc-a__git-button">
+              <i class="fas fa-code proj-desc-a__code-icon" />
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-a__button-link"
                 href="https://github.com/valdezDev/gatsby-blog"
                 target="_blank"
                 rel="noopener noreferrer" >
@@ -147,29 +147,29 @@ const Project = () => (
         </Card>
       </Col>
       <Col sm="6">
-        <Card className="proj-desc">
-          <CardBody className="proj-desc__body">
-            <CardTitle className="proj-desc__title text-center">Portfolio</CardTitle>
-            <CardSubtitle className="proj-desc__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
-            <ul className="proj-desc__list">
+        <Card className="proj-desc-b">
+        <CardTitle className="proj-desc-b__title text-center"># Developer Portfolio</CardTitle>
+          <CardBody className="proj-desc-b__body">
+            <CardSubtitle className="proj-desc-b__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
+            <ul className="proj-desc-b__list">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
             </ul>
-            <Button className="proj-desc__demo-button">
+            <Button className="proj-desc-b__demo-button">
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-b__button-link"
                 href="valdezDev.tech"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
               </a>
             </Button>
-            <Button className="proj-desc__git-button">
-              <i class="fas fa-code proj-desc__code-icon" />
+            <Button className="proj-desc-b__git-button">
+              <i class="fas fa-code proj-desc-b__code-icon" />
               <a
-                className="proj-desc__button-link"
+                className="proj-desc-b__button-link"
                 href="https://github.com/valdezDev/gatsby-portfolio"
                 target="_blank"
                 rel="noopener noreferrer" >
