@@ -22,7 +22,7 @@ const Contact = () => (
             All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
             </CardSubtitle>
           <CardBody className="contact-card__body">
-            <form
+            {/*<form
               method="POST"
               className="contact-card__form"
               data-netlify="true"
@@ -33,7 +33,7 @@ const Contact = () => (
                   <input className="contact-card__name col-md-3" type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="contact-card__field half">
-                  <input className="contact-card__email col-md-3" type="email" name="email" id="email" placeholder="Email" />
+                  <input className="contact-card__email col-md-3" type="email" name="email" id="email" placeholder="email@email.com" />
                 </div>
                 <div className="contact-card__field">
                   <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
@@ -45,7 +45,18 @@ const Contact = () => (
               <ul className="contact-card__actions">
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
-            </form>
+            </form>*/}
+             <form
+      name="contact-form"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input name="name" placeholder="Your Name" type="text" />
+      <input name="email" placeholder="name@name.com" type="email" />
+      <textarea name="message" />
+      <button>Send</button>
+    </form>
           </CardBody>
         </Card>
       </Col>
