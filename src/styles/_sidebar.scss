@@ -29,24 +29,27 @@
   }
 }
 
-
 .sidecard {
   border-width: 0px;
   &__body {
-    background-color: darken($blue, 42%);
+    background-image: linear-gradient(to bottom, darken($blue, 20%), darken($blue, 10%));
+    margin-top: -16px;
   }
   
   &__title {
-    color: $yellow;
+    color: lighten($yellow, 4%);
+    background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
+    font-size: 1.2rem;
   }
 
   &__querycard {
-    background: darken($blue, 42%);
+    background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 38%));
     border-radius: 4px;
     margin-bottom: 1.5rem;
+    box-shadow: 4px 4px darken($blue, 40%);
   }
 
-  &__minibody{
+  &__minibody {
     transition: color 0.5s ease;
     &:hover {
     color: white;

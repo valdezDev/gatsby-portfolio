@@ -10,10 +10,10 @@ import Img from 'gatsby-image'
 const Sidebar = () => (
   <div>  
     <Card className="sidecard">
+      <CardTitle className="text-center text-uppercase mb-3 sidecard__title">
+        Recent Posts
+      </CardTitle>
       <CardBody className="sidecard__body">
-        <CardTitle className="text-center text-uppercase mb-3 sidecard__title">
-          Recent Posts
-        </CardTitle>
         <StaticQuery
           query={sidebarQuery}
           render={data => (
