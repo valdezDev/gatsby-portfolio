@@ -46,7 +46,7 @@ const Contact = () => (
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
             </form>*/}
-            <form method="post" action="#" data-netlify="true" name="contact-form-test">
+            <form method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form-test">
   <input type="hidden" name="form-name-test" value="contact" />
   <input type="text" name="name" id="name" required />
   <input type="text" name="email" id="email" required />
