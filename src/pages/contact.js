@@ -9,6 +9,6 @@ const ContactPage = () => (
     <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
     <Contact />
   </Layout>
-)
+);
 
 export default ContactPage;

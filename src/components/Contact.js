@@ -22,37 +22,27 @@ const Contact = () => (
             All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
             </CardSubtitle>
           <CardBody className="contact-card__body">
-            {/*<form
-              method="POST"
-              className="contact-card__form"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              name="contact">
+            
+            <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+              <input type="hidden" name="bot-field" />
               <div className="contact-card__fields">
                 <div className="contact-card__field half">
                   <input className="contact-card__name col-md-3" type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="contact-card__field half">
-                  <input className="contact-card__email col-md-3" type="email" name="email" id="email" placeholder="email@email.com" />
+                  <input className="contact-card__email col-md-3" type="email" name="email" id="email" placeholder="example@email.com" />
                 </div>
                 <div className="contact-card__field">
                   <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
-              </div>
-              <div className="contact-card__field">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
+                </div>
+                <div className="contact-card__field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
               </div>
               <ul className="contact-card__actions">
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
-            </form>*/}
-            <form method="post" action="#" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form-test">
-  <input type="hidden" name="form-name-test" value="contact" />
-  <input type="text" name="name" id="name" required />
-  <input type="text" name="email" id="email" required />
-  <textarea name="message" id="message" rows="4" required />
-  <input type="submit" value="Send Message" />
-</form>
+            </form>
           </CardBody>
         </Card>
       </Col>
