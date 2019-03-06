@@ -23,10 +23,6 @@
     margin-bottom: 1rem;
   }
 
-  &__body {
-    //background-color: darken($blue, 30%);
-  }
-
   &__name {
     display: block;
     margin: 0 auto;
@@ -54,7 +50,6 @@
 
   & textarea {
     background-color: darken(white, 4%);
-    color: $rose;
   }
 }
 
