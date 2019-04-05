@@ -54,14 +54,11 @@
 }
 
 .follow-card {
-  background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 3%), lighten($dark-gray, 6.2%));
 
   &__title {
     font-weight: bold;
     font-size: 2rem;
-    color: darken($blue, 42%);
-  }
-  &__body {
-    background-image: linear-gradient(to bottom, darken($rose, 18%), darken($rose, 17%));
+    color: darken($blue, 4%);
   }
 }
