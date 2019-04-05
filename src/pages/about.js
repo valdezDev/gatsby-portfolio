@@ -44,29 +44,31 @@ const AboutPage = () => (
             <CardTitle className="skills__title text-center"># Skills</CardTitle>
             <CardText className="skills__list-wrapper">
               <ul className="skills__list">
-                <li>// MongoDB</li>
-                <li>// ExpressJS</li>
-                <li>// React</li>
-                <li>// NodeJS</li>
-                <li>// REST</li>
-                <li>// Gatsby</li>
+                <li>// React, ES6, Gatsby, Redux</li>
                 <li>// jQuery</li>
-                <li>// Sass</li>
+                <li>// Python, Django</li>
+                <li>// Sass, Bootstrap</li>
+                <li>// MongoDB, GraphQL</li>
+                <li>// ExpressJS</li>
+                <li>// NodeJS</li>
+                <li>// REST APIs</li>
               </ul>
             </CardText>
           </Card>
         </Col>
         <Col sm="6">
           <Card className="tools col-md-11">
-            <CardTitle className="tools__title text-center"># Tools</CardTitle>
+            <CardTitle className="tools__title text-center"># Tools & Soft Skills</CardTitle>
             <CardText className="tools__list-wrapper">
               <ul className="tools__list">
                 <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
                 <li>Visual Studio Code</li>
                 <li>PostMan</li>
-                <li>JEST</li>
+                <li>Enzyme, JEST</li>
                 <li>mLab</li>
-                <li>Kanban Flow</li>
+                <li>Heroku, Digital Ocean, Netlify</li>
+                <li>KanbanFlow, WakaTime, Strict Time Management</li>
+                <li>Excellent Team Communication and Customer Service Experience</li>
               </ul>
             </CardText>
           </Card>

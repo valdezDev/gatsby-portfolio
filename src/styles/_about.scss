@@ -52,6 +52,7 @@
 .tools {
   background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 40%));
   margin: auto;
+  margin-bottom: 1.5rem;
   width: 90%;
   &__title {
     text-shadow: 1px 1px darken($blue, 50%);
@@ -65,7 +66,7 @@
     color: lighten($rose, 2%);
     list-style-type: square;
     margin-left: 50px;
-    margin-top: 12px;
+    margin-top: 4px;
     & a {
       color: darken($blue, 10%);
       text-decoration: underline;
