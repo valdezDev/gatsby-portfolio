@@ -18,12 +18,12 @@
 }
 
 .proj-desc-a {
-  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 44%));
+  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
   border-radius: 0px;
   margin: 1rem;
 
   &__title {
-    background-image: linear-gradient(to bottom, lighten($dark-gray, 4%), lighten($dark-gray, 5%));
+    //background-image: linear-gradient(to bottom, lighten($dark-gray, 4%), lighten($dark-gray, 5%));
     font-weight: bold;
     font-size: 2rem;
     color: $blue;
@@ -76,13 +76,13 @@
 }
 
 .proj-desc-b {
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 4%), lighten($dark-gray, 5%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
   border-radius: 0px;
   border-width: 0px;
   margin: 1rem;
 
   &__title {
-    background-image: linear-gradient(to bottom, darken($blue, 48%), darken($blue, 45%));
+    //background-image: linear-gradient(to bottom, darken($blue, 48%), darken($blue, 45%));
     font-weight: bold;
     font-size: 2rem;
     color: darken($rose, 2%);
