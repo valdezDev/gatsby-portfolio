@@ -1,4 +1,5 @@
 .author-social-links {
+
   ul {
     display: inline-flex;
 
@@ -31,22 +32,22 @@
 
 .sidecard {
   border-width: 0px;
+  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
   &__body {
-    background-image: linear-gradient(to bottom, darken($blue, 20%), darken($blue, 10%));
     margin-top: -16px;
   }
   
   &__title {
     color: lighten($yellow, 4%);
-    background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   &__querycard {
-    background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 38%));
+    //background-image: linear-gradient(to bottom, darken($blue, 40%), darken($blue, 38%));
+    background-image: linear-gradient(to bottom, lighten($dark-gray, 2%), lighten($dark-gray, 3.8%));
     border-radius: 4px;
     margin-bottom: 1.5rem;
-    box-shadow: 4px 4px darken($blue, 40%);
+    //box-shadow: 4px 4px darken($blue, 40%);
   }
 
   &__minibody {
@@ -62,5 +63,9 @@
 
   &__link {
     color: $blue;
+    transition: color 0.5s ease;
+    &:hover {
+      color: lighten($blue, 15%);
+    }
   }
 }

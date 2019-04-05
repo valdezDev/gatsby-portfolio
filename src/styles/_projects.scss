@@ -23,7 +23,6 @@
   margin: 1rem;
 
   &__title {
-    //background-image: linear-gradient(to bottom, lighten($dark-gray, 4%), lighten($dark-gray, 5%));
     font-weight: bold;
     font-size: 2rem;
     color: $blue;
@@ -82,7 +81,6 @@
   margin: 1rem;
 
   &__title {
-    //background-image: linear-gradient(to bottom, darken($blue, 48%), darken($blue, 45%));
     font-weight: bold;
     font-size: 2rem;
     color: darken($rose, 2%);

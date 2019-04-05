@@ -11,8 +11,8 @@ import { DiscussionEmbed } from 'disqus-react';
 const SinglePost = ({ data, pageContext }) => {
   
   const post = data.markdownRemark.frontmatter;
-  const baseUrl = 'https://valdezdev.tech/';
-  const disqusShortname = 'https-valdezdev-tech';
+  const baseUrl = 'https://valdezdev.com/';
+  const disqusShortname = 'https-valdezdev-com';
   const disqusConfig = {
     identifier: data.markdownRemark.id,
     title: post.title,

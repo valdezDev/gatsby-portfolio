@@ -32,13 +32,11 @@
 }
 
 .skills {
-  //background-image: linear-gradient(to bottom, darken($blue, 24%), darken($blue, 20%));
   background-image: linear-gradient(to bottom, lighten($dark-gray, 1.4%), lighten($dark-gray, 2.4%));
   margin: auto;
   margin-bottom: 1.5rem;
   width: 90%;
   &__title {
-    //text-shadow: 2px 2px darken($blue, 50%);
     font-size: 24px;
     color: darken($rose, 4%);
   }
