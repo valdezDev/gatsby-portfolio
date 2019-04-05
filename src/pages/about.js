@@ -9,7 +9,7 @@ import '../styles/index.scss';
 const AboutPage = () => (
 
   <Layout>
-    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `javascript`]} />
+    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `javascript`, `valdezdev`]} />
     <h1 className="page-header">About Paul</h1>
     <Card className="about-card">
       <Row>

@@ -1,18 +1,16 @@
 // About Page
 .about-card {
   border-width: 0px !important;
-  background: linear-gradient(
-    to bottom, 
-    rgba(darken($blue, 42%), 0.8), 
-    rgba(darken($blue, 41%), 0.8)
-  );
+  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
 }
+
 .about-img {
   background: rgba($blue, 0.001);
   border-width: 0px;
   &__img {
     border-radius: 320px;
     width: 40%;
+    margin-top: 1.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -34,25 +32,27 @@
 }
 
 .skills {
-  background-image: linear-gradient(to bottom, darken($blue, 24%), darken($blue, 20%));
+  //background-image: linear-gradient(to bottom, darken($blue, 24%), darken($blue, 20%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 1.4%), lighten($dark-gray, 2.4%));
   margin: auto;
+  margin-bottom: 1.5rem;
   width: 90%;
   &__title {
-    text-shadow: 2px 2px darken($blue, 50%);
+    //text-shadow: 2px 2px darken($blue, 50%);
     font-size: 24px;
-    color: lighten($rose, 4%);
+    color: darken($rose, 4%);
   }
   
   &__list {
     font-size: 18px;
-    color: $white;
+    color: lighten($blue, 26%);
     margin-left: 50px;
     margin-top: 12px;
   }
 }
 
 .tools {
-  background-image: linear-gradient(to bottom, darken($rose, 12%), darken($rose, 10%));
+  background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 40%));
   margin: auto;
   width: 90%;
   &__title {
@@ -64,7 +64,7 @@
   
   &__list {
     font-size: 18px;
-    color: $white;
+    color: lighten($rose, 2%);
     list-style-type: square;
     margin-left: 50px;
     margin-top: 12px;
@@ -73,7 +73,7 @@
       text-decoration: underline;
       transition: color 0.5s ease;
       &:hover {
-        color: darken($blue, 2%);
+        color: lighten($blue, 5%);
       }
     }
   }
