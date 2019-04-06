@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 import '../styles/index.scss';
 import SocialButtons from "../components/SocialButtons";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => (
 
@@ -22,7 +23,7 @@ const Contact = () => (
             All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
             </CardSubtitle>
           <CardBody className="contact-card__body">
-            
+            {/* 
             <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
               <input type="hidden" name="bot-field" />
               <div className="contact-card__fields">
@@ -42,7 +43,8 @@ const Contact = () => (
               <ul className="contact-card__actions">
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
-            </form>
+           </form> */}
+            <ContactForm />
           </CardBody>
         </Card>
       </Col>
