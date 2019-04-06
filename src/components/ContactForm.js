@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <form
-    name="contact-test-test"
+    name="contact"
     method="post"
     action="/success"
     data-netlify="true"

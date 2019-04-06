@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Contact from '../components/Contact';
@@ -14,3 +14,13 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
+*/
+import React from "react"
+import DummyForm from "../components/dummyForm"
+export default () => (
+  <div>
+    <h2>Send me a line</h2>
+    <ContactForm/>
+  </div>
+)
+
