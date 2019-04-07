@@ -36,6 +36,9 @@
   &__list {
     color: lighten($blue, 40%);
     margin-left: 10px;
+    & li {
+      list-style-type: square;
+    }
   }
 
   &__button-link {
@@ -95,6 +98,9 @@
   &__list {
     color: lighten($rose, 6%);
     margin-left: 10px;
+    & li {
+      list-style-type: square;
+    }
   }
 
   &__button-link {

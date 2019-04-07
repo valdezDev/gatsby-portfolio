@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SocialButtons from "../components/SocialButtons";
+import Contact from "../components/Contact";
 import SEO from "../components/seo";
 //import Img from 'gatsby-image'; come back to this.
 import { Button, Card, CardTitle, CardSubtitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
@@ -27,6 +28,7 @@ const IndexPage = () => (
         </Card>
         </Col>
     </Row>
+    {/*<Contact className="contact-comp"/>*/}
   </Layout>
 );
 

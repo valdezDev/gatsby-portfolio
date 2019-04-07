@@ -26,13 +26,13 @@ const Project = () => (
         <Card className="proj-desc-a">
           <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
           <CardBody className="proj-desc-a__body">
-            <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together for career information.</CardSubtitle> <br/>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
             <ul className="proj-desc-a__list">
-              <li>-  Built on a MERN Stack</li>
-              <li>-  A simple social media app that allows user registration, login.</li>
-              <li>-  Performs various asynchronous, CRUD functionalities using JavaScript</li>
-              <li>-  State management using Redux.</li>
-              <li>-  Database is hosted on mLab and the app is deployed to Heroku</li>
+              <li>Built on a MERN Stack</li>
+              <li>A simple social media app that allows user registration, login.</li>
+              <li>Performs various asynchronous, CRUD functionalities using JavaScript</li>
+              <li>State management using Redux.</li>
+              <li>Database is hosted on mLab and the app is deployed to Heroku</li>
             </ul>
             <Button className="proj-desc-a__demo-button">
               <a
@@ -71,9 +71,9 @@ const Project = () => (
             
             <CardSubtitle className="proj-desc-b__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
             <ul className="proj-desc-b__list">
-              <li>//  Built using create-react-app</li>
-              <li>//  Integrated with the Hacker News, Algolia Search API.</li>
-              <li>//  Has state management functionality, ideally will filter search results using Redux in the future.</li>
+              <li>Built using create-react-app</li>
+              <li>Integrated with the Hacker News, Algolia Search API.</li>
+              <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
             </ul>
             <Button className="proj-desc-b__demo-button">
               <a
@@ -111,10 +111,10 @@ const Project = () => (
           <CardBody className="proj-desc-a__body">
             <CardSubtitle className="proj-desc-a__subtitle text-center">Lorem ipsum dolor sit amet consectetur.</CardSubtitle> <br/>
             <ul className="proj-desc-a__list">
-              <li>//  Built using GatsbyJS</li>
-              <li>//  Each post is accessing markdown queries written in GraphQL</li>
-              <li>//  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem reprehenderit? Quasi.</li>
-              <li>//  Deployed to Netlify</li>
+              <li>Built using GatsbyJS</li>
+              <li>Each post is accessing markdown queries written in GraphQL</li>
+              <li>Every post uses Node functionality to pass assign and pass a unique slug based on the blog title.</li>
+              <li>Deployed to Netlify</li>
             </ul>
             <Button className="proj-desc-a__demo-button">
               <a

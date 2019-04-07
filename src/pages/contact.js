@@ -1,20 +1,21 @@
-/*import React from "react";
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Contact from '../components/Contact';
-import ContactForm from '../components/ContactForm';
+//import ContactForm from '../components/ContactForm';
 import '../styles/index.scss';
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
     <Contact />
-    <ContactForm />
+    {/*<ContactForm />*/}
   </Layout>
 );
 
 export default ContactPage;
-*/
+
+/*
 import React from "react"
 import ContactForm from "../components/ContactForm"
 export default () => (
@@ -23,4 +24,5 @@ export default () => (
     <ContactForm/>
   </div>
 )
+*/
 
