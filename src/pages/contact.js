@@ -16,7 +16,7 @@ const ContactPage = () => (
 export default ContactPage;
 */
 import React from "react"
-import DummyForm from "../components/dummyForm"
+import ContactForm from "../components/ContactForm"
 export default () => (
   <div>
     <h2>Send me a line</h2>
