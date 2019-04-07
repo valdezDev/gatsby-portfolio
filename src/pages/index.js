@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Layout from "../components/layout";
 import SocialButtons from "../components/SocialButtons";
 import SEO from "../components/seo";
@@ -30,4 +30,13 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default IndexPage;*/
+
+import React from "react"
+import ContactForm from "../components/ContactForm"
+export default () => (
+  <div>
+    <h2>Send me a line</h2>
+    <ContactForm/>
+  </div>
+)
