@@ -44,6 +44,7 @@ const Contact = () => (
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
            </form> */}
+          <ContactForm />
           </CardBody>
         </Card>
       </Col>
