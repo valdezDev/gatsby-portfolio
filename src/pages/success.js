@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import SocialButtons from "../components/SocialButtons";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
+import SuccessEmail from '../images/success.gif';
 import { Card, CardBody, CardSubtitle, CardText, CardTitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
 import '../styles/index.scss';
 
@@ -35,7 +36,7 @@ const Success = () => (
             Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me and I will be sure to give you a speedy response.
           </CardSubtitle>
           <CardBody>
-            <img className="email-gif" src={'https://media.giphy.com/media/3sbiWejYVIGuX1thyq/giphy.gif'} alt="email-gif" />
+            <img className="email-gif" src={SuccessEmail} alt="email-gif" />
           </CardBody>
         </Card>
       </Col>

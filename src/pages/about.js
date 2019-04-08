@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-//import Img from 'gatsby-image'; come back to this.
 import PaulImage from '../images/paul.jpg';
 import { Button, Card, CardBody, CardImg, CardText, CardTitle, CardSubtitle, Col, Container, Row} from "reactstrap";
 import '../styles/index.scss';

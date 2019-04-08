@@ -1,7 +1,7 @@
 // About Page
 .about-card {
   border-width: 0px !important;
-  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
+  background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
 }
 
 .about-img {
@@ -32,7 +32,7 @@
 }
 
 .skills {
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 1.4%), lighten($dark-gray, 2.4%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 0.1%), lighten($dark-gray, 0.6%));
   margin: auto;
   margin-bottom: 1.5rem;
   width: 90%;
