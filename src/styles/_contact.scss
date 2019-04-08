@@ -1,17 +1,7 @@
-// Contact Page
-.contact-container {
-  //background-color: $dark-gray;
-  //margin-top: 23rem;
-}
-
+// Contact Form
 .contact-card {
-  /*background: linear-gradient(
-    to bottom, 
-    rgba(darken($blue, 42%), 0.8), 
-    rgba(darken($blue, 41%), 0.8)
-  );*/
+  margin-top: 1.5rem;
   background: rgba($blue, 0.001);
-
   &__title {
     font-size: 2rem;
     font-weight: bold;

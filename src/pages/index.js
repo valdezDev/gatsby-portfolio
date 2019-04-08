@@ -1,10 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import SocialButtons from "../components/SocialButtons";
-import Contact from "../components/Contact";
 import SEO from "../components/seo";
-//import Img from 'gatsby-image'; come back to this.
-import { Button, Card, CardBody, CardTitle, CardSubtitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
+import { Card, CardBody, CardSubtitle, CardTitle, Col, Container, Row} from "reactstrap";
 import '../styles/index.scss';
 
 const IndexPage = () => (
@@ -28,7 +26,7 @@ const IndexPage = () => (
         <Card className="contact-card">
           <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
           <CardSubtitle className="contact-card__subtitle text-center">
-            All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
+            All messages will be sent to my personal email at pvaldezdev@gmail.com.
           </CardSubtitle>
           <CardBody className="contact-card__body">
             <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">

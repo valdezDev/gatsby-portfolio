@@ -14,11 +14,8 @@
 @import './single-post';
 @import './about';
 @import './projects';
-@import './contact';
-@import './success';
 
-
-// Index Page
+// Index & Success Page
 .hero-background-0 {
   background: url(../images/hero-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -57,7 +54,8 @@
 
 .index-intro {
   background: rgba($blue, 0.001);
-  margin-top: 7rem;
+  margin-top: 2.5rem;
+  border-width: 0;
   &__page-header {
     font-family: 'Merienda', cursive;
     color: $yellow;
@@ -94,4 +92,76 @@
 .contact-comp {
   margin-top: 10rem;
   z-index: -1;
+}
+
+// Contact Form
+.contact-card {
+  margin-top: 1.5rem;
+  background: rgba($blue, 0.001);
+  border-width: 0;
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darken($blue, 1%);
+  }
+
+  &__subtitle {
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__success-subtitle {
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    display: block;
+    margin: 0 auto;
+    background-color: darken(white, 4%);
+  }
+  
+  &__email {
+    display: block;
+    margin: 1.25rem auto;
+    background-color: darken(white, 4%);
+  }
+
+  &__message {
+    justify-content: center;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  &__send-message {
+    justify-content: center;
+    display: block;
+    margin: 1rem auto;
+    border-color: $blue !important;
+  }
+
+  & textarea {
+    background-color: darken(white, 4%);
+  }
+}
+
+.follow-card {
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 3%), lighten($dark-gray, 6.2%));
+
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: darken($blue, 4%);
+  }
+}
+
+.email-gif {
+  width: 50%;
+  display: block;
+  margin:auto;
 }
