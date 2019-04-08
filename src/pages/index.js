@@ -10,66 +10,52 @@ import '../styles/index.scss';
 const IndexPage = () => (
   <Layout>
     <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `javascript`]} />
+    
     <Container>
       <div className="hero-background-0"></div>
       <div className="hero-background-1"></div>
     </Container>
+    
     <Row>
       <Col sm="5">
         <Card className="index-intro">
           <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
-            {/*<NavItem>
-            <Button className="col-md-2 index-intro__button">
-              <NavLink className="index-intro__link" href="/contact">Get in Touch!</NavLink>
-            </Button>
-          </NavItem>*/}
           <SocialButtons/>
         </Card>
       </Col>
       <Col sm="7">
-  
-          <Card className="contact-card">
-            <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
-            <CardSubtitle className="contact-card__subtitle text-center">
-              All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
-              </CardSubtitle>
-            <CardBody className="contact-card__body">
-              <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
-                <input type="hidden" name="bot-field" />
-                <div className="contact-card__fields">
-                  <div className="contact-card__field half">
-                    <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
-                  </div>
-                  <div className="contact-card__field half">
-                    <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
-                  </div>
-                  <div className="contact-card__field">
-                    <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
-                  </div>
-                  <div className="contact-card__field">
-                    <div data-netlify-recaptcha="true"></div>
-                  </div>
+        <Card className="contact-card">
+          <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
+          <CardSubtitle className="contact-card__subtitle text-center">
+            All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
+          </CardSubtitle>
+          <CardBody className="contact-card__body">
+            <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+              <input type="hidden" name="bot-field" />
+              <div className="contact-card__fields">
+                <div className="contact-card__field half">
+                  <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
                 </div>
-                <ul className="contact-card__actions">
-                  <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
-                </ul>
-              </form>
-            </CardBody>
-          </Card>
-    </Col>
+                <div className="contact-card__field half">
+                  <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
+                </div>
+                <div className="contact-card__field">
+                  <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                </div>
+                <div className="contact-card__field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+              </div>
+              <ul className="contact-card__actions">
+                <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+              </ul>
+            </form>
+          </CardBody>
+        </Card>
+      </Col>
     </Row>
   </Layout>
 );
 
 export default IndexPage;
-/*
-import React from "react"
-import ContactForm from "../components/ContactForm"
-export default () => (
-  <div>
-    <h2>Send me a line</h2>
-    <ContactForm/>
-  </div>
-)
-*/
