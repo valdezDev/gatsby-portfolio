@@ -30,7 +30,7 @@ const Contact = () => (
                   <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="contact-card__field half">
-                  <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="johndoe@email.com" />
+                  <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
                 </div>
                 <div className="contact-card__field">
                   <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
