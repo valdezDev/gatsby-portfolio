@@ -4,7 +4,7 @@ import SocialButtons from "../components/SocialButtons";
 import Contact from "../components/Contact";
 import SEO from "../components/seo";
 //import Img from 'gatsby-image'; come back to this.
-import { Button, Card, CardTitle, CardSubtitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
+import { Button, Card, CardBody, CardTitle, CardSubtitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
 import '../styles/index.scss';
 
 const IndexPage = () => (
@@ -15,20 +15,50 @@ const IndexPage = () => (
       <div className="hero-background-1"></div>
     </Container>
     <Row>
-      <Col sm="12">
-      <Card className="index-intro">
-        <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
-        <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
-        <NavItem>
-          <Button className="col-md-2 index-intro__button">
-            <NavLink className="index-intro__link" href="/contact">Get in Touch!</NavLink>
-          </Button>
-        </NavItem>
-        <SocialButtons/>
+      <Col sm="5">
+        <Card className="index-intro">
+          <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
+          <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
+            {/*<NavItem>
+            <Button className="col-md-2 index-intro__button">
+              <NavLink className="index-intro__link" href="/contact">Get in Touch!</NavLink>
+            </Button>
+          </NavItem>*/}
+          <SocialButtons/>
         </Card>
-        </Col>
+      </Col>
+      <Col sm="7">
+  
+          <Card className="contact-card">
+            <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
+            <CardSubtitle className="contact-card__subtitle text-center">
+              All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
+              </CardSubtitle>
+            <CardBody className="contact-card__body">
+              <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+                <input type="hidden" name="bot-field" />
+                <div className="contact-card__fields">
+                  <div className="contact-card__field half">
+                    <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div className="contact-card__field half">
+                    <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
+                  </div>
+                  <div className="contact-card__field">
+                    <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                  </div>
+                  <div className="contact-card__field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                </div>
+                <ul className="contact-card__actions">
+                  <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+                </ul>
+              </form>
+            </CardBody>
+          </Card>
+    </Col>
     </Row>
-    {/*<Contact className="contact-comp"/>*/}
   </Layout>
 );
 
