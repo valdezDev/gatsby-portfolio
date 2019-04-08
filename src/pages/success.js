@@ -19,21 +19,22 @@ const Success = () => (
     </Container>
 
     <Row>
-      <Col sm="5">
+      <Col sm="12">
         <Card className="index-intro">
           <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
           <SocialButtons/>
         </Card>
       </Col>
-      <Col sm="7">
+    </Row>
+    <Row>
+      <Col sm="12">
         <Card className="contact-card">
           <CardTitle className="contact-card__title text-center">Thank You! 📫</CardTitle>
           <CardSubtitle className="contact-card__success-subtitle text-center">
-            Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me. I will be sure to get back to you as soon as I can.
+            Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me and I will be sure to give you a speedy response.
           </CardSubtitle>
           <CardBody>
-            {/*<div className="email-gif"></div>*/}
             <img className="email-gif" src={'https://media.giphy.com/media/3sbiWejYVIGuX1thyq/giphy.gif'} alt="email-gif" />
           </CardBody>
         </Card>

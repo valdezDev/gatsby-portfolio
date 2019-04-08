@@ -29,7 +29,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
 
@@ -43,7 +43,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
 
@@ -106,18 +106,21 @@
   }
 
   &__subtitle {
-    color: white;
+    color: lighten($blue, 20%);
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
   }
   
   &__success-subtitle {
-    color: white;
+    color: lighten($blue, 20%);
     font-size: 1.25rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
+  }
+  &__body {
+    margin: auto;
   }
 
   &__name {

@@ -15,20 +15,22 @@ const IndexPage = () => (
     </Container>
     
     <Row>
-      <Col sm="5">
+      <Col sm="12">
         <Card className="index-intro">
           <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
           <SocialButtons/>
         </Card>
       </Col>
-      <Col sm="7">
+    </Row>
+    <Row>
+      <Col sm="12">
         <Card className="contact-card">
           <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
           <CardSubtitle className="contact-card__subtitle text-center">
             All messages will be sent to my personal email at pvaldezdev@gmail.com.
           </CardSubtitle>
-          <CardBody className="contact-card__body">
+          <CardBody className="col-md-8 contact-card__body">
             <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
               <input type="hidden" name="bot-field" />
               <div className="contact-card__fields">
