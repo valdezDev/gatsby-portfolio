@@ -6,7 +6,7 @@ function encode(data) {
     .join("&")
 }
 
-export default class ContactForm_V2 extends Component {
+class ContactForm_V2 extends Component {
   constructor(props) {
     super(props)
     this.ContactForm = React.createRef()
@@ -87,3 +87,4 @@ export default class ContactForm_V2 extends Component {
     )
   }
 }
+export default ContactForm_V2
