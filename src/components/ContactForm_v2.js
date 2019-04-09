@@ -1,10 +1,5 @@
 import React, { Component } from "react"
 import { navigate } from "gatsby"
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
 
 class ContactForm_V2 extends Component {
   constructor(props) {
@@ -12,7 +7,11 @@ class ContactForm_V2 extends Component {
     this.ContactForm = React.createRef()
     this.state = {}
   }
-
+  encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
@@ -24,7 +23,7 @@ class ContactForm_V2 extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+      body: this.encode({
         "form-name": form.getAttribute("name"),
         ...this.state,
       }),
