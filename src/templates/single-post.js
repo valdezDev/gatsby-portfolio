@@ -91,7 +91,9 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
           <li>
             <a
-              href={`https://plus.google.com/share?url=${baseUrl}${pageContext.slug}`}
+              href={`https://plus.google.com/share?url=${baseUrl}${
+                pageContext.slug
+              }`}
               /* href={
                 "https://plus.google.com/share?url=" +
                 baseUrl +
@@ -106,7 +108,9 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
           <li>
             <a
-              href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${pageContext.slug}`}
+              href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${
+                pageContext.slug
+              }`}
               /* href={
                 "https://www.linkedin.com/shareArticle?url=" +
                 baseUrl +

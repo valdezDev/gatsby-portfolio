@@ -26,12 +26,12 @@ class Header extends React.Component {
       isOpen: !this.state.isOpen,
     })
   } */
-  state={
-    isOpen:false
+  state = {
+    isOpen: false,
   }
   // for a simple explanation on this https://www.freecodecamp.org/forum/t/react-prevstate/86495/2
-  toggle=()=>{
-    this.setState(prevstate=>({isOpen:!prevstate.isOpen}))
+  toggle = () => {
+    this.setState(prevstate => ({ isOpen: !prevstate.isOpen }))
   }
   render() {
     return (
