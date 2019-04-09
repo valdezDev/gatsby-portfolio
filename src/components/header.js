@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React from "react"
+import PropTypes from "prop-types"
 import {
   Collapse,
   Navbar,
@@ -7,50 +7,50 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
-} from 'reactstrap';
+  NavLink,
+} from "reactstrap"
 
-class Header extends React.Component{
+class Header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
-      isOpen: false
-    };
+      isOpen: false,
+    }
   }
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
-    });
+      isOpen: !this.state.isOpen,
+    })
   }
   render() {
     return (
       <div>
         <Navbar fixed="top" dark expand="sm">
           <div className="container">
-          <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
-          <NavbarToggler className="nav-toggler" onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/about">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/projects">Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/blog">Blog</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+            <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+            <NavbarToggler className="nav-toggler" onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink href="/about">About</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/projects">Projects</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/blog">Blog</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/contact">Contact</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
           </div>
         </Navbar>
       </div>
-    );
+    )
   }
 }
 
@@ -62,4 +62,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header;
+export default Header

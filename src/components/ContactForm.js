@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 export default () => (
   <form
@@ -26,4 +26,4 @@ export default () => (
       <input type="reset" value="Eraser" />
     </div>
   </form>
-);
+)

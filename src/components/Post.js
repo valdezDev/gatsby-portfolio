@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { Card, CardTitle, CardSubtitle, CardText, CardBody } from 'reactstrap';
-import Img from 'gatsby-image';
+import React from "react"
+import { Link } from "gatsby"
+import { Card, CardTitle, CardSubtitle, CardText, CardBody } from "reactstrap"
+import Img from "gatsby-image"
 //import { slugify } from '../util/utilityFunctions';
-import '../styles/index.scss';
+import "../styles/index.scss"
 
 const Post = ({ title, author, slug, date, body, fluid }) => (
   <Card className="post-card">
     <Link to={slug}>
-      <Img className="card-image-top" fluid={fluid} alt="proj-img"/>
+      <Img className="card-image-top" fluid={fluid} alt="proj-img" />
     </Link>
     <CardBody className="post-card__body">
       <CardTitle>
@@ -17,17 +17,14 @@ const Post = ({ title, author, slug, date, body, fluid }) => (
         </Link>
       </CardTitle>
       <CardSubtitle className="post-card__info">
-        <span>Posted on {date}</span> by {' '}
-        <span>{author}</span>
+        <span>Posted on {date}</span> by <span>{author}</span>
       </CardSubtitle>
       <CardText className="post-card__text">{body}</CardText>
-      <Link
-        to={slug}
-        className="btn btn-outline float-right">
-          Read more
+      <Link to={slug} className="btn btn-outline float-right">
+        Read more
       </Link>
     </CardBody>
   </Card>
-);
+)
 
-export default Post;
+export default Post

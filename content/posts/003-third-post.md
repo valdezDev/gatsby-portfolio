@@ -1,12 +1,12 @@
 ---
-title: 'First Post - Introduction'
-date: 2019-01-9 04:19:00
+title: 'Third Post - CSS'
+date: 2019-01-31 04:19:00
 author: 'Paul Valdez'
-image: ../../images/proj.jpg
+#image: ../../images/proj.jpg
+featuredImage: "proj.jpg"
 ---
 
-Welcome to Paul's Code Blog. I hope you find this application to be useful.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at. Ut aliquam purus sit amet. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. A scelerisque purus semper eget duis at tellus. Id aliquet risus feugiat in ante metus dictum. At imperdiet dui accumsan sit amet nulla. Ut pharetra sit amet aliquam id diam maecenas ultricies. Morbi enim nunc faucibus a. Non blandit massa enim nec dui.
+My journey from CSS to the ease of using SCSS.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at. Ut aliquam purus sit amet. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. A scelerisque purus semper eget duis at tellus. Id aliquet risus feugiat in ante metus dictum. At imperdiet dui accumsan sit amet nulla. Ut pharetra sit amet aliquam id diam maecenas ultricies. Morbi enim nunc faucibus a. Non blandit massa enim nec dui.
 
 Egestas sed sed risus pretium quam. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Ultricies leo integer malesuada nunc vel risus commodo. Velit scelerisque in dictum non consectetur a erat nam. Pharetra sit amet aliquam id diam maecenas. Viverra ipsum nunc aliquet bibendum enim. Nam at lectus urna duis convallis. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Diam in arcu cursus euismod. Imperdiet dui accumsan sit amet nulla facilisi.
 

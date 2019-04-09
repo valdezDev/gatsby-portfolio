@@ -26,6 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               author
+              featuredImage
             }
             fields {
               slug
@@ -35,17 +36,21 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(res => {
-    if(res.errors) return Promise.reject(res.errors)
+    if(res.errors){
+      throw res.errors
+    }
 
     const posts = res.data.allMarkdownRemark.edges;
 
+    
     posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: singlePostTemplate,
         context: {
           // Passing slug for template to use to get post
-          slug: node.fields.slug
+          slug: node.fields.slug,
+          imageInfo:node.frontmatter.featuredImage
         }
       })
     })

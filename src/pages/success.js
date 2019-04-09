@@ -1,8 +1,8 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Layout from '../components/layout';
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../components/layout"
 
-const Success = (props) => (
+const Success = props => (
   <Layout>
     <Helmet>
       <title>Success! Thank You.</title>
@@ -13,13 +13,17 @@ const Success = (props) => (
       <section id="one">
         <div className="success__inner">
           <header className="success__major">
-            <h1 className="success__major" color="red">Success! 📫😇</h1>
+            <h1 className="success__major" color="red">
+              Success! 📫😇
+            </h1>
           </header>
-          <p className="text-center success__small">Thank you for taking the time to reach out!</p>
+          <p className="text-center success__small">
+            Thank you for taking the time to reach out!
+          </p>
         </div>
       </section>
     </div>
   </Layout>
-);
+)
 
-export default Success;
+export default Success

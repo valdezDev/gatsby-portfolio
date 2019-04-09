@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 import {
   Button,
   Card,
@@ -6,22 +6,24 @@ import {
   CardTitle,
   CardSubtitle,
   Col,
-  Row
-} from 'reactstrap';
-import '../styles/index.scss';
-import SocialButtons from "../components/SocialButtons";
-import ContactForm from "../components/ContactForm";
+  Row,
+} from "reactstrap"
+import "../styles/index.scss"
+import SocialButtons from "../components/SocialButtons"
+import ContactForm from "../components/ContactForm"
 
 const Contact = () => (
-
   <Card className="contact-container">
     <Row>
       <Col sm="8">
         <Card className="contact-card">
-          <CardTitle className="contact-card__title text-center">Get in Touch</CardTitle>
+          <CardTitle className="contact-card__title text-center">
+            Get in Touch
+          </CardTitle>
           <CardSubtitle className="contact-card__subtitle text-center">
-            All messages will be sent to my personal email at pvaldezdev@gmail.com. Thank you for taking the time to reach out!
-            </CardSubtitle>
+            All messages will be sent to my personal email at
+            pvaldezdev@gmail.com. Thank you for taking the time to reach out!
+          </CardSubtitle>
           <CardBody className="contact-card__body">
             {/* 
             <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
@@ -44,13 +46,15 @@ const Contact = () => (
                 <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
               </ul>
            </form> */}
-          <ContactForm />
+            <ContactForm />
           </CardBody>
         </Card>
       </Col>
       <Col sm="4">
         <Card className="follow-card">
-          <CardTitle className="follow-card__title text-center"># Follow</CardTitle>
+          <CardTitle className="follow-card__title text-center">
+            # Follow
+          </CardTitle>
           <CardBody className="follow-card__body">
             <SocialButtons />
           </CardBody>
@@ -58,7 +62,6 @@ const Contact = () => (
       </Col>
     </Row>
   </Card>
+)
 
-);
-
-export default Contact;
+export default Contact

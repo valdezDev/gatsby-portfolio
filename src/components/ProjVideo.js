@@ -1,15 +1,13 @@
-import React from 'react';
-import { Player } from 'video-react';
+import React from "react"
+import { Player } from "video-react"
 
 const ProjVideo = () => (
+  <Player
+    playsInline
+    poster="/assets/poster.png"
+    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+    className="projVideo"
+  />
+)
 
-    <Player
-      playsInline
-      poster="/assets/poster.png"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-      className="projVideo"
-    />
-  
-);
-
-export default ProjVideo;
+export default ProjVideo

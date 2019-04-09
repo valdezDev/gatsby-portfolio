@@ -5,29 +5,30 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
     "disqus-react": "^1.0.5",
-    "gatsby": "^2.0.117",
-    "gatsby-image": "^2.0.29",
-    "gatsby-plugin-catch-links": "^2.0.10",
-    "gatsby-plugin-manifest": "^2.0.17",
-    "gatsby-plugin-offline": "^2.0.24",
-    "gatsby-plugin-react-helmet": "^3.0.6",
-    "gatsby-plugin-sass": "^2.0.10",
-    "gatsby-plugin-sharp": "^2.0.20",
-    "gatsby-source-filesystem": "^2.0.20",
-    "gatsby-transformer-remark": "^2.2.4",
-    "gatsby-transformer-sharp": "^2.1.13",
+    "gatsby": "^2.3.14",
+    "gatsby-image": "^2.0.37",
+    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-manifest": "^2.0.26",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.17",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "nodemailer": "^5.1.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-google-recaptcha": "^1.0.5",
     "react-helmet": "^5.2.0",
-    "reactstrap": "^7.1.0",
-    "video-react": "^0.13.2"
+    "reactstrap": "^8.0.0",
+    "video-react": "^0.13.6"
   },
   "keywords": [
     "gatsby"
@@ -38,6 +39,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "format":"prettier --write src/**/*.{js,jsx}",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
@@ -46,5 +48,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
   }
 }

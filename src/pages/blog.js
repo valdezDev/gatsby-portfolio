@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { graphql, StaticQuery } from 'gatsby';
-import Post from '../components/Post';
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { graphql, StaticQuery } from "gatsby"
+import Post from "../components/Post"
 
 const BlogPage = () => (
   <Layout>
@@ -13,7 +13,8 @@ const BlogPage = () => (
       render={data => {
         return (
           <div>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
+            {/* {data.allMarkdownRemark.edges.map(({ node }) => ( */}
+            {data.allPosts.edges.map(({ node }) => (
               <Post
                 key={node.id}
                 title={node.frontmatter.title}
@@ -21,7 +22,11 @@ const BlogPage = () => (
                 author={node.frontmatter.author}
                 body={node.excerpt}
                 date={node.frontmatter.date}
-                fluid={node.frontmatter.image.childImageSharp.fluid}
+                /* fluid={node.frontmatter.image.childImageSharp.fluid} */
+                fluid={data.allPictures.edges.filter(
+                  x =>
+                    x.node.fluid.originalName === node.frontmatter.featuredImage
+                )}
               />
             ))}
           </div>
@@ -31,7 +36,7 @@ const BlogPage = () => (
   </Layout>
 )
 
-const blogQuery = graphql`
+/* const blogQuery = graphql`
   query blogQuery {
     allMarkdownRemark (sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
@@ -57,6 +62,40 @@ const blogQuery = graphql`
       }
     }
   }
+` */
+
+const blogQuery = graphql`
+  query blogQuery {
+    allPosts: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MM Do YYYY")
+            author
+            featuredImage
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+    allPictures: allImageSharp {
+      edges {
+        node {
+          fluid(maxWidth: 700) {
+            originalName
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
 `
 
-export default BlogPage;
+export default BlogPage
