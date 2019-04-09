@@ -118,7 +118,7 @@ const sidebarQuery = graphql`
         node {
           fluid(maxWidth: 300) {
             originalName
-            src
+            ...GatsbyImageSharpFluid
           }
         }
       }

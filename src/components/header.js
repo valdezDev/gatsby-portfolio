@@ -11,7 +11,8 @@ import {
 } from "reactstrap"
 
 class Header extends React.Component {
-  constructor(props) {
+  // as of react 16.8 you don't need this
+  /* constructor(props) {
     super(props)
 
     this.toggle = this.toggle.bind(this)
@@ -19,10 +20,18 @@ class Header extends React.Component {
       isOpen: false,
     }
   }
+  // don't mutate like so, it's anti-pattern
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen,
     })
+  } */
+  state={
+    isOpen:false
+  }
+  // for a simple explanation on this https://www.freecodecamp.org/forum/t/react-prevstate/86495/2
+  toggle=()=>{
+    this.setState(prevstate=>({isOpen:!prevstate.isOpen}))
   }
   render() {
     return (

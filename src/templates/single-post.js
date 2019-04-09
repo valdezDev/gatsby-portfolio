@@ -91,11 +91,12 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
           <li>
             <a
-              href={
+              href={`https://plus.google.com/share?url=${baseUrl}${pageContext.slug}`}
+              /* href={
                 "https://plus.google.com/share?url=" +
                 baseUrl +
                 pageContext.slug
-              }
+              } */
               className="google"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,11 +106,12 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
           <li>
             <a
-              href={
+              href={`https://www.linkedin.com/shareArticle?url=${baseUrl}${pageContext.slug}`}
+              /* href={
                 "https://www.linkedin.com/shareArticle?url=" +
                 baseUrl +
                 pageContext.slug
-              }
+              } */
               className="linkedin"
               target="_blank"
               rel="noopener noreferrer"
