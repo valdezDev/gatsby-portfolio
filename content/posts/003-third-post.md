@@ -3,6 +3,7 @@ title: 'Third Post - CSS'
 date: 2019-01-31 04:19:00
 author: 'Paul Valdez'
 #image: ../../images/proj.jpg
+# name changed and adjusted to prevent issues with image loading with gatsby image and transformations.
 featuredImage: "proj.jpg"
 ---
 

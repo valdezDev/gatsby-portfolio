@@ -28,7 +28,13 @@ export default () => (
   </form>
 )
  */
-
+/**
+ * changes made to this component
+ * transformed it from a stateless functional component to a full blown class component.
+ * Added a state to hold the inputs and then encode them (through encode function) and post a request to netlify
+ * Added gatsby navigate import to make the routing done in a internal fashion as it would lead to 404 and the data not added. 
+ * See my comment on your issue
+ */
 
 import React, { Component } from "react"
 import { navigate } from "gatsby"
@@ -113,6 +119,7 @@ class ContactForm extends Component {
         </p>
         <p>
           <button type="submit">Send</button>
+          <input type="reset" value="Eraser" />
         </p>
       </form>
     )

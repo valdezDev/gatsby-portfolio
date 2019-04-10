@@ -1,3 +1,9 @@
+/**
+ * changes made to this file
+ * updated the reference of where the markdown files are located instead of pages/posts they are inside content/posts
+ * THis was applied from a organizational point of view, namely separation of concerns approach. Inside of pages should only exist the site's pages, not anything else.
+ * The blog/markdown content should be inside it's own folder.
+ */
 module.exports = {
   siteMetadata: {
     title: `valdezDev`,

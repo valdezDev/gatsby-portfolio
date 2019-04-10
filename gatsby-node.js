@@ -1,3 +1,8 @@
+/**
+ * changes applied to the file
+ * updated the graphql query to retrieve the extra featuredImage field, that field is the name of the image associated with the blog post.
+ * Will be injected through context as imageInfo
+ */
 const path = require('path');
 const { slugify } = require('./src/util/utilityFunctions');
 

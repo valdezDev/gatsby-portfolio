@@ -3,6 +3,15 @@ import { Card, CardTitle, CardBody } from "reactstrap"
 import { graphql, StaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
+/**
+ * changes made to this component
+ * rework on the graphql query as it will fetch the images  and the markdown through alias (allImages,allPageInfo )
+ * the markdown result is then iterated and based on the featuredImage field will filter the image array and injects the corresponding one
+ * this was implemented as the way you were importing the image in the frontmatter field inside each markdown could lead to issues down the line.
+ * Gatsby when resolves the image filed in there, if a image and a markdown are sibglings, they are inside the same folder, it will resolve the file to a File node.
+ * Otherwise it will resolve it to a String node. And will lead to issues while you're trying to work with some fragments.
+ * 
+ */
 const Sidebar = () => (
   <div>
     <Card className="sidecard">

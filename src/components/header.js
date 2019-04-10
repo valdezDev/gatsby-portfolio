@@ -11,7 +11,7 @@ import {
 } from "reactstrap"
 
 class Header extends React.Component {
-  // as of react 16.8 you don't need this
+  // as of react 16.5.xxx you don't need this. 
   /* constructor(props) {
     super(props)
 
@@ -29,7 +29,8 @@ class Header extends React.Component {
   state = {
     isOpen: false,
   }
-  // for a simple explanation on this https://www.freecodecamp.org/forum/t/react-prevstate/86495/2
+  // for a simple explanation on this https://www.freecodecamp.org/forum/t/react-prevstate/86495/2 
+  // and https://reactjs.org/docs/state-and-lifecycle.html
   toggle = () => {
     this.setState(prevstate => ({ isOpen: !prevstate.isOpen }))
   }

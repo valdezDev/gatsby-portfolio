@@ -8,6 +8,14 @@ import Img from "gatsby-image"
 //import { slugify } from '../util/utilityFunctions';
 import { DiscussionEmbed } from "disqus-react"
 
+/**
+ * 
+ * changes made to this component
+ * modified the graphql query to alias both the markdown and image based on the variables(slug, imageInfo)
+ * same logic applies here as described in sr/components/Sidebar
+ * updated the links href to a string template, as it's a safer and less error prone than concatenating them
+ * for a little context see https://flaviocopes.com/javascript-template-literals/ and https://ponyfoo.com/articles/template-literals-strictly-better-strings
+ */
 const SinglePost = ({ data, pageContext }) => {
   //const post = data.markdownRemark.frontmatter;
   const post = data.markdownInfo.frontmatter

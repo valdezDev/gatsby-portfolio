@@ -4,6 +4,12 @@ import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
 
+/**
+ * changes ade to this component/page
+ * rework on the graphql query as it will fetch the images  and the markdown through alias (allPosts,allPictures )
+ * see detailed explanation inside /src/components/SideBar. Same logic applies here
+ * 
+ */
 const BlogPage = () => (
   <Layout>
     <SEO title="Blog" keywords={[`paul valdez`, `valdezdev`, `developer`]} />
