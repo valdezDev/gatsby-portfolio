@@ -78,7 +78,7 @@ const Project = () => (
             <Button className="proj-desc-b__demo-button">
               <a
                 className="proj-desc-b__button-link"
-                href="https://placeholder.com/"
+                href="https://inspiring-swanson-53922f.netlify.com/"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
@@ -157,20 +157,49 @@ const Project = () => (
               <li>Designed the styles using SASS and JSX.</li>
               <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
             </ul>
-            <Button className="proj-desc-b__demo-button">
-              <a
-                className="proj-desc-b__button-link"
-                href="valdezDev.tech"
-                target="_blank"
-                rel="noopener noreferrer" >
-                Try Demo
-              </a>
-            </Button>
             <Button className="proj-desc-b__git-button">
               <i class="fas fa-code proj-desc-b__code-icon" />
               <a
                 className="proj-desc-b__button-link"
                 href="https://github.com/valdezDev/gatsby-portfolio"
+                target="_blank"
+                rel="noopener noreferrer" >
+                  Source Code
+              </a>
+            </Button>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col sm="6">
+        <Card className="proj-video">
+          <ProjVideo />
+        </Card>
+      </Col>
+      <Col sm="6">
+        <Card className="proj-desc-a">
+        <CardTitle className="proj-desc-a__title text-center"># Spenser's Chess Portfolio</CardTitle>
+          <CardBody className="proj-desc-a__body">
+            <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>
+            <ul className="proj-desc-a__list">
+              <li>Built using GatsbyJS</li>
+              <li>Uses the React Scroll package to add smooth scroll animations to the proper locations when using the navbar.</li>
+              <li>Designed using bootstrap, SASS, and JSX.</li>
+              <li>This portfolio and its domain have been deployed and secured using Netlify. It's also wired up to access the form submssion functionality that Netlify offers its users.</li>
+            </ul>
+            <Button className="proj-desc-a__demo-button">
+              <a
+                className="proj-desc-a__button-link"
+                href="https://unruffled-bartik-96bf86.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer" >
+                Try Demo
+              </a>
+            </Button>
+            <Button className="proj-desc-a__git-button">
+              <i class="fas fa-code proj-desc-a__code-icon" />
+              <a
+                className="proj-desc-a__button-link"
+                href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
                 target="_blank"
                 rel="noopener noreferrer" >
                   Source Code

@@ -9,7 +9,6 @@
 @import './card';
 @import './links';
 @import './sidebar';
-
 @import './blog';
 @import './single-post';
 @import './about';
@@ -34,7 +33,7 @@
 }
 
 .hero-background-1 {
-  background-image: linear-gradient(to bottom, darken($blue, 32%), lighten($dark-gray, 3%));
+  background-image: linear-gradient(to bottom, darken($light, 32%), lighten($dark-gray, 3%));
   background-size: cover;
   opacity: 0.4;
   height: 100%;

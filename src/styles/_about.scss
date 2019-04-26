@@ -32,7 +32,7 @@
 }
 
 .skills {
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 0.1%), lighten($dark-gray, 0.6%));
+  background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 39%));
   margin: auto;
   margin-bottom: 1.5rem;
   width: 90%;
@@ -50,7 +50,7 @@
 }
 
 .tools {
-  background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 40%));
+  background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 39%));
   margin: auto;
   margin-bottom: 1.5rem;
   width: 90%;
