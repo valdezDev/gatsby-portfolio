@@ -2,9 +2,9 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import SocialButtons from "../components/SocialButtons";
 import Layout from '../components/layout';
-import SEO from "../components/seo";
+
 import SuccessEmail from '../images/success.gif';
-import { Card, CardBody, CardSubtitle, CardText, CardTitle, Col, Container, NavItem, NavLink, Row} from "reactstrap";
+import { Card, CardBody, CardSubtitle, CardTitle, Col, Container, Row} from "reactstrap";
 import '../styles/index.scss';
 
 const Success = () => (

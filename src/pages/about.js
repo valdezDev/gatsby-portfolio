@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PaulImage from '../images/paul.jpg';
-import { Button, Card, CardBody, CardImg, CardText, CardTitle, CardSubtitle, Col, Container, Row} from "reactstrap";
+import { Card, CardBody, CardImg, CardText, CardTitle, Col, Row} from "reactstrap";
 import '../styles/index.scss';
 
 const AboutPage = () => (
