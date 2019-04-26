@@ -42,6 +42,8 @@
   }
   
   &__list {
+    font-family: 'Consolas', monaco, monospace;
+    //font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     color: lighten($blue, 26%);
     margin-left: 50px;
