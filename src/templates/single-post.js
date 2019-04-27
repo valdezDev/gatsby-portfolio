@@ -12,7 +12,7 @@ const SinglePost = ({ data, pageContext }) => {
   
   const post = data.markdownRemark.frontmatter;
   const baseUrl = 'https://valdezdev.com/';
-  const disqusShortname = 'https-valdezdev-tech';
+  const disqusShortname = 'https-valdezdev-tech'; // 'tech' can't be changed
   const disqusConfig = {
     identifier: data.markdownRemark.id,
     title: post.title,
