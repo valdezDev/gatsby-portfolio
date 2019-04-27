@@ -189,7 +189,7 @@ const Project = () => (
             <Button className="proj-desc-a__demo-button">
               <a
                 className="proj-desc-a__button-link"
-                href="https://unruffled-bartik-96bf86.netlify.com/"
+                href="https://spenserkearns.com/"
                 target="_blank"
                 rel="noopener noreferrer" >
                 Try Demo
