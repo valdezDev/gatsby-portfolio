@@ -31,7 +31,7 @@ const IndexPage = () => (
             All messages will be sent to my personal email at pvaldezdev@gmail.com.
           </CardSubtitle>
           <CardBody className="col-md-8 contact-card__body">
-            <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+            <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
               <input type="hidden" name="bot-field" />
               <div className="contact-card__fields">
                 <div className="contact-card__field half">
