@@ -1,8 +1,8 @@
 ---
-title: 'Third Post - CSS'
-date: 2019-01-31 04:19:00
+title: 'Getting the Hang of Sass'
+date: 2019-04-15 04:19:00
 author: 'Paul Valdez'
-image: ../../images/proj.jpg
+image: ../../images/css.jpg
 ---
 
 My journey from CSS to the ease of using SCSS.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at. Ut aliquam purus sit amet. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. A scelerisque purus semper eget duis at tellus. Id aliquet risus feugiat in ante metus dictum. At imperdiet dui accumsan sit amet nulla. Ut pharetra sit amet aliquam id diam maecenas ultricies. Morbi enim nunc faucibus a. Non blandit massa enim nec dui.

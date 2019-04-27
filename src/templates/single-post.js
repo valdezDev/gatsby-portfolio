@@ -87,7 +87,7 @@ const SinglePost = ({ data, pageContext }) => {
           </li>
         </ul>
       </div>
-      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      <DiscussionEmbed className="disqus-section text-white" shortname={disqusShortname} config={disqusConfig} />
 
     </Layout>
   )

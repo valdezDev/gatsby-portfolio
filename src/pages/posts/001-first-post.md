@@ -1,24 +1,37 @@
 ---
-title: 'First Post - Introduction'
-date: 2019-01-9 04:19:00
+title: 'The Pomodoro Technique'
+date: 2019-04-27 03:19:00
 author: 'Paul Valdez'
-image: ../../images/proj.jpg
+image: ../../images/time.jpg
 ---
 
 Welcome to Paul's Code Blog. I hope you find this application to be useful.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at. Ut aliquam purus sit amet. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. A scelerisque purus semper eget duis at tellus. Id aliquet risus feugiat in ante metus dictum. At imperdiet dui accumsan sit amet nulla. Ut pharetra sit amet aliquam id diam maecenas ultricies. Morbi enim nunc faucibus a. Non blandit massa enim nec dui.
-<img src="../../images/proj.jpg"
-     alt="test markdown img"
-     style="float: left; margin-right: 10px;" />
-     <img src="../../images/proj.jpg"
-     alt="test markdown img"
-     style="float: left; margin-right: 10px;" />
+## Images are great
+![alt-text for image](../../images/proj.jpg)
+-This talks about the image that you see here
 
 Egestas sed sed risus pretium quam. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Ultricies leo integer malesuada nunc vel risus commodo. Velit scelerisque in dictum non consectetur a erat nam. Pharetra sit amet aliquam id diam maecenas. Viverra ipsum nunc aliquet bibendum enim. Nam at lectus urna duis convallis. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Diam in arcu cursus euismod. Imperdiet dui accumsan sit amet nulla facilisi.
 
 Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Volutpat consequat mauris nunc congue nisi. Commodo ullamcorper a lacus vestibulum sed arcu non. Pulvinar elementum integer enim neque volutpat ac. Vitae tempus quam pellentesque nec. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Nulla facilisi cras fermentum odio eu feugiat. Massa sapien faucibus et molestie ac feugiat. Nec feugiat nisl pretium fusce id velit. Id porta nibh venenatis cras sed felis. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Ut consequat semper viverra nam. Suspendisse sed nisi lacus sed viverra tellus. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Velit laoreet id donec ultrices tincidunt arcu non.
 
-Urna condimentum mattis pellentesque id nibh tortor id aliquet. Arcu non sodales neque sodales ut etiam. Aliquam malesuada bibendum arcu vitae. In pellentesque massa placerat duis ultricies lacus sed. Nunc pulvinar sapien et ligula ullamcorper. Ultricies mi quis hendrerit dolor. Nunc mi ipsum faucibus vitae. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Mi proin sed libero enim sed. Vitae justo eget magna fermentum iaculis eu non. Scelerisque eu ultrices vitae auctor eu augue. Nec dui nunc mattis enim ut tellus elementum sagittis. Magnis dis parturient montes nascetur ridiculus mus. Felis donec et odio pellentesque. Congue quisque egestas diam in arcu cursus euismod quis. Gravida rutrum quisque non tellus orci ac auctor augue.
+        const path = require('path');
+        const { slugify } = require('./src/util/utilityFunctions');
+
+        exports.onCreateNode = ({ node, actions }) => {
+  
+          const { createNodeField } = actions;
+
+          if (node.internal.type === 'MarkdownRemark') {
+            const slugFromTitle = slugify(node.frontmatter.title);
+            createNodeField({
+              node,
+              name: 'slug',
+              value: slugFromTitle,
+            })
+          };
+        };
+
 
 Vivamus at augue eget arcu dictum varius duis. Turpis massa tincidunt dui ut ornare lectus sit amet. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Pellentesque massa placerat duis ultricies lacus sed turpis. Ultricies mi eget mauris pharetra et. Potenti nullam ac tortor vitae. Augue ut lectus arcu bibendum at varius vel pharetra vel. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Ut enim blandit volutpat maecenas volutpat. Tempus urna et pharetra pharetra massa massa ultricies mi. Quis auctor elit sed vulputate. Libero volutpat sed cras ornare arcu dui vivamus arcu. Nulla pellentesque dignissim enim sit. Aliquam etiam erat velit scelerisque. Nunc non blandit massa enim nec dui nunc mattis. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.
 
