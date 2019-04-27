@@ -7,7 +7,7 @@ import '../styles/index.scss';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `javascript`]} />
+    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `web developer`, `fullstack`,`javascript`]} />
     
     <Container>
       <div className="hero-background-0"></div>
