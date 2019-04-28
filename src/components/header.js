@@ -39,7 +39,7 @@ class Header extends React.Component{
               offset={-70}
               duration={1250}
             >
-              <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle" />{this.props.siteTitle}</NavbarBrand>
+              <NavbarBrand className="dev-brand" href="/"><img src={brandImg} className="brand-img rounded-circle" />{this.props.siteTitle}</NavbarBrand>
             </Link>
             <NavbarToggler className="nav-toggler" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>

@@ -73,21 +73,47 @@
   }
 
   &__contact-button {
-    //background-image: linear-gradient(to right, darken($blue, 15%), darken($blue, 5%));
-    background: transparent;
-    display: inline-block;
-    border-color: $blue;
-    border-radius: 24px;
     margin-left: auto;
     margin-right: auto;
+    background: transparent;
+    border-color: $blue;
+    border-radius: 24px;
+    //width: 25%;
+    
     color: $blue;
-    //box-shadow: 4px 8px darken($blue, 50%);
-    transition: color 0.3s ease-in-out, all 0.3s ease-in-out;
+    display: inline-block;
+    vertical-align: top;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, all 0.3s ease-in-out;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.075);
       color: white;
+      background-color: $blue;
     }
   }
+
+  /*&__blog-button {
+    background: transparent;
+    border-color: $rose;
+    border-radius: 24px;
+    color: $rose;
+    width: 75%;
+    height: 80%;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.075);
+      background-color: $rose;
+    }
+  }
+
+  &__nav-link {
+    color: $rose;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 6px;
+    &:hover {
+      color: white !important;
+    }
+  }*/
 
   &__link {
     color: darken($white, 12%);

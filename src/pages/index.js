@@ -35,23 +35,31 @@ const IndexPage = () => (
           <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
           <SocialButtons />
-          <Button className="index-intro__contact-button btn btn-outline">
-            <Link
-              activeClass="active"
-              to="card-4"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-            GET IN TOUCH
-            </Link>
-          </Button>
-          {/*<Button className="index-intro__blog-button">
-            <NavLink href="/blog">
-              A Dev's Blog
-            </NavLink>
-</Button>*/}
+
+          
+            
+                <Button className="index-intro__contact-button btn btn-outline col-md-2">
+                  <Link
+                    activeClass="active"
+                    to="card-4"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                  >
+                    Get in Touch
+                  </Link>
+                </Button>
+              
+              {/*<Col sm="6">
+                <Button className="index-intro__blog-button btn btn-outline">
+                  <NavLink className="index-intro__nav-link" href="/blog">
+                    valdezDev Blog
+                  </NavLink>
+                </Button>
+</Col>*/}
+            
+          
         </Card>
       </Col>
     </Card>
