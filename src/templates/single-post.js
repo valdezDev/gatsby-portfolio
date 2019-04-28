@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import BlogLayout from '../components/BlogLayout';
 import Sidebar from '../components/Sidebar';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
@@ -20,7 +20,7 @@ const SinglePost = ({ data, pageContext }) => {
   };
 
   return (
-    <Layout>
+    <BlogLayout>
       <SEO title={post.title} />
       <h1 className="page-header" id="test">{post.title}</h1>
       <Row>
@@ -89,7 +89,7 @@ const SinglePost = ({ data, pageContext }) => {
       </div>
       <DiscussionEmbed className="disqus-section text-white" shortname={disqusShortname} config={disqusConfig} />
 
-    </Layout>
+    </BlogLayout>
   )
 }
 

@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import { Link, animateScroll as scroll } from "react-scroll";
 import brandImg from '../images/brandImg.jpg';
 
 class Header extends React.Component{
@@ -30,19 +31,66 @@ class Header extends React.Component{
       <div>
         <Navbar fixed="top" dark expand="sm">
           <div className="container">
-          <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle"/>{this.props.siteTitle}</NavbarBrand>
-          <NavbarToggler className="nav-toggler" onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+            <Link
+              activeClass="active"
+              to="index-intro"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1250}
+            >
+              <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle" />{this.props.siteTitle}</NavbarBrand>
+            </Link>
+            <NavbarToggler className="nav-toggler" onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="card-2"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1250}
+                  >
+                    About
+                  </Link>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/projects">Projects</NavLink>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="card-3"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1250}
+                  >
+                    Projects
+                  </Link>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/blog">Blog</NavLink>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="card-4"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1250}
+                  >
+                    Contact
+                  </Link>
+                </NavLink>
               </NavItem>
+              <NavItem className="blog-link">
+                <NavLink href="/blog">
+                  A Dev's Blog
+                </NavLink>
+              </NavItem>  
             </Nav>
           </Collapse>
           </div>

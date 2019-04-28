@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../components/layout";
+import BlogLayout from "../components/BlogLayout";
 import SEO from "../components/seo";
 import { graphql, StaticQuery } from 'gatsby';
 import Post from '../components/Post';
 
 const BlogPage = () => (
-  <Layout>
+  <BlogLayout>
     <SEO title="Blog" keywords={[`paul valdez`, `valdezdev`, `developer`]} />
     <h1 className="page-header">Blog</h1>
     <StaticQuery
@@ -28,7 +28,7 @@ const BlogPage = () => (
         )
       }}
     />
-  </Layout>
+  </BlogLayout>
 )
 
 const blogQuery = graphql`

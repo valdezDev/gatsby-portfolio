@@ -15,6 +15,12 @@
 @import './projects';
 
 // Index & Success Page
+
+.card-1 {
+  background: rgba($blue, 0.001);
+  border-width: 0px;
+  height: 900px;
+}
 .hero-background-0 {
   background: url(../images/hero-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -164,6 +170,7 @@
 
 .email-gif {
   width: 50%;
+  border-radius: 360px;
   display: block;
   margin:auto;
 }
