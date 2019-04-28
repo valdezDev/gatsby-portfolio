@@ -1,23 +1,22 @@
 // Projects Page
 
 .card-3 {
-  /*border-top: darken($blue, 20%);
+  border-top: darken($blue, 20%);
   border-top-width: 2px;
   border-style: solid;
   background: rgba($blue, 0.001);
   //border-width: 0;
   width: 100vw;
   position: relative;
-  margin-left: -50vw;*/
+  margin-left: -50vw;
   background: rgba($blue, 0.001);
   margin-top: -1.75rem;
   margin-bottom: -1.75rem;
-  //left: 50%;
+  left: 50%;
 }
 .container-card {
-  background: lighten($dark-gray, 1.25%);
-  padding-bottom: 1.5rem;
-  z-index: 1;
+  background: lighten($dark-gray, 1.25%) !important;
+  padding: 2.5rem;
 }
 
 .projVideo {

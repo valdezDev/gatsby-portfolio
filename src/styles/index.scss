@@ -28,7 +28,6 @@
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 100%;
   opacity: 0.12;
   top: 0;
   left: 0;
@@ -42,7 +41,8 @@
   background-image: linear-gradient(to bottom, darken($light, 32%), lighten($dark-gray, 3%));
   background-size: cover;
   opacity: 0.4;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   margin-top: 0px;
   top: 0;
   left: 0;
@@ -138,7 +138,7 @@
 // Contact Form
 .card-4 {
   background: rgba($blue, 0.001);
-  /*border-right-width: 0;
+  border-right-width: 0;
   border-left-width: 0;
   border-top: darken($blue, 26%);
   border-top-width: 2px;
@@ -147,13 +147,14 @@
   position: relative;
   margin-left: -50vw;
   margin-bottom: -1.75rem;
-  left: 50%;*/
+  left: 50%;
   margin-top: -1.75rem;
 }
 .contact-card {
   //background: rgba($blue, 0.001);
   background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
   border-width: 0;
+  padding: 2.5rem;
   &__title {
     padding-top: 1rem;
     font-size: 2rem;

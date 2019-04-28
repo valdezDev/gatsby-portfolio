@@ -67,20 +67,20 @@ const IndexPage = () => (
             <Card className="about-me">
               <CardBody className="about-me__body">
                 <CardTitle className="about-me__title text-center">Who is Paul Valdez?</CardTitle>
-                <CardText className="about-me__text col-md-10">
+                <CardText className="about-me__text col-md-8">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quae ipsam dolores eaque eveniet. Voluptatibus animi excepturi optio earum consectetur eaque rem quisquam accusantium atque, enim dolorum hic! Sint?
                 </CardText>
-                <CardText className="about-me__text col-md-10">
+                <CardText className="about-me__text col-md-8">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque fuga ab aliquid libero temporibus. Labore unde maxime nisi adipisci reprehenderit.
                 </CardText>
-                <CardText className="about-me__text col-md-10">
+                <CardText className="about-me__text col-md-8">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum, temporibus saepe unde minus quisquam porro quod eos enim blanditiis corrupti minima quas debitis quis beatae, vitae, neque nemo distinctio perspiciatis eum facilis. Praesentium accusantium voluptate quis ea amet corrupti quo iure fugit voluptatum possimus?
                 </CardText>
               </CardBody>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="skills col-md-11">
+            <Card className="skills col-md-6">
               <CardTitle className="skills__title text-center"># Skills</CardTitle>
               <CardText className="skills__list-wrapper">
                 <ul className="skills__list">
@@ -97,7 +97,7 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="tools col-md-11">
+            <Card className="tools col-md-6">
               <CardTitle className="tools__title text-center"># Tools & Soft Skills</CardTitle>
               <CardText className="tools__list-wrapper">
                 <ul className="tools__list">
@@ -154,7 +154,7 @@ const IndexPage = () => (
                     href="https://github.com/valdezDev/devgab"
                     target="_blank"
                     rel="noopener noreferrer" >
-                      Source Code
+                      GitHub
                   </a>
                 </Button>
               </CardBody>
@@ -195,7 +195,7 @@ const IndexPage = () => (
                     href="https://github.com/valdezDev/hacker-news-search-app"
                     target="_blank"
                     rel="noopener noreferrer" >
-                      Source Code
+                      GitHub
                   </a>
                 </Button>
               </CardBody>
@@ -236,7 +236,7 @@ const IndexPage = () => (
                     href="https://github.com/valdezDev/gatsby-blog"
                     target="_blank"
                     rel="noopener noreferrer" >
-                      Source Code
+                      GitHub
                   </a>
                 </Button>
               </CardBody>
@@ -268,7 +268,7 @@ const IndexPage = () => (
                     href="https://github.com/valdezDev/gatsby-portfolio"
                     target="_blank"
                     rel="noopener noreferrer" >
-                      Source Code
+                      GitHub
                   </a>
                 </Button>
               </CardBody>
@@ -306,7 +306,7 @@ const IndexPage = () => (
                     href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
                     target="_blank"
                     rel="noopener noreferrer" >
-                      Source Code
+                      GitHub
                   </a>
                 </Button>
               </CardBody>
@@ -317,8 +317,7 @@ const IndexPage = () => (
     </Card>
 
     <Card className="card-4">
-      <Col sm="12">
-        <Card className="contact-card">
+    <Card className="contact-card">
           <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
           <CardSubtitle className="contact-card__subtitle text-center">
             All messages will be sent to my personal email at pvaldezdev@gmail.com.
@@ -346,7 +345,6 @@ const IndexPage = () => (
             </form>
           </CardBody>
         </Card>
-      </Col>
     </Card>
   </Layout>
 );
