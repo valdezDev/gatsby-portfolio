@@ -1,4 +1,8 @@
 // About Page
+.card-2 {
+  background: rgba($blue, 0.001);
+  border-width: 0;
+}
 .about-card {
   border-width: 0px !important;
   background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));

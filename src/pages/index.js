@@ -12,6 +12,7 @@ import {
   CardTitle,
   Col,
   Container,
+  NavLink,
   Row
 } from "reactstrap";
 import ProjVideo from '../components/ProjVideo';
@@ -34,7 +35,7 @@ const IndexPage = () => (
           <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
           <SocialButtons />
-          <Button className="index-intro__button">
+          <Button className="index-intro__contact-button btn btn-outline">
             <Link
               activeClass="active"
               to="card-4"
@@ -46,6 +47,11 @@ const IndexPage = () => (
             GET IN TOUCH
             </Link>
           </Button>
+          {/*<Button className="index-intro__blog-button">
+            <NavLink href="/blog">
+              A Dev's Blog
+            </NavLink>
+</Button>*/}
         </Card>
       </Col>
     </Card>
@@ -117,6 +123,7 @@ const IndexPage = () => (
       </Card>
     </Card>
 
+    <h1 className="page-header"># Projects</h1>
     <Card className="card-3">
       <Card className="container-card">
       
