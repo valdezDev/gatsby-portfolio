@@ -1,8 +1,17 @@
 // Projects Page
 
 .card-3 {
+  border-top: darken($blue, 20%);
+  border-top-width: 2px;
+  border-style: solid;
   background: rgba($blue, 0.001);
-  border-width: 0;
+  //border-width: 0;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: -1.75rem;
+  margin-bottom: -1.75rem;
+  left: 50%;
 }
 .container-card {
   background: linear-gradient(
@@ -10,6 +19,7 @@
     rgba(lighten($dark-gray, 1%), 0.99), 
     rgba(lighten($dark-gray, 1.5%), 0.99)
   );
+  padding-bottom: 1.5rem;
 }
 
 .projVideo {

@@ -55,6 +55,7 @@
 // Applies to most pages
 .page-header {
   color: $rose;
+  padding-top: 1rem;
 }
 
 .index-intro {
@@ -76,19 +77,24 @@
     margin-left: auto;
     margin-right: auto;
     background: transparent;
-    border-color: $blue;
-    border-radius: 24px;
+    border-color: $blue !important;
+    border-radius: 4px;
+    cursor: pointer;
     //width: 25%;
-    
-    color: $blue;
+    font-size: 1.5rem;
+    color: $blue !important;
     display: inline-block;
     vertical-align: top;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.075);
-      color: white;
-      background-color: $blue;
+      color: white !important;
+      background-color: $blue !important;
     }
+  }
+  &__contact-link {
+    margin-left: auto;
+    margin-right: auto
   }
 
   /*&__blog-button {
@@ -132,13 +138,23 @@
 // Contact Form
 .card-4 {
   background: rgba($blue, 0.001);
-  border-width: 0;
+  //border-width: 0;
+  border-top: darken($blue, 26%);
+  border-top-width: 2px;
+  border-style: solid;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-bottom: -1.75rem;
+  left: 50%;
+  margin-top: -1.75rem;
 }
 .contact-card {
-  margin-top: 4rem;
-  background: rgba($blue, 0.001);
-  border-width: 0;
+  //background: rgba($blue, 0.001);
+  background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
+  //border-width: 0;
   &__title {
+    padding-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
     color: darken($blue, 1%);

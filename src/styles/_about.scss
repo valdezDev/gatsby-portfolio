@@ -2,10 +2,13 @@
 .card-2 {
   background: rgba($blue, 0.001);
   border-width: 0;
-  //width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-bottom: -1.75rem;
+  left: 50%;
 }
+
 
 .about-card {
   border-width: 0px !important;
