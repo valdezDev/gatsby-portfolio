@@ -138,7 +138,8 @@
 // Contact Form
 .card-4 {
   background: rgba($blue, 0.001);
-  //border-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
   border-top: darken($blue, 26%);
   border-top-width: 2px;
   border-style: solid;
@@ -152,7 +153,7 @@
 .contact-card {
   //background: rgba($blue, 0.001);
   background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
-  //border-width: 0;
+  border-width: 0;
   &__title {
     padding-top: 1rem;
     font-size: 2rem;
