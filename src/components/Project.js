@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import {
   Button,
   Card,
@@ -213,4 +213,4 @@ const Project = () => (
   </Card>
 );
 
-export default Project;
+export default Project;*/

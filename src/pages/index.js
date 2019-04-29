@@ -15,7 +15,11 @@ import {
   NavLink,
   Row
 } from "reactstrap";
-import ProjVideo from '../components/ProjVideo';
+import ProjVideo1 from '../components/ProjVideo1';
+import ProjVideo2 from '../components/ProjVideo2';
+import ProjVideo3 from '../components/ProjVideo3';
+import ProjVideo5 from '../components/ProjVideo5';
+import devgab from '../media/devgabDemoVid.mp4';
 import PaulImage from '../images/paul.jpg';
 import '../styles/index.scss';
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -123,7 +127,9 @@ const IndexPage = () => (
         <Row className="row-a">
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo />
+              <ProjVideo1
+                src={devgab}
+              />
             </Card>
           </Col>
           <Col sm="6">
@@ -161,11 +167,11 @@ const IndexPage = () => (
             </Card>
           </Col>
         </Row>
-
+        <hr className="proj-break align-self-center" />
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo />
+              <ProjVideo2 />
             </Card>
           </Col>
           <Col sm="6">
@@ -202,11 +208,11 @@ const IndexPage = () => (
             </Card>
           </Col>
         </Row>
-
+        <hr className="proj-break align-self-center" />
         <Row className="row-a">
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo />
+              <ProjVideo3 />
             </Card>
           </Col>
           <Col sm="6">
@@ -217,7 +223,7 @@ const IndexPage = () => (
                 <ul className="proj-desc-a__list">
                   <li>Built using GatsbyJS</li>
                   <li>Each post is accessing markdown queries written in GraphQL</li>
-                  <li>Every post uses Node functionality to pass assign and pass a unique slug based on the blog title.</li>
+                  <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
                   <li>Deployed to Netlify</li>
                 </ul>
                 <Button className="proj-desc-a__demo-button">
@@ -228,6 +234,14 @@ const IndexPage = () => (
                     rel="noopener noreferrer" >
                     Try Demo
                   </a>
+                </Button>
+                <Button className="proj-desc-a__demo-button-2">
+                  <NavLink
+                    className="proj-desc-a__button-link-2"
+                    href="/blog"
+                  >
+                    Visit My Blog!
+                  </NavLink>
                 </Button>
                 <Button className="proj-desc-a__git-button">
                   <i class="fas fa-code proj-desc-a__code-icon" />
@@ -243,11 +257,11 @@ const IndexPage = () => (
             </Card>
           </Col>
         </Row>
-
+        <hr className="proj-break align-self-center" />
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo />
+              
             </Card>
           </Col>
           <Col sm="6">
@@ -274,9 +288,12 @@ const IndexPage = () => (
               </CardBody>
             </Card>
           </Col>
+        </Row>
+        <hr className="proj-break align-self-center" />
+        <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo />
+              <ProjVideo5 />
             </Card>
           </Col>
           <Col sm="6">
@@ -317,34 +334,34 @@ const IndexPage = () => (
     </Card>
 
     <Card className="card-4">
-    <Card className="contact-card">
-          <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
-          <CardSubtitle className="contact-card__subtitle text-center">
-            All messages will be sent to my personal email at pvaldezdev@gmail.com.
-          </CardSubtitle>
-          <CardBody className="col-md-8 contact-card__body">
-            <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
-              <input type="hidden" name="bot-field" />
-              <div className="contact-card__fields">
-                <div className="contact-card__field half">
-                  <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div className="contact-card__field half">
-                  <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
-                </div>
-                <div className="contact-card__field">
-                  <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
-                </div>
-                <div className="contact-card__field">
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
+      <Card className="contact-card">
+        <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
+        <CardSubtitle className="contact-card__subtitle text-center">
+          All messages will be sent to my personal email at pvaldezdev@gmail.com.
+        </CardSubtitle>
+        <CardBody className="col-md-8 contact-card__body">
+          <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
+            <input type="hidden" name="bot-field" />
+            <div className="contact-card__fields">
+              <div className="contact-card__field half">
+                <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
               </div>
-              <ul className="contact-card__actions">
-                <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
-              </ul>
-            </form>
-          </CardBody>
-        </Card>
+              <div className="contact-card__field half">
+                <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
+              </div>
+              <div className="contact-card__field">
+                <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+              </div>
+              <div className="contact-card__field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </div>
+            <ul className="contact-card__actions">
+              <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </CardBody>
+      </Card>
     </Card>
   </Layout>
 );

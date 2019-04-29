@@ -29,6 +29,15 @@
   height: 60%;
 }
 
+.proj-break {
+  border-width: 1px;
+  border-color: lighten($rose, 16%);
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .proj-desc-a {
   background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
   border-radius: 0px;
@@ -60,6 +69,13 @@
     }
   }
 
+  &__button-link-2 {
+    color: white;
+    &:hover{
+      color: white !important;
+    }
+  }
+
   &__demo-button {
     background-color: darken($blue, 45.5%);
     border-color: $blue;
@@ -69,6 +85,18 @@
     &:hover {
       background-color: lighten($blue, 10%);
       transform: scale(1.2);
+    }
+  }
+  &__demo-button-2 {
+    background-color: transparent;
+    border-color: $rose;
+    margin: 12px;
+    display: inline-block;
+    transition: all .2s ease-in-out, color .3s ease-in-out;
+    &:hover {
+      background-color: lighten($rose, 3%);
+      transform: scale(1.2);
+      color: white !important;
     }
   }
 
