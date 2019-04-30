@@ -1,8 +1,8 @@
 import React from "react";
-import BlogLayout from "../components/BlogLayout";
+import BlogLayout from "../components/blog/BlogLayout";
 import SEO from "../components/seo";
 import { graphql, StaticQuery } from 'gatsby';
-import Post from '../components/Post';
+import Post from '../components/blog/Post';
 
 const BlogPage = () => (
   <BlogLayout>

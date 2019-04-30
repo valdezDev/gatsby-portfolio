@@ -1,6 +1,6 @@
 import React from 'react';
-import BlogLayout from '../components/BlogLayout';
-import Sidebar from '../components/Sidebar';
+import BlogLayout from '../components/blog/BlogLayout';
+import Sidebar from '../components/blog/Sidebar';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import { Card, CardBody, CardSubtitle, Row, Col } from 'reactstrap';

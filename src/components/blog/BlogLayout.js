@@ -4,9 +4,9 @@ import { StaticQuery, graphql } from "gatsby";
 
 import BlogHeader from "./BlogHeader";
 
-import '../styles/index.scss';
+import '../../styles/index.scss';
 
-const Layout = ({ children }) => (
+const BlogLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query BlogSiteTitleQuery {
@@ -30,8 +30,8 @@ const Layout = ({ children }) => (
   />
 )
 
-Layout.propTypes = {
+BlogLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout;
+export default BlogLayout;

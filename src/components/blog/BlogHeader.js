@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import brandImg from '../images/brandImg.jpg';
+import brandImg from '../../images/brandImg.jpg';
 
 class Header extends React.Component{
   constructor(props) {

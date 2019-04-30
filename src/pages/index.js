@@ -124,44 +124,43 @@ const IndexPage = () => (
     <Card className="card-3">
       <Card className="container-card">
         <h1 className="page-header"># Projects</h1>
-        <Row className="row-a">
-          <Col sm="6">
-            <Card className="proj-video">
-              <ProjVideo1
-                src={devgab}
-              />
-            </Card>
-          </Col>
-          <Col sm="6">
-            <Card className="proj-desc-a">
-              <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
-              <CardBody className="proj-desc-a__body">
-                <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
-                <ul className="proj-desc-a__list">
-                  <li>Built on a MERN Stack.</li>
-                  <li>A simple social media app that allows user registration, login.</li>
-                  <li>Performs various asynchronous, CRUD functionalities using JavaScript.</li>
-                  <li>State management using Redux.</li>
-                  <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
-                </ul>
-                <Button className="proj-desc-a__demo-button">
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://afternoon-waters-74578.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__git-button">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/devgab"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                      GitHub
-                  </a>
+        
+          <Row>
+            <Col sm="6">
+              <Card className="proj-video">
+                <ProjVideo1 />
+              </Card>
+            </Col>
+            <Col sm="6">
+              <Card className="proj-desc-a col-md-11">
+                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
+                <CardBody className="proj-desc-a__body">
+                  <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
+                  <ul className="proj-desc-a__list">
+                    <li>Built on a MERN Stack.</li>
+                    <li>A simple social media app that allows user registration, login.</li>
+                    <li>Performs various asynchronous, CRUD functionalities using JavaScript.</li>
+                    <li>State management using Redux.</li>
+                    <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
+                  </ul>
+                  <Button className="proj-desc-a__demo-button">
+                    <a
+                      className="proj-desc-a__button-link"
+                      href="https://afternoon-waters-74578.herokuapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer" >
+                      Try Demo
+                    </a>
+                  </Button>
+                  <Button className="proj-desc-a__git-button">
+                    <i className="fas fa-code proj-desc-a__code-icon" />
+                    <a
+                      className="proj-desc-a__button-link"
+                      href="https://github.com/valdezDev/devgab"
+                      target="_blank"
+                      rel="noopener noreferrer" >
+                        GitHub
+                    </a>
                 </Button>
               </CardBody>
             </Card>
@@ -175,8 +174,8 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b">
-            <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
+            <Card className="proj-desc-b col-md-11">
+              <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
               <CardBody className="proj-desc-b__body">
                 
                 <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
@@ -216,7 +215,7 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a">
+            <Card className="proj-desc-a col-md-11">
             <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
@@ -265,7 +264,7 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b">
+            <Card className="proj-desc-b col-md-11">
             <CardTitle className="proj-desc-b__title text-center"># Developer Portfolio</CardTitle>
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
@@ -297,7 +296,7 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a">
+            <Card className="proj-desc-a col-md-11">
             <CardTitle className="proj-desc-a__title text-center"># Spenser's Chess Portfolio</CardTitle>
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>

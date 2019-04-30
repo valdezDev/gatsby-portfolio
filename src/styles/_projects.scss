@@ -14,9 +14,10 @@
   margin-bottom: -1.75rem;
   left: 50%;
 }
+
 .container-card {
   background: lighten($dark-gray, 1.25%) !important;
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 .projVideo {
@@ -41,7 +42,8 @@
 .proj-desc-a {
   background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
   border-radius: 0px;
-  margin: 1rem;
+  //margin: 1rem;
+  margin-top: 1rem;
 
   &__title {
     font-weight: bold;
@@ -121,7 +123,8 @@
   background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
   border-radius: 0px;
   border-width: 0px;
-  margin: 1rem;
+  //margin: 1rem;
+  margin-top: 1rem;
 
   &__title {
     font-weight: bold;

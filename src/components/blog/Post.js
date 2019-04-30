@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Card, CardTitle, CardSubtitle, CardText, CardBody } from 'reactstrap';
 import Img from 'gatsby-image';
-//import { slugify } from '../util/utilityFunctions';
-import '../styles/index.scss';
+import '../../styles/index.scss';
 
 const Post = ({ title, author, slug, date, body, fluid }) => (
   <Card className="post-card">
