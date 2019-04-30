@@ -1,6 +1,6 @@
 import React from 'react';
 import { Player } from 'video-react';
-import hn from '../media/hnDemoVid.mp4';
+import hn from '../../media/hnDemoVid.mp4';
 
 const ProjVideo2 = () => (
 

@@ -15,13 +15,15 @@ import {
   NavLink,
   Row
 } from "reactstrap";
-import ProjVideo1 from '../components/ProjVideo1';
-import ProjVideo2 from '../components/ProjVideo2';
-import ProjVideo3 from '../components/ProjVideo3';
-import ProjVideo5 from '../components/ProjVideo5';
+import ProjVideo1 from '../components/vid/ProjVideo1';
+import ProjVideo2 from '../components/vid/ProjVideo2';
+import ProjVideo3 from '../components/vid/ProjVideo3';
+import ProjVideo5 from '../components/vid/ProjVideo5';
 import PaulImage from '../images/paul.jpg';
 import '../styles/index.scss';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+
+/* eslint-disable */
 
 const IndexPage = () => (
   <Layout>
@@ -233,14 +235,6 @@ const IndexPage = () => (
                     Try Demo
                   </a>
                 </Button>
-                <Button className="proj-desc-a__demo-button-2">
-                  <NavLink
-                    className="proj-desc-a__button-link-2"
-                    href="/blog"
-                  >
-                    Visit My Blog!
-                  </NavLink>
-                </Button>
                 <Button className="proj-desc-a__git-button">
                   <i class="fas fa-code proj-desc-a__code-icon" />
                   <a
@@ -250,6 +244,14 @@ const IndexPage = () => (
                     rel="noopener noreferrer" >
                       GitHub
                   </a>
+                </Button>
+                <Button className="proj-desc-a__demo-button-2">
+                  <NavLink
+                    className="proj-desc-a__button-link-2"
+                    href="/blog"
+                  >
+                    Visit My Blog!
+                  </NavLink>
                 </Button>
               </CardBody>
             </Card>

@@ -5,8 +5,9 @@ import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import { Card, CardBody, CardSubtitle, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
-//import { slugify } from '../util/utilityFunctions';
 import { DiscussionEmbed } from 'disqus-react';
+
+/* eslint-disable */
 
 const SinglePost = ({ data, pageContext }) => {
   

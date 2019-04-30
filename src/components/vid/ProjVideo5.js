@@ -1,6 +1,6 @@
 import React from 'react';
 import { Player } from 'video-react';
-import chess from '../media/chessDemoVid.mp4';
+import chess from '../../media/chessDemoVid.mp4';
 
 const ProjVideo4 = () => (
 

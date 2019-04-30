@@ -1,6 +1,6 @@
 import React from 'react';
 import { Player } from 'video-react';
-import blog from '../media/blogDemoVid.mp4';
+import blog from '../../media/blogDemoVid.mp4';
 
 const ProjVideo3 = () => (
 

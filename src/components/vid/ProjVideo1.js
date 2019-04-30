@@ -1,6 +1,6 @@
 import React from 'react';
 import { Player } from 'video-react';
-import devgab from '../media/devgabDemoVid.mp4';
+import devgab from '../../media/devgabDemoVid.mp4';
 
 const ProjVideo1 = () => (
 

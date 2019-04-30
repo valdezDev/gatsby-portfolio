@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import brandImg from '../images/brandImg.jpg';
 
 class Header extends React.Component{
@@ -39,7 +39,7 @@ class Header extends React.Component{
               offset={-70}
               duration={1250}
             >
-              <NavbarBrand className="dev-brand" href="/"><img src={brandImg} className="brand-img rounded-circle" />{this.props.siteTitle}</NavbarBrand>
+              <NavbarBrand className="dev-brand" href="/"><img src={brandImg} className="brand-img rounded-circle" alt="valdezDev brand img" />{this.props.siteTitle}</NavbarBrand>
             </Link>
             <NavbarToggler className="nav-toggler" onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>

@@ -30,7 +30,7 @@ class Header extends React.Component{
       <div>
         <Navbar fixed="top" dark expand="sm">
           <div className="container">
-          <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle"/>{this.props.siteTitle}</NavbarBrand>
+          <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle" alt="valdezDev brand img"/>{this.props.siteTitle}</NavbarBrand>
           <NavbarToggler className="nav-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
