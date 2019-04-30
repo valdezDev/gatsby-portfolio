@@ -5,7 +5,7 @@
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  margin-bottom: -1.75rem;
+  //margin-bottom: -1.75rem;
   left: 50%;
 }
 
@@ -14,6 +14,7 @@
   border-width: 0px !important;
   background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
   padding-bottom: 2.75rem;
+  //width: 99vw;
 }
 
 .about-img {
@@ -47,6 +48,7 @@
 .skills {
   background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 39%));
   margin: auto;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   width: 90%;
   &__title {
@@ -67,6 +69,7 @@
 .tools {
   background-image: linear-gradient(to bottom, darken($blue, 43%), darken($blue, 39%));
   margin: auto;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   width: 90%;
   &__title {

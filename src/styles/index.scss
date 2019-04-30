@@ -13,43 +13,65 @@
 @import './single-post';
 @import './about';
 @import './projects';
+@import './contact';
+//@import './success';
+
 
 // Index & Success Page
-
 .card-1 {
   background: rgba($blue, 0.001);
   border-width: 0px;
   height: 900px;
 }
+
 .hero-background-0 {
   background: url(../images/hero-background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
   background-position: center;
   opacity: 0.12;
+  //width: 99vw !important;
+  margin-right: 10px !important;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: fixed;
+  //position: fixed;
   z-index: -1;
+
+  //width: 99.5vw;
+  width: 1920px;
+  position: fixed;
+  //margin-top: 1rem;
+  margin-left: -50vw;
+  //margin-bottom: -1.75rem;
+  left: 50%;
 }
 
 .hero-background-1 {
   background-image: linear-gradient(to bottom, darken($light, 32%), lighten($dark-gray, 3%));
-  background-size: cover;
+  background-size: auto;
   opacity: 0.4;
-  height: 100vh;
-  width: 100vw;
+  //height: 100vh;
+  //width: 99vw !important;
+  margin-right: 10px !important;
   margin-top: 0px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: fixed;
+  //position: fixed;
   z-index: -1;
+
+  //width: 99.5vw;
+  width: 1920px;
+  position: fixed;
+  //margin-top: 1rem;
+  margin-left: -50vw;
+  //margin-bottom: -1.75rem;
+  left: 50%;
 }
 
 // Applies to most pages
@@ -97,30 +119,6 @@
     margin-right: auto
   }
 
-  /*&__blog-button {
-    background: transparent;
-    border-color: $rose;
-    border-radius: 24px;
-    color: $rose;
-    width: 75%;
-    height: 80%;
-    justify-content: center;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.075);
-      background-color: $rose;
-    }
-  }
-
-  &__nav-link {
-    color: $rose;
-    transition: color 0.3s ease-in-out;
-    margin-bottom: 6px;
-    &:hover {
-      color: white !important;
-    }
-  }*/
-
   &__link {
     color: darken($white, 12%);
     transition: color 0.5s ease;
@@ -135,96 +133,20 @@
   z-index: -1;
 }
 
-// Contact Form
-.card-4 {
-  background: rgba($blue, 0.001);
-  border-right-width: 0;
-  border-left-width: 0;
-  border-top: darken($blue, 26%);
-  border-top-width: 2px;
-  border-style: solid;
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  margin-bottom: -1.75rem;
-  left: 50%;
-  margin-top: -1.75rem;
-}
-.contact-card {
-  //background: rgba($blue, 0.001);
-  background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
-  border-width: 0;
-  padding: 2.5rem;
-  &__title {
-    padding-top: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: darken($blue, 1%);
-  }
-
-  &__subtitle {
-    color: lighten($blue, 20%);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  &__success-subtitle {
-    color: lighten($blue, 20%);
-    font-size: 1.25rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
-  &__body {
-    margin: auto;
-  }
-
-  &__name {
-    display: block;
-    margin: 0 auto;
-    background-color: darken(white, 4%);
-  }
-  
-  &__email {
-    display: block;
-    margin: 1.25rem auto;
-    background-color: darken(white, 4%);
-  }
-
-  &__message {
-    justify-content: center;
-    display: block;
-    margin: 2rem auto;
-  }
-
-  &__send-message {
-    justify-content: center;
-    display: block;
-    margin: 1rem auto;
-    border-color: $blue !important;
-  }
-
-  & textarea {
-    background-color: darken(white, 4%);
-  }
-}
-
-.follow-card {
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 3%), lighten($dark-gray, 6.2%));
-
-  &__title {
-    font-weight: bold;
-    font-size: 2rem;
-    color: darken($blue, 4%);
-  }
-}
 
 .email-gif {
-  width: 50%;
+  //width: 50%;
   border-radius: 360px;
   display: block;
-  margin:auto;
+  margin: auto;
+}
+
+
+// Success Page 
+.success-card {
+  margin-top: -300px;
+  background: transparent;
+  border-width: 0;
 }
 
 // 404 page

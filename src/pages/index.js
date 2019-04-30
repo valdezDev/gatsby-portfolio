@@ -19,7 +19,6 @@ import ProjVideo1 from '../components/ProjVideo1';
 import ProjVideo2 from '../components/ProjVideo2';
 import ProjVideo3 from '../components/ProjVideo3';
 import ProjVideo5 from '../components/ProjVideo5';
-import devgab from '../media/devgabDemoVid.mp4';
 import PaulImage from '../images/paul.jpg';
 import '../styles/index.scss';
 import { Link, animateScroll as scroll } from "react-scroll";

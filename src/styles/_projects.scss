@@ -1,17 +1,14 @@
 // Projects Page
 
 .card-3 {
-  border-top: darken($blue, 20%);
+  border-top: darken($blue, 45%);
   border-top-width: 2px;
   border-style: solid;
   background: rgba($blue, 0.001);
-  //border-width: 0;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
   background: rgba($blue, 0.001);
-  margin-top: -1.75rem;
-  margin-bottom: -1.75rem;
   left: 50%;
 }
 
