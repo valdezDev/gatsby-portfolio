@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {
   Collapse,
+  Container,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -28,9 +29,9 @@ class Header extends React.Component{
   }
   render() {
     return (
-      <div>
+      
         <Navbar fixed="top" dark expand="sm">
-          <div className="container">
+          <Container>
             <Link
               activeClass="active"
               to="index-intro"
@@ -48,7 +49,7 @@ class Header extends React.Component{
                 <NavLink>
                   <Link
                     activeClass="active"
-                    to="card-2"
+                    to="about-me"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -86,16 +87,11 @@ class Header extends React.Component{
                   </Link>
                 </NavLink>
               </NavItem>
-              <NavItem className="blog-link">
-                <NavLink href="/blog">
-                  A Dev's Blog
-                </NavLink>
-              </NavItem>  
             </Nav>
           </Collapse>
-          </div>
+          </Container>
         </Navbar>
-      </div>
+      
     );
   }
 }

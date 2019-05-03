@@ -6,13 +6,11 @@ import {
   Button,
   Card,
   CardBody,
-  CardImg,
   CardSubtitle,
   CardText,
   CardTitle,
   Col,
   Container,
-  NavLink,
   Row
 } from "reactstrap";
 import ProjVideo1 from '../components/vid/ProjVideo1';
@@ -20,7 +18,6 @@ import ProjVideo2 from '../components/vid/ProjVideo2';
 import ProjVideo3 from '../components/vid/ProjVideo3';
 import ProjVideo4 from '../components/vid/ProjVideo4';
 import ProjVideo5 from '../components/vid/ProjVideo5';
-import PaulImage from '../images/paul.jpg';
 import '../styles/index.scss';
 import { Link } from "react-scroll";
 
@@ -30,70 +27,56 @@ import { Link } from "react-scroll";
 const IndexPage = () => (
   <Layout>
     <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `web developer`, `fullstack`,`javascript`]} />
-    
-    <Container>
-      <div className="hero-background-0"></div>
-      <div className="hero-background-1"></div>
-    </Container>
-    
-    <Card className="card-1">
-      <Col sm="12">
-        <Card className="index-intro">
-          <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
-          <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
-          <SocialButtons />
-          <Link
-              className="index-intro__contact-button btn btn-outline"
-              activeClass="active"
-              to="card-4"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1250}
-            >
+    <div className="landing">
+      <div className="dark-overlay landing-inner text-light">
+        <Container>
+          <Row>
+            <Col sm="12" className="text-center">
+              <h1 className="display-3 mb-4 index-intro">Paul Valdez</h1>
+              <p className="lead index-intro__subtitle">Full Stack Developer</p>
+              <SocialButtons />
+              <Link
+                className="index-intro__contact-button btn btn-outline"
+                activeClass="active"
+                to="card-4"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1250}
+              >
                 Get in Touch
-          </Link>
-        </Card>
-      </Col>
-    </Card>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
 
-    <Card className="card-2">
-      <Card className="about-card">
-        <Row className="card-2-row">
-          <Col sm="12">
-            <Card className="about-img">
-              <CardImg
-                top
-                src={PaulImage}
-                alt="Card image cap"
-                className="about-img__img"
-              />
-            </Card>
-          </Col>
-          <Col sm="12">
-            <Card className="about-me">
-              <CardBody className="about-me__body">
-                <CardTitle className="about-me__title text-center">Who is Paul Valdez?</CardTitle>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quae ipsam dolores eaque eveniet. Voluptatibus animi excepturi optio earum consectetur eaque rem quisquam accusantium atque, enim dolorum hic! Sint?
-                </CardText>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque fuga ab aliquid libero temporibus. Labore unde maxime nisi adipisci reprehenderit.
-                </CardText>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum, temporibus saepe unde minus quisquam porro quod eos enim blanditiis corrupti minima quas debitis quis beatae, vitae, neque nemo distinctio perspiciatis eum facilis. Praesentium accusantium voluptate quis ea amet corrupti quo iure fugit voluptatum possimus?
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
+    
+      <Row className="about-row">
+        <Col sm="6">
+          <Card className="about-me">
+            <CardBody className="about-me__body">
+              <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
+              <CardText className="about-me__text">
+              Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
+              </CardText>
+            </CardBody>
+          </Card>
+      </Col>
+    </Row>
+    <hr className="about-break col-md-4" />
+    <h3 className="skills-header text-center">Developer Skills</h3>
+      <Container className="about-container">
+        <Row className="dev-row">
           <Col sm="6">
-            <Card className="skills col-md-6">
-              <CardTitle className="skills__title text-center"># Skills</CardTitle>
-              <CardText className="skills__list-wrapper">
-                <ul className="skills__list">
-                  <li>// React, ES6, Gatsby, Redux</li>
-                  <li>// jQuery</li>
-                  <li>// Python, Django</li>
+            <Card className="frontend">
+              <CardTitle className="frontend__title text-center"># Frontend</CardTitle>
+              <CardText className="frontend__list-wrapper">
+                <ul className="frontend__list">
+                  <li>// React / Redux</li>
+                  <li>// Gatsby</li>
+                  <li>// jQuery, Django</li>
                   <li>// Sass, Bootstrap</li>
                   <li>// MongoDB, GraphQL</li>
                   <li>// ExpressJS</li>
@@ -104,8 +87,24 @@ const IndexPage = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="tools col-md-6">
-              <CardTitle className="tools__title text-center"># Tools & Soft Skills</CardTitle>
+            <Card className="backend">
+              <CardTitle className="backend__title text-center"># Backend</CardTitle>
+              <CardText className="backend__list-wrapper">
+                <ul className="backend__list">
+                  <li>// RESTful APIs</li>
+                  <li>// MongoDB</li>
+                  <li>// NodeJS</li>
+                  <li>// GraphQL</li>
+                  <li>// ExpressJS</li>
+                </ul>
+              </CardText>
+            </Card>
+        </Col>
+      </Row>
+      <Row className="dev-row">
+          <Col sm="6">
+            <Card className="tools">
+              <CardTitle className="tools__title text-center"># tools & Soft Skills</CardTitle>
               <CardText className="tools__list-wrapper">
                 <ul className="tools__list">
                   <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
@@ -119,10 +118,27 @@ const IndexPage = () => (
                 </ul>
               </CardText>
             </Card>
-          </Col>
+        </Col>
+        <Col sm="6">
+            <Card className="soft-skills">
+              <CardTitle className="soft-skills__title text-center"># soft-skills & Soft Skills</CardTitle>
+              <CardText className="soft-skills__list-wrapper">
+                <ul className="soft-skills__list">
+                  <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
+                  <li>Visual Studio Code</li>
+                  <li>PostMan</li>
+                  <li>Enzyme, JEST</li>
+                  <li>mLab</li>
+                  <li>Heroku, Digital Ocean, Netlify</li>
+                  <li>KanbanFlow, WakaTime, Strict Time Management</li>
+                  <li>Excellent Team Communication and Customer Service Experience</li>
+                </ul>
+              </CardText>
+            </Card>
+            </Col>
+          
         </Row>
-      </Card>
-    </Card>
+    </Container>
 
     <Card className="card-3">
       <Card className="container-card">
@@ -246,14 +262,6 @@ const IndexPage = () => (
                     rel="noopener noreferrer" >
                       GitHub
                   </a>
-                </Button>
-                <Button className="proj-desc-a__demo-button-2">
-                  <NavLink
-                    className="proj-desc-a__button-link-2"
-                    href="/blog"
-                  >
-                    Visit My Blog!
-                  </NavLink>
                 </Button>
               </CardBody>
             </Card>

@@ -14,83 +14,45 @@
 @import './about';
 @import './projects';
 @import './contact';
-//@import './success';
-
 
 // Index & Success Page
-.card-1 {
-  background: rgba($blue, 0.001);
-  border-width: 0px;
-  height: 900px;
-}
-
-.hero-background-0 {
-  background: url(../images/hero-background.jpg) no-repeat center center fixed;
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+.landing {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url('../images/hero-background.jpg') no-repeat;
+  background-size: cover;
   background-position: center;
-  opacity: 0.12;
-  //width: 99vw !important;
-  margin-right: 10px !important;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  //position: fixed;
-  z-index: -1;
-
-  //width: 99.5vw;
-  width: 1920px;
-  position: fixed;
-  //margin-top: 1rem;
-  margin-left: -50vw;
-  //margin-bottom: -1.75rem;
-  left: 50%;
+  height: 100vh;
+  width: 100% !important;
+  margin-top: 50px;
 }
 
-.hero-background-1 {
-  background-image: linear-gradient(to bottom, darken($light, 32%), lighten($dark-gray, 3%));
-  background-size: auto;
-  opacity: 0.4;
-  //height: 100vh;
-  //width: 99vw !important;
-  margin-right: 10px !important;
-  margin-top: 0px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  //position: fixed;
-  z-index: -1;
-
-  //width: 99.5vw;
-  width: 1920px;
-  position: fixed;
-  //margin-top: 1rem;
-  margin-left: -50vw;
-  //margin-bottom: -1.75rem;
-  left: 50%;
+.landing-innner {
+  padding-top: 80px;
 }
 
-// Applies to most pages
+.dark-overlay {
+  background-color: rgba(12, 2, 3, 0.92);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .page-header {
   color: $rose;
   padding-top: 1rem;
 }
 
 .index-intro {
-  background: rgba($blue, 0.001);
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   border-width: 0;
-  &__page-header {
-    font-family: 'Merienda', cursive;
-    color: $yellow;
-    font-size: 4.5rem;
-  }
-
-  &__profession {
+  font-family: 'Merienda', cursive;
+  color: $yellow;
+  
+  &__subtitle {
     color: $rose;
     font-size: 1.25rem;
   }
@@ -102,7 +64,6 @@
     border-color: $blue !important;
     border-radius: 4px;
     cursor: pointer;
-    //width: 25%;
     font-size: 1.5rem;
     color: $blue !important;
     display: inline-block;
@@ -129,10 +90,9 @@
   }
 }
 .contact-comp {
-  margin-top: 10rem;
+  //margin-top: 10rem;
   z-index: -1;
 }
-
 
 .email-gif {
   //width: 50%;

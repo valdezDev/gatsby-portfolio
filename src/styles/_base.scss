@@ -1,9 +1,8 @@
 .container#content {
   margin-top: 60px;
+  width: 100%;
 }
-body {
-  background-color: $dark-gray;
-}
+
 a {
   color: #0056b3;
   &:hover {
@@ -11,20 +10,26 @@ a {
     text-decoration: none;
   }
 }
+
 body {
   font-family: $Lato;
+  background-color: $dark-gray;
 }
 
 h1 {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   text-align: center;
 }
+
 .navbar {
   background: rgba(darken($blue, 39%), 0.92);
+  background: rgba($dark-gray, 0.88);
   line-height: 1;
   color: $rose;
+  width: 100%;
   //width: 100vw;
 }
+
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-brand {
   color: $blue;
@@ -56,11 +61,4 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
-}
-
-.blog-link {
-  //margin-left: 4rem;
-  &::after{
-    margin-left: 0px !important;
-  }
 }
