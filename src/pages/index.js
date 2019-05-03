@@ -6,6 +6,7 @@ import {
   Button,
   Card,
   CardBody,
+  CardImg,
   CardSubtitle,
   CardText,
   CardTitle,
@@ -13,11 +14,12 @@ import {
   Container,
   Row
 } from "reactstrap";
-import ProjVideo1 from '../components/vid/ProjVideo1';
-import ProjVideo2 from '../components/vid/ProjVideo2';
-import ProjVideo3 from '../components/vid/ProjVideo3';
-import ProjVideo4 from '../components/vid/ProjVideo4';
-import ProjVideo5 from '../components/vid/ProjVideo5';
+
+import dgGif from '../images/dgGif.gif';
+import hnGif from '../images/hnGif.gif';
+import blogGif from '../images/blogGif.gif';
+import portGif from '../images/portGif.gif';
+import chessGif from '../images/chessGif.gif';
 import '../styles/index.scss';
 import { Link } from "react-scroll";
 
@@ -147,7 +149,7 @@ const IndexPage = () => (
           <Row>
             <Col sm="6">
               <Card className="proj-video">
-                <ProjVideo1 />
+                <CardImg top src={dgGif} />
               </Card>
             </Col>
             <Col sm="6">
@@ -189,7 +191,7 @@ const IndexPage = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo2 />
+              <CardImg top src={hnGif} />
             </Card>
           </Col>
           <Col sm="6">
@@ -230,7 +232,7 @@ const IndexPage = () => (
         <Row className="row-a">
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo3 />
+              <CardImg top src={blogGif} />
             </Card>
           </Col>
           <Col sm="6">
@@ -271,7 +273,7 @@ const IndexPage = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo4/>
+              <CardImg top src={portGif} />
             </Card>
           </Col>
           <Col sm="6">
@@ -303,7 +305,7 @@ const IndexPage = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo5 />
+              <CardImg top src={chessGif} />
             </Card>
           </Col>
           <Col sm="6">
