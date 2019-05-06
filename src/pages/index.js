@@ -46,7 +46,7 @@ const IndexPage = () => (
                 offset={-70}
                 duration={1250}
               >
-                Get in Touch
+                Get in Touch!
               </Link>
             </Col>
           </Row>
@@ -164,15 +164,15 @@ const IndexPage = () => (
                     <li>State management using Redux.</li>
                     <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
                   </ul>
-                  <Button className="proj-desc-a__demo-button">
+                  
                     <a
                       className="proj-desc-a__button-link"
                       href="https://afternoon-waters-74578.herokuapp.com/"
                       target="_blank"
                       rel="noopener noreferrer" >
-                      Try Demo
+                      <Button className="proj-desc-a__demo-button"></Button>Try Demo
                     </a>
-                  </Button>
+                  
                   <Button className="proj-desc-a__git-button">
                     <i className="fas fa-code proj-desc-a__code-icon" />
                     <a
@@ -345,24 +345,23 @@ const IndexPage = () => (
       </Card>
     </Card>
 
-    <Card className="card-4">
-      <Card className="contact-card">
+    <Container className="contact-container">
+      <Row>
+        <Col sm="11">
+        <Card className="contact-card">
         <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
-        <CardSubtitle className="contact-card__subtitle text-center">
-          All messages will be sent to my personal email at pvaldezdev@gmail.com.
-        </CardSubtitle>
-        <CardBody className="col-md-8 contact-card__body">
+          <CardBody className=" contact-card__body">
           <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
             <input type="hidden" name="bot-field" />
             <div className="contact-card__fields">
               <div className="contact-card__field half">
-                <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
+                <input className="contact-card__name" type="text" name="name" id="name" placeholder="Name..." />
               </div>
               <div className="contact-card__field half">
-                <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
+                <input className="contact-card__email " type="email" name="email" id="email" placeholder="example@email.com..." />
               </div>
               <div className="contact-card__field">
-                <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                <textarea className="contact-card__message " name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
               </div>
               <div className="contact-card__field">
                 <div data-netlify-recaptcha="true"></div>
@@ -374,7 +373,13 @@ const IndexPage = () => (
           </form>
         </CardBody>
       </Card>
-    </Card>
+        </Col>
+        <Col sm="1">
+          <SocialButtons />
+        </Col>
+      </Row>
+      
+    </Container>
   </Layout>
 );
 

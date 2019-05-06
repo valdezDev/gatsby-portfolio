@@ -16,10 +16,6 @@ import {
   NavLink,
   Row
 } from "reactstrap";
-import ProjVideo1 from '../components/vid/ProjVideo1';
-import ProjVideo2 from '../components/vid/ProjVideo2';
-import ProjVideo3 from '../components/vid/ProjVideo3';
-import ProjVideo5 from '../components/vid/ProjVideo5';
 import PaulImage from '../images/paul.jpg';
 import '../styles/index.scss';
 
