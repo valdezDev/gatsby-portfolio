@@ -164,26 +164,24 @@ const IndexPage = () => (
                     <li>State management using Redux.</li>
                     <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
                   </ul>
-                  
-                    <a
-                      className="proj-desc-a__button-link"
-                      href="https://afternoon-waters-74578.herokuapp.com/"
-                      target="_blank"
-                      rel="noopener noreferrer" >
-                      <Button className="proj-desc-a__demo-button"></Button>Try Demo
-                    </a>
-                  
-                  <Button className="proj-desc-a__git-button">
-                    <i className="fas fa-code proj-desc-a__code-icon" />
-                    <a
-                      className="proj-desc-a__button-link"
-                      href="https://github.com/valdezDev/devgab"
-                      target="_blank"
-                      rel="noopener noreferrer" >
+                  <a
+                    className="proj-desc-a__button-link"
+                    href="https://afternoon-waters-74578.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer" >
+                    <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                  </a>
+                  <a
+                    className="proj-desc-a__button-link"
+                    href="https://github.com/valdezDev/devgab"
+                    target="_blank"
+                    rel="noopener noreferrer" >
+                    <Button className="proj-desc-a__git-button">
+                      <i className="fas fa-code proj-desc-a__code-icon" />
                         GitHub
-                    </a>
-                </Button>
-              </CardBody>
+                    </Button>
+                  </a>
+                </CardBody>
             </Card>
           </Col>
         </Row>
@@ -198,32 +196,31 @@ const IndexPage = () => (
             <Card className="proj-desc-b col-md-11">
               <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
               <CardBody className="proj-desc-b__body">
-                
                 <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
                 <ul className="proj-desc-b__list">
                   <li>Built using create-react-app.</li>
                   <li>Integrated with the Hacker News, Algolia Search API.</li>
                   <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
                 </ul>
-                <Button className="proj-desc-b__demo-button">
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://inspiring-swanson-53922f.netlify.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://inspiring-swanson-53922f.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__demo-button">
                     Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://github.com/valdezDev/hacker-news-search-app"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                      GitHub
-                  </a>
-                </Button>
+                  </Button>
+                </a>
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://github.com/valdezDev/hacker-news-search-app"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__git-button">
+                    <i class="fas fa-code proj-desc-b__code-icon" />
+                    Github
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -246,25 +243,23 @@ const IndexPage = () => (
                   <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
                   <li>Deployed to Netlify</li>
                 </ul>
-                <Button className="proj-desc-a__demo-button">
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://unruffled-bartik-96bf86.netlify.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__git-button">
-                  <i class="fas fa-code proj-desc-a__code-icon" />
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/gatsby-blog"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                </a>
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://github.com/valdezDev/devgab"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__git-button">
+                    <i className="fas fa-code proj-desc-a__code-icon" />
                       GitHub
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -287,16 +282,16 @@ const IndexPage = () => (
                   <li>Designed the styles using SASS and JSX.</li>
                   <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
                 </ul>
-                <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://github.com/valdezDev/gatsby-portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                      GitHub
-                  </a>
-                </Button>
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://github.com/valdezDev/hacker-news-search-app"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__git-button">
+                    <i class="fas fa-code proj-desc-b__code-icon" />
+                    Github
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -319,25 +314,23 @@ const IndexPage = () => (
                   <li>Designed using bootstrap, SASS, and JSX.</li>
                   <li>This portfolio and its domain have been deployed and secured using Netlify. It's also wired up to access the form submssion functionality that Netlify offers its users.</li>
                 </ul>
-                <Button className="proj-desc-a__demo-button">
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://spenserkearns.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__git-button">
-                  <i class="fas fa-code proj-desc-a__code-icon" />
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                </a>
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://github.com/valdezDev/devgab"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__git-button">
+                    <i className="fas fa-code proj-desc-a__code-icon" />
                       GitHub
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
