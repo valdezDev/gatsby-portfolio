@@ -1,14 +1,6 @@
 // Projects Page
-.card-3 {
-  border-top: darken($blue, 45%);
-  border-top-width: 2px;
-  border-style: solid;
-  background: rgba($blue, 0.001);
-  //width: 100vw;
-  position: relative;
-  //margin-left: -50vw;
-  background: rgba($blue, 0.001);
-  //left: 50%;
+.proj-container {
+  padding-top: 5rem;
 }
 
 .container-card {
@@ -23,7 +15,8 @@
 .proj-video {
   border-width: 0px;
   margin: 1rem;
-  height: 60%;
+  //height: 60%;
+  background: transparent;
 }
 
 .proj-break {
@@ -38,12 +31,13 @@
 .proj-desc-a {
   background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
   border-radius: 0px;
-  margin-top: 1rem;
 
   &__title {
     font-weight: bold;
     font-size: 2rem;
     color: $blue;
+    background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
+    padding: 6px;
   }
 
   &__subtitle {
@@ -85,6 +79,7 @@
       transform: scale(1.05);
     }
   }
+
   &__demo-button-2 {
     background-color: transparent;
     border-color: $rose;
@@ -120,14 +115,13 @@
   background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
   border-radius: 0px;
   border-width: 0px;
-  //margin: 1rem;
-  margin-top: 1rem;
 
   &__title {
+    background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
+    padding: 6px;
     font-weight: bold;
     font-size: 2rem;
     color: darken($rose, 2%);
-    text-shadow: 2px 2px darken($blue, 40%);
   }
 
   &__subtitle {

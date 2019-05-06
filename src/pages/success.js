@@ -16,7 +16,11 @@ import {
   NavLink,
   Row
 } from "reactstrap";
-import PaulImage from '../images/paul.jpg';
+import dgGif from '../images/dgGif.gif';
+import hnGif from '../images/hnGif.gif';
+import blogGif from '../images/blogGif.gif';
+import portGif from '../images/portGif.gif';
+import chessGif from '../images/chessGif.gif';
 import '../styles/index.scss';
 
 /* eslint-disable */
@@ -28,71 +32,55 @@ const Success = () => (
       <meta name="description" content="Success Page" />
     </Helmet>
 
-    <Container className="bg-container">
-      <div className="hero-background-0"></div>
-      <div className="hero-background-1"></div>
-    </Container>
-
-    <Card className="card-1">
-      <Col sm="12">
-        <Card className="index-intro">
-          <CardTitle className="index-intro__page-header text-center">Paul Valdez</CardTitle>
-          <CardSubtitle className="index-intro__profession text-center">Full Stack MERN Developer</CardSubtitle>
-          <SocialButtons/>
-        </Card>
+    <div className="landing">
+      <div className="dark-overlay landing-inner text-light">
+        <Container>
+          <Row>
+            <Col sm="12" className="text-center">
+              <h1 className="display-3 mb-4 index-intro">Paul Valdez</h1>
+              <p className="lead index-intro__subtitle">Full Stack Developer</p>
+              <SocialButtons />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12">
+              <Card className="success-card">
+                <CardTitle className="contact-card__title text-center">Thank You! 📫</CardTitle>
+                <CardSubtitle className="contact-card__success-subtitle text-center">
+                  Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me and I will be sure to give you a speedy response.
+                </CardSubtitle>
+                <CardImg className="email-gif col-md-3" src={SuccessEmail} alt="email-gif"/>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
+    
+    <Row className="about-row">
+        <Col sm="6">
+          <Card className="about-me">
+            <CardBody className="about-me__body">
+              <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
+              <CardText className="about-me__text">
+              Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
+              </CardText>
+            </CardBody>
+          </Card>
       </Col>
-    </Card>
-    <Card className="success-card">
-      <Col sm="12">
-        <Card className="success-card">
-          <CardTitle className="contact-card__title text-center">Thank You! 📫</CardTitle>
-          <CardSubtitle className="contact-card__success-subtitle text-center">
-            Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me and I will be sure to give you a speedy response.
-          </CardSubtitle>
-          <CardBody>
-            <img className="email-gif col-md-3" src={SuccessEmail} alt="email-gif" />
-          </CardBody>
-        </Card>
-      </Col>
-    </Card>
-
-    <Card className="card-2">
-      <Card className="about-card">
-        <Row className="card-2-row">
-          <Col sm="12">
-            <Card className="about-img">
-              <CardImg
-                top
-                src={PaulImage}
-                alt="Card image cap"
-                className="about-img__img"
-              />
-            </Card>
-          </Col>
-          <Col sm="12">
-            <Card className="about-me">
-              <CardBody className="about-me__body">
-                <CardTitle className="about-me__title text-center">Who is Paul Valdez?</CardTitle>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quae ipsam dolores eaque eveniet. Voluptatibus animi excepturi optio earum consectetur eaque rem quisquam accusantium atque, enim dolorum hic! Sint?
-                </CardText>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque fuga ab aliquid libero temporibus. Labore unde maxime nisi adipisci reprehenderit.
-                </CardText>
-                <CardText className="about-me__text col-md-8">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum, temporibus saepe unde minus quisquam porro quod eos enim blanditiis corrupti minima quas debitis quis beatae, vitae, neque nemo distinctio perspiciatis eum facilis. Praesentium accusantium voluptate quis ea amet corrupti quo iure fugit voluptatum possimus?
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
+    </Row>
+    <hr className="about-break col-md-4" />
+    <h3 className="skills-header text-center">Developer Skills</h3>
+      <Container className="about-container">
+        <Row className="dev-row">
           <Col sm="6">
-            <Card className="skills col-md-6">
-              <CardTitle className="skills__title text-center"># Skills</CardTitle>
-              <CardText className="skills__list-wrapper">
-                <ul className="skills__list">
-                  <li>// React, ES6, Gatsby, Redux</li>
-                  <li>// jQuery</li>
-                  <li>// Python, Django</li>
+            <Card className="frontend">
+              <CardTitle className="frontend__title text-center"># Frontend</CardTitle>
+              <CardText className="frontend__list-wrapper">
+                <ul className="frontend__list">
+                  <li>// React / Redux</li>
+                  <li>// Gatsby</li>
+                  <li>// jQuery, Django</li>
                   <li>// Sass, Bootstrap</li>
                   <li>// MongoDB, GraphQL</li>
                   <li>// ExpressJS</li>
@@ -103,8 +91,24 @@ const Success = () => (
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="tools col-md-6">
-              <CardTitle className="tools__title text-center"># Tools & Soft Skills</CardTitle>
+            <Card className="backend">
+              <CardTitle className="backend__title text-center"># Backend</CardTitle>
+              <CardText className="backend__list-wrapper">
+                <ul className="backend__list">
+                  <li>// RESTful APIs</li>
+                  <li>// MongoDB</li>
+                  <li>// NodeJS</li>
+                  <li>// GraphQL</li>
+                  <li>// ExpressJS</li>
+                </ul>
+              </CardText>
+            </Card>
+        </Col>
+      </Row>
+      <Row className="dev-row">
+          <Col sm="6">
+            <Card className="tools">
+              <CardTitle className="tools__title text-center"># tools & Soft Skills</CardTitle>
               <CardText className="tools__list-wrapper">
                 <ul className="tools__list">
                   <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
@@ -118,24 +122,41 @@ const Success = () => (
                 </ul>
               </CardText>
             </Card>
-          </Col>
+        </Col>
+        <Col sm="6">
+            <Card className="soft-skills">
+              <CardTitle className="soft-skills__title text-center"># soft-skills & Soft Skills</CardTitle>
+              <CardText className="soft-skills__list-wrapper">
+                <ul className="soft-skills__list">
+                  <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
+                  <li>Visual Studio Code</li>
+                  <li>PostMan</li>
+                  <li>Enzyme, JEST</li>
+                  <li>mLab</li>
+                  <li>Heroku, Digital Ocean, Netlify</li>
+                  <li>KanbanFlow, WakaTime, Strict Time Management</li>
+                  <li>Excellent Team Communication and Customer Service Experience</li>
+                </ul>
+              </CardText>
+            </Card>
+            </Col>
+          
         </Row>
-      </Card>
-    </Card>
+    </Container>
 
-    <Card className="card-3">
-      <Card className="container-card">
+    <Container className="proj-container">
+      
         <h1 className="page-header"># Projects</h1>
         
           <Row>
             <Col sm="6">
               <Card className="proj-video">
-                <ProjVideo1 />
+                <CardImg top src={dgGif} />
+                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
               </Card>
             </Col>
             <Col sm="6">
-              <Card className="proj-desc-a col-md-11">
-                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
+              <Card className="proj-desc-a">
                 <CardBody className="proj-desc-a__body">
                   <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
                   <ul className="proj-desc-a__list">
@@ -145,26 +166,24 @@ const Success = () => (
                     <li>State management using Redux.</li>
                     <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
                   </ul>
-                  <Button className="proj-desc-a__demo-button">
-                    <a
-                      className="proj-desc-a__button-link"
-                      href="https://afternoon-waters-74578.herokuapp.com/"
-                      target="_blank"
-                      rel="noopener noreferrer" >
-                      Try Demo
-                    </a>
-                  </Button>
-                  <Button className="proj-desc-a__git-button">
-                    <i className="fas fa-code proj-desc-a__code-icon" />
-                    <a
-                      className="proj-desc-a__button-link"
-                      href="https://github.com/valdezDev/devgab"
-                      target="_blank"
-                      rel="noopener noreferrer" >
+                  <a
+                    className="proj-desc-a__button-link"
+                    href="https://afternoon-waters-74578.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer" >
+                    <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                  </a>
+                  <a
+                    className="proj-desc-a__button-link"
+                    href="https://github.com/valdezDev/devgab"
+                    target="_blank"
+                    rel="noopener noreferrer" >
+                    <Button className="proj-desc-a__git-button">
+                      <i className="fas fa-code proj-desc-a__code-icon" />
                         GitHub
-                    </a>
-                </Button>
-              </CardBody>
+                    </Button>
+                  </a>
+                </CardBody>
             </Card>
           </Col>
         </Row>
@@ -172,39 +191,38 @@ const Success = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo2 />
+            <CardImg top src={hnGif} />
+            <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b col-md-11">
-              <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
+            <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
-                
                 <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
                 <ul className="proj-desc-b__list">
                   <li>Built using create-react-app.</li>
                   <li>Integrated with the Hacker News, Algolia Search API.</li>
                   <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
                 </ul>
-                <Button className="proj-desc-b__demo-button">
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://inspiring-swanson-53922f.netlify.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://inspiring-swanson-53922f.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__demo-button">
                     Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://github.com/valdezDev/hacker-news-search-app"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                      GitHub
-                  </a>
-                </Button>
+                  </Button>
+                </a>
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://github.com/valdezDev/hacker-news-search-app"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__git-button">
+                    <i class="fas fa-code proj-desc-b__code-icon" />
+                    Github
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -213,12 +231,12 @@ const Success = () => (
         <Row className="row-a">
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo3 />
+              <CardImg top src={blogGif} />
+              <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a col-md-11">
-            <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
+            <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
                 <ul className="proj-desc-a__list">
@@ -227,33 +245,23 @@ const Success = () => (
                   <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
                   <li>Deployed to Netlify</li>
                 </ul>
-                <Button className="proj-desc-a__demo-button">
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://unruffled-bartik-96bf86.netlify.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__git-button">
-                  <i class="fas fa-code proj-desc-a__code-icon" />
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/gatsby-blog"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                </a>
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://github.com/valdezDev/devgab"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__git-button">
+                    <i className="fas fa-code proj-desc-a__code-icon" />
                       GitHub
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__demo-button-2">
-                  <NavLink
-                    className="proj-desc-a__button-link-2"
-                    href="/blog"
-                  >
-                    Visit My Blog!
-                  </NavLink>
-                </Button>
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -262,12 +270,12 @@ const Success = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              
+            <CardImg top src={portGif} />
+            <CardTitle className="proj-desc-b__title text-center"># valdezDev.com</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b col-md-11">
-            <CardTitle className="proj-desc-b__title text-center"># Developer Portfolio</CardTitle>
+            <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
                 <ul className="proj-desc-b__list">
@@ -276,16 +284,16 @@ const Success = () => (
                   <li>Designed the styles using SASS and JSX.</li>
                   <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
                 </ul>
-                <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
-                  <a
-                    className="proj-desc-b__button-link"
-                    href="https://github.com/valdezDev/gatsby-portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                      GitHub
-                  </a>
-                </Button>
+                <a
+                  className="proj-desc-b__button-link"
+                  href="https://github.com/valdezDev/hacker-news-search-app"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-b__git-button">
+                    <i class="fas fa-code proj-desc-b__code-icon" />
+                    Github
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
@@ -294,12 +302,12 @@ const Success = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <ProjVideo5 />
+              <CardImg top src={chessGif} />
+              <CardTitle className="proj-desc-a__title text-center"># spenserkearns.com </CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a col-md-11">
-            <CardTitle className="proj-desc-a__title text-center"># Spenser's Chess Portfolio</CardTitle>
+            <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>
                 <ul className="proj-desc-a__list">
@@ -308,50 +316,47 @@ const Success = () => (
                   <li>Designed using bootstrap, SASS, and JSX.</li>
                   <li>This portfolio and its domain have been deployed and secured using Netlify. It's also wired up to access the form submssion functionality that Netlify offers its users.</li>
                 </ul>
-                <Button className="proj-desc-a__demo-button">
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://spenserkearns.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    Try Demo
-                  </a>
-                </Button>
-                <Button className="proj-desc-a__git-button">
-                  <i class="fas fa-code proj-desc-a__code-icon" />
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
-                    target="_blank"
-                    rel="noopener noreferrer" >
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
+                </a>
+                <a
+                  className="proj-desc-a__button-link"
+                  href="https://github.com/valdezDev/devgab"
+                  target="_blank"
+                  rel="noopener noreferrer" >
+                  <Button className="proj-desc-a__git-button">
+                    <i className="fas fa-code proj-desc-a__code-icon" />
                       GitHub
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </CardBody>
             </Card>
           </Col>
         </Row>
-      </Card>
-    </Card>
+      
+    </Container>
 
-    <Card className="card-4">
-      <Card className="contact-card">
+    <Container className="contact-container">
+      <Row>
+        <Col sm="11">
+        <Card className="contact-card">
         <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
-        <CardSubtitle className="contact-card__subtitle text-center">
-          All messages will be sent to my personal email at pvaldezdev@gmail.com.
-        </CardSubtitle>
-        <CardBody className="col-md-8 contact-card__body">
+          <CardBody className=" contact-card__body">
           <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
             <input type="hidden" name="bot-field" />
             <div className="contact-card__fields">
               <div className="contact-card__field half">
-                <input className="contact-card__name col-md-6" type="text" name="name" id="name" placeholder="Name" />
+                <input className="contact-card__name" type="text" name="name" id="name" placeholder="Name..." />
               </div>
               <div className="contact-card__field half">
-                <input className="contact-card__email col-md-6" type="email" name="email" id="email" placeholder="example@email.com" />
+                <input className="contact-card__email " type="email" name="email" id="email" placeholder="Email..." />
               </div>
               <div className="contact-card__field">
-                <textarea className="contact-card__message col-md-10" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                <textarea className="contact-card__message " name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
               </div>
               <div className="contact-card__field">
                 <div data-netlify-recaptcha="true"></div>
@@ -363,7 +368,13 @@ const Success = () => (
           </form>
         </CardBody>
       </Card>
-    </Card>
+        </Col>
+        <Col sm="1">
+          <SocialButtons />
+        </Col>
+      </Row>
+      
+    </Container>
   </Layout>
 );
 

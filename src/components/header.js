@@ -77,7 +77,7 @@ class Header extends React.Component{
                 <NavLink>
                   <Link
                     activeClass="active"
-                    to="card-4"
+                    to="contact-card__name"
                     spy={true}
                     smooth={true}
                     offset={-70}

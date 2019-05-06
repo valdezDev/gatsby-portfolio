@@ -13,7 +13,7 @@ a {
 
 body {
   font-family: $Lato;
-  background-color: $dark-gray;
+  background-image: linear-gradient(to bottom, $dark-gray, lighten($dark-gray, 0.5%));
 }
 
 h1 {

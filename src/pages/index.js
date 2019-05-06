@@ -40,7 +40,7 @@ const IndexPage = () => (
               <Link
                 className="index-intro__contact-button btn btn-outline"
                 activeClass="active"
-                to="card-4"
+                to="contact-card__name"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -142,19 +142,19 @@ const IndexPage = () => (
         </Row>
     </Container>
 
-    <Card className="card-3">
-      <Card className="container-card">
+    <Container className="proj-container">
+      
         <h1 className="page-header"># Projects</h1>
         
           <Row>
             <Col sm="6">
               <Card className="proj-video">
                 <CardImg top src={dgGif} />
+                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
               </Card>
             </Col>
             <Col sm="6">
-              <Card className="proj-desc-a col-md-11">
-                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
+              <Card className="proj-desc-a">
                 <CardBody className="proj-desc-a__body">
                   <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
                   <ul className="proj-desc-a__list">
@@ -189,12 +189,12 @@ const IndexPage = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <CardImg top src={hnGif} />
+            <CardImg top src={hnGif} />
+            <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b col-md-11">
-              <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
+            <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
                 <ul className="proj-desc-b__list">
@@ -230,11 +230,11 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
               <CardImg top src={blogGif} />
+              <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a col-md-11">
-            <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
+            <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
                 <ul className="proj-desc-a__list">
@@ -268,12 +268,12 @@ const IndexPage = () => (
         <Row>
           <Col sm="6">
             <Card className="proj-video">
-              <CardImg top src={portGif} />
+            <CardImg top src={portGif} />
+            <CardTitle className="proj-desc-b__title text-center"># valdezDev.com</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-b col-md-11">
-            <CardTitle className="proj-desc-b__title text-center"># https://valdezDev.com</CardTitle>
+            <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
                 <ul className="proj-desc-b__list">
@@ -301,11 +301,11 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
               <CardImg top src={chessGif} />
+              <CardTitle className="proj-desc-a__title text-center"># spenserkearns.com </CardTitle>
             </Card>
           </Col>
           <Col sm="6">
-            <Card className="proj-desc-a col-md-11">
-            <CardTitle className="proj-desc-a__title text-center"># Spenser's Chess Portfolio</CardTitle>
+            <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>
                 <ul className="proj-desc-a__list">
@@ -335,8 +335,8 @@ const IndexPage = () => (
             </Card>
           </Col>
         </Row>
-      </Card>
-    </Card>
+      
+    </Container>
 
     <Container className="contact-container">
       <Row>
@@ -351,7 +351,7 @@ const IndexPage = () => (
                 <input className="contact-card__name" type="text" name="name" id="name" placeholder="Name..." />
               </div>
               <div className="contact-card__field half">
-                <input className="contact-card__email " type="email" name="email" id="email" placeholder="example@email.com..." />
+                <input className="contact-card__email " type="email" name="email" id="email" placeholder="Email..." />
               </div>
               <div className="contact-card__field">
                 <textarea className="contact-card__message " name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
