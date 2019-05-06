@@ -1,4 +1,10 @@
 // Projects Page
+
+.proj-header {
+  margin-bottom: 2.5rem;
+  color: $rose;
+}
+
 .proj-container {
   padding-top: 5rem;
 }
@@ -8,14 +14,8 @@
   padding: 1rem;
 }
 
-.projVideo {
-  height: 100% !important;
-}
-
 .proj-video {
   border-width: 0px;
-  margin: 1rem;
-  //height: 60%;
   background: transparent;
 }
 
@@ -29,14 +29,13 @@
 }
 
 .proj-desc-a {
-  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
+  background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
   border-radius: 0px;
 
   &__title {
     font-weight: bold;
-    font-size: 2rem;
-    color: $blue;
-    background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
+    font-size: 1.75rem;
+    background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
     padding: 6px;
   }
 
@@ -60,16 +59,8 @@
     }
   }
 
-  &__button-link-2 {
-    color: white;
-    margin-bottom: 8px;
-    &:hover{
-      color: white !important;
-    }
-  }
-
   &__demo-button {
-    background-color: darken($blue, 45.5%);
+    background: transparent;
     border-color: $blue;
     margin: 12px;
     display: inline-block;
@@ -80,22 +71,8 @@
     }
   }
 
-  &__demo-button-2 {
-    background-color: transparent;
-    border-color: $rose;
-    margin: 12px;
-    justify-content: center;
-    display: inline-block;
-    transition: all .2s ease-in-out, color .3s ease-in-out;
-    &:hover {
-      background-color: lighten($rose, 3%);
-      transform: scale(1.05);
-      color: white !important;
-    }
-  }
-
   &__git-button {
-    background-color: darken($blue, 45.5%);
+    background: transparent;
     border-color: $git-violet;
     margin: 12px;
     display: inline-block;
@@ -112,16 +89,15 @@
 }
 
 .proj-desc-b {
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 5.5%), lighten($dark-gray, 1.75%));
   border-radius: 0px;
   border-width: 0px;
 
   &__title {
-    background-image: linear-gradient(to bottom, lighten($dark-gray, 2.5%), lighten($dark-gray, 4%));
+    background-image: linear-gradient(to bottom, lighten($dark-gray, 5.5%), lighten($dark-gray, 1.75%));
     padding: 6px;
     font-weight: bold;
     font-size: 2rem;
-    color: darken($rose, 2%);
   }
 
   &__subtitle {
@@ -145,7 +121,7 @@
   }
 
   &__demo-button {
-    background-color: lighten($dark-gray, 4.75%);
+    background: transparent;
     border-color: $blue;
     margin: 12px;
     display: inline-block;
@@ -157,7 +133,7 @@
   }
 
   &__git-button {
-    background-color: lighten($dark-gray, 4.75%);
+    background: transparent;
     border-color: $git-violet;
     margin: 12px;
     display: inline-block;

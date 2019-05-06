@@ -144,13 +144,13 @@ const IndexPage = () => (
 
     <Container className="proj-container">
       
-        <h1 className="page-header"># Projects</h1>
+        <h1 className="proj-header"># Projects</h1>
         
           <Row>
             <Col sm="6">
               <Card className="proj-video">
                 <CardImg top src={dgGif} />
-                <CardTitle className="proj-desc-a__title text-center"># DevGab</CardTitle>
+                <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
               </Card>
             </Col>
             <Col sm="6">
@@ -190,7 +190,7 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
             <CardImg top src={hnGif} />
-            <CardTitle className="proj-desc-b__title text-center"># Hacker News Search</CardTitle>
+            <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
@@ -230,7 +230,7 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
               <CardImg top src={blogGif} />
-              <CardTitle className="proj-desc-a__title text-center"># Developer Blog</CardTitle>
+              <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
@@ -245,14 +245,14 @@ const IndexPage = () => (
                 </ul>
                 <a
                   className="proj-desc-a__button-link"
-                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  href="https://unruffled-bartik-96bf86.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer" >
                   <Button className="proj-desc-a__demo-button">Try Demo</Button>
                 </a>
                 <a
                   className="proj-desc-a__button-link"
-                  href="https://github.com/valdezDev/devgab"
+                  href="https://github.com/valdezDev/gatsby-blog"
                   target="_blank"
                   rel="noopener noreferrer" >
                   <Button className="proj-desc-a__git-button">
@@ -269,7 +269,7 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
             <CardImg top src={portGif} />
-            <CardTitle className="proj-desc-b__title text-center"># valdezDev.com</CardTitle>
+            <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
             </Card>
           </Col>
           <Col sm="6">
@@ -284,7 +284,7 @@ const IndexPage = () => (
                 </ul>
                 <a
                   className="proj-desc-b__button-link"
-                  href="https://github.com/valdezDev/hacker-news-search-app"
+                  href="https://github.com/valdezDev/gatsby-portfolio"
                   target="_blank"
                   rel="noopener noreferrer" >
                   <Button className="proj-desc-b__git-button">
@@ -301,7 +301,7 @@ const IndexPage = () => (
           <Col sm="6">
             <Card className="proj-video">
               <CardImg top src={chessGif} />
-              <CardTitle className="proj-desc-a__title text-center"># spenserkearns.com </CardTitle>
+              <CardTitle className="proj-desc-a__title text-center text-white"># spenserkearns.com </CardTitle>
             </Card>
           </Col>
           <Col sm="6">
@@ -316,14 +316,14 @@ const IndexPage = () => (
                 </ul>
                 <a
                   className="proj-desc-a__button-link"
-                  href="https://afternoon-waters-74578.herokuapp.com/"
+                  href="https://spenserkearns.com"
                   target="_blank"
                   rel="noopener noreferrer" >
                   <Button className="proj-desc-a__demo-button">Try Demo</Button>
                 </a>
                 <a
                   className="proj-desc-a__button-link"
-                  href="https://github.com/valdezDev/devgab"
+                  href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
                   target="_blank"
                   rel="noopener noreferrer" >
                   <Button className="proj-desc-a__git-button">
@@ -335,7 +335,6 @@ const IndexPage = () => (
             </Card>
           </Col>
         </Row>
-      
     </Container>
 
     <Container className="contact-container">

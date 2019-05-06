@@ -13,7 +13,6 @@ import {
   CardTitle,
   Col,
   Container,
-  NavLink,
   Row
 } from "reactstrap";
 import dgGif from '../images/dgGif.gif';
@@ -47,7 +46,7 @@ const Success = () => (
               <Card className="success-card">
                 <CardTitle className="contact-card__title text-center">Thank You! 📫</CardTitle>
                 <CardSubtitle className="contact-card__success-subtitle text-center">
-                  Your message has successfully been sent to pvaldezdev@gmail.com. I appreciate you taking the time to reach out to me and I will be sure to give you a speedy response.
+                  Your message has successfully been sent.
                 </CardSubtitle>
                 <CardImg className="email-gif col-md-3" src={SuccessEmail} alt="email-gif"/>
               </Card>

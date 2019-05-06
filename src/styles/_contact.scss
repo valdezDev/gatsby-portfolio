@@ -3,15 +3,13 @@
   padding-top: 5rem;
 }
 .contact-card {
-  //background-image: linear-gradient(to bottom, darken($blue, 46%), darken($blue, 45.25%));
-  background: rgba($blue, 0.001);
+  background: transparent;
   border-width: 0;
-  //padding: 2.5rem;
+
   &__title {
-    //padding-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
-    color: darken($blue, 1%);
+    color: darken($rose, 3%);
   }
 
   &__body {
@@ -23,9 +21,10 @@
     display: block;
     margin: 0 auto;
     padding: 6px;
-    background-color: darken($dark-gray, 0.1%);
-    color: $rose;
-    border-color: $rose;
+    //background-color: darken($dark-gray, 0.1%);
+    background: transparent;
+    color: $blue;
+    border-color: $blue;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 50%;
@@ -38,9 +37,9 @@
     display: block;
     margin: 1.25rem auto;
     padding: 4px;
-    background-color: darken($dark-gray, 0.1%);
-    color: $rose;
-    border-color: $rose;
+    background: transparent;
+    color: $blue;
+    border-color: $blue;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 50%;
@@ -53,17 +52,23 @@
     justify-content: center;
     display: block;
     margin: 1rem auto;
-    border-color: $blue !important;
+    border-color: darken($rose, 10%) !important;
+    color: white;
+    &:hover{
+      color: white;
+      background-color: darken($rose, 10%);
+    }
   }
 
   & textarea {
-    background-color: darken($dark-gray, 0.1%);
-    color: $rose;
-    border-color: $rose;
+    //background-color: darken($dark-gray, 0.1%);
+    background: transparent;
+    color: $blue;
+    border-color: $blue;
     justify-content: center;
     display: block;
     margin: 2rem auto;
-    padding: 6px;
+    padding: 12px;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 100%;
