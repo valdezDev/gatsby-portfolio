@@ -1,16 +1,9 @@
 // Bootstrap scss
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import "~video-react/styles/scss/video-react";
-
 @import './variables';
 @import './base';
 @import './social';
-@import './card';
-@import './links';
-@import './sidebar';
-@import './blog';
-@import './single-post';
 @import './about';
 @import './projects';
 @import './contact';
@@ -33,7 +26,7 @@
 }
 
 .dark-overlay {
-  background-color: rgba(12, 2, 3, 0.92);
+  background-color: rgba(12, 2, 3, 0.93);
   position: absolute;
   top: 0;
   left: 0;
@@ -44,12 +37,12 @@
 .index-intro {
   margin-top: 2rem;
   border-width: 0;
-  font-family: 'Merienda', cursive;
+  font-family: $Gugi;
   color: $yellow;
   
   &__subtitle {
-    color: $rose;
-    font-size: 1.25rem;
+    color: lighten($rose, 3%);
+    font-size: 1.5rem;
   }
 
   &__contact-button {
@@ -57,10 +50,10 @@
     margin-right: auto;
     background: transparent;
     border-color: $blue !important;
+    color: $blue !important;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.5rem;
-    color: $blue !important;
     display: inline-block;
     vertical-align: top;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, all 0.3s ease-in-out;
@@ -70,6 +63,7 @@
       background-color: $blue !important;
     }
   }
+
   &__contact-link {
     margin-left: auto;
     margin-right: auto
@@ -84,24 +78,18 @@
     }
   }
 }
-.contact-comp {
-  //margin-top: 10rem;
-  z-index: -1;
-}
-
-.email-gif {
-  //width: 50%;
-  border-radius: 360px;
-  display: block;
-  margin: 2rem auto;
-}
 
 
 // Success Page 
 .success-card {
-  //margin-bottom: 32px;
   background: transparent;
   border-width: 0;
+}
+
+.email-gif {
+  border-radius: 360px;
+  display: block;
+  margin: 2rem auto;
 }
 
 // 404 page

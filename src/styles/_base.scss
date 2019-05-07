@@ -1,14 +1,5 @@
 .container#content {
   margin-top: 60px;
-  //width: 100%;
-}
-
-a {
-  color: #0056b3;
-  &:hover {
-    color: #007bff;
-    text-decoration: none;
-  }
 }
 
 body {
@@ -16,26 +7,18 @@ body {
   background-image: linear-gradient(to bottom, $dark-gray, darken($blue, 45%));
 }
 
-h1 {
-  //margin-bottom: 20px;
-  text-align: center;
-}
-
 .navbar {
-  background: rgba(darken($blue, 39%), 0.92);
-  background: rgba($dark-gray, 0.88);
+  background: rgba(lighten($dark-gray, 0.75%), 0.9);
   line-height: 1;
-  color: $rose;
-  //width: 100%;
-  //width: 100vw;
 }
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-brand {
-  color: $blue;
+  color: lighten($blue, 8%);
   transition: color 0.5s ease-in-out, all 0.2s ease-in-out;
   cursor: pointer;
   margin-right: 1.25rem;
+
   &:hover {
     color: lighten($blue, 30%);
     transform: scale(1.075);
@@ -56,9 +39,4 @@ h1 {
   width: 1.2rem;
   margin-right: 8px;
   margin-bottom: 4px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }

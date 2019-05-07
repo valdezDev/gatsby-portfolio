@@ -6,7 +6,8 @@
 
   .social-links {
     text-align: center;
-
+    list-style: none;
+    padding: 0;
     ul.social-links-list {
       li {
         margin: 12px;
@@ -31,4 +32,9 @@
       }
     }
   }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }

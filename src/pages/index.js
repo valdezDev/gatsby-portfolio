@@ -55,96 +55,93 @@ const IndexPage = () => (
     </div>
 
     
-      <Row className="about-row">
-        <Col sm="6">
-          <Card className="about-me">
-            <CardBody className="about-me__body">
-              <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
-              <CardText className="about-me__text">
-              Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
-              </CardText>
-            </CardBody>
-          </Card>
+    <Row className="about-row">
+      <Col sm="6">
+        <Card className="about-me">
+          <CardBody className="about-me__body">
+            <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
+            <CardText className="about-me__text">
+            Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
+            </CardText>
+          </CardBody>
+        </Card>
       </Col>
     </Row>
     <hr className="about-break col-md-4" />
-    <h3 className="skills-header text-center">Developer Skills</h3>
-      <Container className="about-container">
-        <Row className="dev-row">
-          <Col sm="6">
-            <Card className="frontend">
-              <CardTitle className="frontend__title text-center"># Frontend</CardTitle>
-              <CardText className="frontend__list-wrapper">
-                <ul className="frontend__list">
-                  <li>// React / Redux</li>
-                  <li>// Gatsby</li>
-                  <li>// jQuery, Django</li>
-                  <li>// Sass, Bootstrap</li>
-                  <li>// MongoDB, GraphQL</li>
-                  <li>// ExpressJS</li>
-                  <li>// NodeJS</li>
-                  <li>// REST APIs</li>
-                </ul>
-              </CardText>
-            </Card>
-          </Col>
-          <Col sm="6">
-            <Card className="backend">
-              <CardTitle className="backend__title text-center"># Backend</CardTitle>
-              <CardText className="backend__list-wrapper">
-                <ul className="backend__list">
-                  <li>// RESTful APIs</li>
-                  <li>// MongoDB</li>
-                  <li>// NodeJS</li>
-                  <li>// GraphQL</li>
-                  <li>// ExpressJS</li>
-                </ul>
-              </CardText>
-            </Card>
+    <h3 className="skills-header text-center"># Developer Skills</h3>
+    <Container className="about-container">
+      <Row className="dev-row">
+        <Col sm="4">
+          <Card className="frontend">
+            <CardTitle className="frontend__title text-center"># Frontend</CardTitle>
+            <CardText className="frontend__list-wrapper">
+              <ul className="frontend__list">
+                <li>//  React / Redux</li>
+                <li>//  JSX / ES6 </li>
+                <li>//  Gatsby</li>
+                <li>//  Sass</li>
+                <li>//  Bootstrap / Reactstrap</li>
+                <li>//  jQuery</li>
+              </ul>
+            </CardText>
+          </Card>
+        </Col>
+        <Col sm="4">
+          <Card className="backend">
+            <CardTitle className="backend__title text-center"># Backend</CardTitle>
+            <CardText className="backend__list-wrapper">
+              <ul className="backend__list">
+                <li>// RESTful APIs</li>
+                <li>// MongoDB</li>
+                <li>// NodeJS</li>
+                <li>// GraphQL</li>
+                <li>// ExpressJS</li>
+                <li>// Python / Django</li>
+              </ul>
+            </CardText>
+          </Card>
         </Col>
       </Row>
       <Row className="dev-row">
-          <Col sm="6">
-            <Card className="tools">
-              <CardTitle className="tools__title text-center"># tools & Soft Skills</CardTitle>
-              <CardText className="tools__list-wrapper">
-                <ul className="tools__list">
-                  <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
-                  <li>Visual Studio Code</li>
-                  <li>PostMan</li>
-                  <li>Enzyme, JEST</li>
-                  <li>mLab</li>
-                  <li>Heroku, Digital Ocean, Netlify</li>
-                  <li>KanbanFlow, WakaTime, Strict Time Management</li>
-                  <li>Excellent Team Communication and Customer Service Experience</li>
-                </ul>
-              </CardText>
-            </Card>
+        <Col sm="5">
+          <Card className="tools">
+            <CardTitle className="tools__title text-center"># Toolkit</CardTitle>
+            <CardText className="tools__list-wrapper">
+              <ul className="tools__list">
+                <li>Git / Bash </li>
+                <li>Visual Studio Code</li>
+                <li>PostMan</li>
+                <li>Enzyme, JEST</li>
+                <li>mLab</li>
+                <li>Heroku, Digital Ocean, Netlify</li>
+                <li>NameCheap</li>
+                <li>KanbanFlow, WakaTime</li>
+                
+              </ul>
+            </CardText>
+          </Card>
         </Col>
-        <Col sm="6">
-            <Card className="soft-skills">
-              <CardTitle className="soft-skills__title text-center"># soft-skills & Soft Skills</CardTitle>
-              <CardText className="soft-skills__list-wrapper">
-                <ul className="soft-skills__list">
-                  <li>Git (Bash), <a href="https://github.com/valdezDev" target="_blank" rel="noopener noreferrer">Github</a></li>
-                  <li>Visual Studio Code</li>
-                  <li>PostMan</li>
-                  <li>Enzyme, JEST</li>
-                  <li>mLab</li>
-                  <li>Heroku, Digital Ocean, Netlify</li>
-                  <li>KanbanFlow, WakaTime, Strict Time Management</li>
-                  <li>Excellent Team Communication and Customer Service Experience</li>
-                </ul>
-              </CardText>
-            </Card>
-            </Col>
-          
-        </Row>
+        <Col sm="5">
+          <Card className="soft-skills">
+            <CardTitle className="soft-skills__title text-center"># Soft Skills</CardTitle>
+            <CardText className="soft-skills__list-wrapper">
+              <ul className="soft-skills__list">
+                <li>Strict Time Management using the Pomodoro Technique</li>
+                <li>Excellent Team Communication / Collaboration </li>
+                <li>Customer Service Experience</li>
+                <li>Experienced in Management</li>
+                <li>Lorem ipsum dolor sit amet </li>
+                <li>Lorem ipsum dolor sit amet </li>
+                <li>Lorem ipsum dolor sit amet </li>
+              </ul>
+            </CardText>
+          </Card>
+        </Col>
+      </Row>
     </Container>
 
     <Container className="proj-container">
-      
-        <h1 className="proj-header"># Projects</h1>
+      <h1 className="proj-header text-center"># Projects</h1>
         
           <Row>
             <Col sm="6">
