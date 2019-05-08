@@ -23,7 +23,7 @@
 .proj-desc-a {
   margin: 2rem auto 2rem;
   background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
-  border-radius: 0px;
+  border-radius: 6px;
 
   &__title {
     font-family: $Josefin;
@@ -54,6 +54,7 @@
   }
 
   &__demo-button {
+    font-family: $Josefin;
     background: transparent;
     border-color: $blue;
     border-width: 2px;
@@ -67,6 +68,7 @@
   }
 
   &__git-button {
+    font-family: $Josefin;
     background: transparent;
     border-color: $git-violet;
     border-width: 2px;
@@ -119,6 +121,7 @@
   }
 
   &__demo-button {
+    font-family: $Josefin;
     background: transparent;
     border-color: $blue;
     border-width: 2px;
@@ -132,6 +135,7 @@
   }
 
   &__git-button {
+    font-family: $Josefin;
     background: transparent;
     border-color: $git-violet;
     border-width: 2px;

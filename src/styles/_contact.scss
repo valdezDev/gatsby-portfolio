@@ -1,15 +1,21 @@
 // Contact Form
 .contact-container {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
+
 .contact-card {
   background: transparent;
   border-width: 0;
-
+  
   &__title {
+    font-family: $Josefin;
     font-size: 2rem;
-    font-weight: bold;
     color: darken($rose, 3%);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lighten($blue, 30%);
+    width: 50%;
+    margin: 1em auto 1em;
   }
 
   &__body {
@@ -19,41 +25,47 @@
 
   &__name {
     display: block;
-    margin: 0 auto;
-    padding: 6px;
-    //background-color: darken($dark-gray, 0.1%);
-    background: transparent;
-    color: $blue;
+    margin: 1rem auto 1rem;
+    padding: 8px;
+    background: darken($blue, 48%);
+    color: lighten($blue, 30%);
     border-color: $blue;
+    border-radius: 4px;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 50%;
     &::placeholder {
-      color: darken(white, 12%);  
+      color: darken($blue, 10%);
     }
   }
   
   &__email {
     display: block;
-    margin: 1.25rem auto;
-    padding: 4px;
-    background: transparent;
-    color: $blue;
+    margin: 1rem auto 1rem;
+    padding: 8px;
+    background: darken($blue, 48%);
+    color: lighten($blue, 30%);
     border-color: $blue;
+    border-radius: 4px;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 50%;
+    box-shadow: 8px 12px darken($blue, 60%);
     &::placeholder {
-      color: darken(white, 12%); 
+      color: darken($blue, 10%);
     }
   }
 
   &__send-message {
+    font-family: $Josefin;
     justify-content: center;
     display: block;
     margin: 1rem auto;
+    font-size: 1.25rem;
     border-color: darken($rose, 10%) !important;
+    border-width: 2px;
     color: white;
+    box-shadow: 8px 12px darken($blue, 60%);
     &:hover{
       color: white;
       background-color: darken($rose, 10%);
@@ -61,20 +73,21 @@
   }
 
   & textarea {
-    //background-color: darken($dark-gray, 0.1%);
-    background: transparent;
-    color: $blue;
+    background: darken($blue, 48%);
+    color: lighten($blue, 30%);
     border-color: $blue;
+    border-radius: 4px;
     justify-content: center;
     display: block;
     margin: 2rem auto;
     padding: 12px;
     font-family: $Neucha;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     width: 100%;
+    box-shadow: 8px 12px darken($blue, 60%);
   }
 
   & textarea::placeholder {
-    color: darken(white, 12%);
+    color: darken($blue, 10%);
   }
 }

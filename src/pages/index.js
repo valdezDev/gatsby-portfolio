@@ -337,37 +337,36 @@ const IndexPage = () => (
     <Container className="contact-container">
       <Row>
         <Col sm="11">
-        <Card className="contact-card">
-        <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
-          <CardBody className=" contact-card__body">
-          <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
-            <input type="hidden" name="bot-field" />
-            <div className="contact-card__fields">
-              <div className="contact-card__field half">
-                <input className="contact-card__name" type="text" name="name" id="name" placeholder="Name..." />
-              </div>
-              <div className="contact-card__field half">
-                <input className="contact-card__email " type="email" name="email" id="email" placeholder="Email..." />
-              </div>
-              <div className="contact-card__field">
-                <textarea className="contact-card__message " name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
-              </div>
-              <div className="contact-card__field">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-            </div>
-            <ul className="contact-card__actions">
-              <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
-            </ul>
-          </form>
-        </CardBody>
-      </Card>
+          <Card className="contact-card">
+            <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
+            <CardBody className=" contact-card__body">
+              <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
+                <input type="hidden" name="bot-field" />
+                <div className="contact-card__fields">
+                  <div className="contact-card__field half">
+                    <input className="contact-card__name" type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div className="contact-card__field half">
+                    <input className="contact-card__email " type="email" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div className="contact-card__field">
+                    <textarea className="contact-card__message " name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                  </div>
+                  <div className="contact-card__field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                </div>
+                <ul className="contact-card__actions">
+                  <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+                </ul>
+              </form>
+            </CardBody>
+          </Card>
         </Col>
         <Col sm="1">
           <SocialButtons />
         </Col>
       </Row>
-      
     </Container>
   </Layout>
 );
