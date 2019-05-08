@@ -144,13 +144,13 @@ const IndexPage = () => (
       <h1 className="proj-header text-center"># Projects</h1>
         
           <Row>
-            <Col sm="6">
-              <Card className="proj-video">
+            <Col sm="7">
+              <Card className="proj-gif">
                 <CardImg top src={dgGif} />
                 <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
               </Card>
             </Col>
-            <Col sm="6">
+            <Col sm="5">
               <Card className="proj-desc-a">
                 <CardBody className="proj-desc-a__body">
                   <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
@@ -184,13 +184,13 @@ const IndexPage = () => (
         </Row>
         <hr className="proj-break align-self-center" />
         <Row>
-          <Col sm="6">
-            <Card className="proj-video">
+          <Col sm="7">
+            <Card className="proj-gif">
             <CardImg top src={hnGif} />
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col sm="5">
             <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
@@ -224,13 +224,13 @@ const IndexPage = () => (
         </Row>
         <hr className="proj-break align-self-center" />
         <Row className="row-a">
-          <Col sm="6">
-            <Card className="proj-video">
+          <Col sm="7">
+            <Card className="proj-gif">
               <CardImg top src={blogGif} />
               <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col sm="5">
             <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
@@ -263,13 +263,13 @@ const IndexPage = () => (
         </Row>
         <hr className="proj-break align-self-center" />
         <Row>
-          <Col sm="6">
-            <Card className="proj-video">
+          <Col sm="7">
+            <Card className="proj-gif">
             <CardImg top src={portGif} />
             <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col sm="5">
             <Card className="proj-desc-b">
               <CardBody className="proj-desc-b__body">
                 <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
@@ -295,13 +295,13 @@ const IndexPage = () => (
         </Row>
         <hr className="proj-break align-self-center" />
         <Row>
-          <Col sm="6">
-            <Card className="proj-video">
+          <Col sm="7">
+            <Card className="proj-gif">
               <CardImg top src={chessGif} />
               <CardTitle className="proj-desc-a__title text-center text-white"># spenserkearns.com </CardTitle>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col sm="5">
             <Card className="proj-desc-a">
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>

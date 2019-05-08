@@ -1,27 +1,19 @@
 // Projects Page
-
 .proj-header {
-  margin-bottom: 2.5rem;
+  margin: 2rem auto 2rem;
   color: $rose;
 }
 
-.proj-container {
-  padding-top: 5rem;
-}
-
-.container-card {
-  background: lighten($dark-gray, 1.25%) !important;
-  padding: 1rem;
-}
-
-.proj-video {
+.proj-gif {
+  margin: 2rem auto 2rem;
   border-width: 0px;
   background: transparent;
 }
 
 .proj-break {
+  margin: 2rem auto 2rem;
   border-width: 1px;
-  border-color: lighten($rose, 16%);
+  border-color: lighten($rose, 6%);
   width: 60%;
   display: block;
   margin-left: auto;
@@ -29,12 +21,14 @@
 }
 
 .proj-desc-a {
+  margin: 2rem auto 2rem;
   background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
   border-radius: 0px;
 
   &__title {
+    font-family: $Josefin;
     font-weight: bold;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
     padding: 6px;
   }
@@ -46,7 +40,7 @@
   
   &__list {
     color: lighten($blue, 40%);
-    margin-left: 10px;
+    margin-left: 16px;
     & li {
       list-style-type: square;
     }
@@ -62,7 +56,8 @@
   &__demo-button {
     background: transparent;
     border-color: $blue;
-    margin: 12px;
+    border-width: 2px;
+    margin: 1rem 1rem;
     display: inline-block;
     transition: all .2s ease-in-out;
     &:hover {
@@ -74,7 +69,8 @@
   &__git-button {
     background: transparent;
     border-color: $git-violet;
-    margin: 12px;
+    border-width: 2px;
+    margin: 1rem 1rem;
     display: inline-block;
     transition: all .2s ease-in-out;
     &:hover {
@@ -89,6 +85,7 @@
 }
 
 .proj-desc-b {
+  margin: 2rem auto 2rem;
   background-image: linear-gradient(to bottom, lighten($dark-gray, 5.5%), lighten($dark-gray, 1.75%));
   border-radius: 0px;
   border-width: 0px;
@@ -96,6 +93,7 @@
   &__title {
     background-image: linear-gradient(to bottom, lighten($dark-gray, 5.5%), lighten($dark-gray, 1.75%));
     padding: 6px;
+    font-family: $Josefin;
     font-weight: bold;
     font-size: 2rem;
   }
@@ -107,7 +105,7 @@
   
   &__list {
     color: lighten($rose, 6%);
-    margin-left: 10px;
+    margin-left: 16px;
     & li {
       list-style-type: square;
     }
@@ -123,7 +121,8 @@
   &__demo-button {
     background: transparent;
     border-color: $blue;
-    margin: 12px;
+    border-width: 2px;
+    margin: 1rem 1rem;
     display: inline-block;
     transition: all .2s ease-in-out;
     &:hover {
@@ -135,7 +134,8 @@
   &__git-button {
     background: transparent;
     border-color: $git-violet;
-    margin: 12px;
+    border-width: 2px;
+    margin: 1rem 1rem;
     display: inline-block;
     transition: all .2s ease-in-out;
     &:hover {
