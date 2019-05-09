@@ -142,167 +142,226 @@ const IndexPage = () => (
 
     <Container className="proj-container">
       <h1 className="proj-header text-center"># Projects</h1>
-        
-          <Row>
-            <Col sm="7">
-              <Card className="proj-gif">
-                <CardImg top src={dgGif} />
-                <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
-              </Card>
-            </Col>
-            <Col sm="5">
-              <Card className="proj-desc-a">
-                <CardBody className="proj-desc-a__body">
-                  <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
-                  <ul className="proj-desc-a__list">
-                    <li>Built on a MERN Stack.</li>
-                    <li>A simple social media app that allows user registration, login.</li>
-                    <li>Performs various asynchronous, CRUD functionalities using JavaScript.</li>
-                    <li>State management using Redux.</li>
-                    <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
-                  </ul>
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://afternoon-waters-74578.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    <Button className="proj-desc-a__demo-button">Try Demo</Button>
-                  </a>
-                  <a
-                    className="proj-desc-a__button-link"
-                    href="https://github.com/valdezDev/devgab"
-                    target="_blank"
-                    rel="noopener noreferrer" >
-                    <Button className="proj-desc-a__git-button">
-                      <i className="fas fa-code proj-desc-a__code-icon" />
-                        GitHub
-                    </Button>
-                  </a>
-                </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <hr className="proj-break align-self-center" />
-        <Row>
-          <Col sm="7">
-            <Card className="proj-gif">
-            <CardImg top src={hnGif} />
+      <Row>
+        <Col sm="7">
+          <Card className="proj-gif-card-a">
+            <CardImg className="projGif" top src={dgGif} />
+            <div class="base-overlay-a">
+              <div class="demo-btn">
+                <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+                  Try Demo
+                </a>
+              </div>
+              <div class="source-btn">
+                <a href="https://github.com/valdezDev/devgab" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col sm="5">
+          <Card className="proj-desc-a">
+          <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
+            <CardBody className="proj-desc-a__body">
+              <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
+              <ul className="proj-desc-a__list">
+                <li>Built on a MERN Stack.</li>
+                <li>A simple social media app that allows user registration, login.</li>
+                <li>Performs various asynchronous, CRUD functionalities using JavaScript.</li>
+                <li>State management using Redux.</li>
+                <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
+              </ul>
+              <a
+                className="proj-desc-a__button-link"
+                href="https://afternoon-waters-74578.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-a__demo-button">Try Demo</Button>
+              </a>
+              <a
+                className="proj-desc-a__button-link"
+                href="https://github.com/valdezDev/devgab"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-a__git-button">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                    GitHub
+                </Button>
+              </a>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <hr className="proj-break align-self-center" />
+      <Row>
+        <Col sm="7">
+          <Card className="proj-gif-card-b">
+            <CardImg className="projGif" top src={hnGif} />
+            <div class="base-overlay-b">
+              <div class="demo-btn">
+                <a href="https://inspiring-swanson-53922f.netlify.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+                  Try Demo
+                </a>
+              </div>
+              <div class="source-btn">
+                <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col sm="5">
+          <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
-            </Card>
-          </Col>
-          <Col sm="5">
+            <CardBody className="proj-desc-b__body">
+              <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
+              <ul className="proj-desc-b__list">
+                <li>Built using create-react-app.</li>
+                <li>Integrated with the Hacker News, Algolia Search API.</li>
+                <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
+              </ul>
+              <a
+                className="proj-desc-b__button-link"
+                href="https://inspiring-swanson-53922f.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-b__demo-button">
+                  Try Demo
+                </Button>
+              </a>
+              <a
+                className="proj-desc-b__button-link"
+                href="https://github.com/valdezDev/hacker-news-search-app"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-b__git-button">
+                  <i class="fas fa-code proj-desc-b__code-icon" />
+                  Github
+                </Button>
+              </a>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <hr className="proj-break align-self-center" />
+      <Row className="row-a">
+        <Col sm="7">
+          <Card className="proj-gif-card-a">
+            <CardImg className="projGif" top src={blogGif} />
+            <div class="base-overlay-a">
+              <div class="demo-btn">
+                <a href="https://unruffled-bartik-96bf86.netlify.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+                  Try Demo
+                </a>
+              </div>
+              <div class="source-btn">
+                <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col sm="5">
+          <Card className="proj-desc-a">
+            <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
+            <CardBody className="proj-desc-a__body">
+              <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
+              <ul className="proj-desc-a__list">
+                <li>Built using GatsbyJS</li>
+                <li>Each post is accessing markdown queries written in GraphQL</li>
+                <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
+                <li>Deployed to Netlify</li>
+              </ul>
+              <a
+                className="proj-desc-a__button-link"
+                href="https://unruffled-bartik-96bf86.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-a__demo-button">Try Demo</Button>
+              </a>
+              <a
+                className="proj-desc-a__button-link"
+                href="https://github.com/valdezDev/gatsby-blog"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-a__git-button">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                    GitHub
+                </Button>
+              </a>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <hr className="proj-break align-self-center" />
+      <Row>
+        <Col sm="7">
+          <Card className="proj-gif-card-b">
+            <CardImg className="projGif" top src={portGif} />
+            <div class="base-overlay-b">
+              <div class="source-btn">
+                <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col sm="5">
             <Card className="proj-desc-b">
-              <CardBody className="proj-desc-b__body">
-                <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
-                <ul className="proj-desc-b__list">
-                  <li>Built using create-react-app.</li>
-                  <li>Integrated with the Hacker News, Algolia Search API.</li>
-                  <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
-                </ul>
-                <a
-                  className="proj-desc-b__button-link"
-                  href="https://inspiring-swanson-53922f.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-b__demo-button">
-                    Try Demo
-                  </Button>
-                </a>
-                <a
-                  className="proj-desc-b__button-link"
-                  href="https://github.com/valdezDev/hacker-news-search-app"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-b__git-button">
-                    <i class="fas fa-code proj-desc-b__code-icon" />
-                    Github
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <hr className="proj-break align-self-center" />
-        <Row className="row-a">
-          <Col sm="7">
-            <Card className="proj-gif">
-              <CardImg top src={blogGif} />
-              <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
-            </Card>
-          </Col>
-          <Col sm="5">
-            <Card className="proj-desc-a">
-              <CardBody className="proj-desc-a__body">
-                <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
-                <ul className="proj-desc-a__list">
-                  <li>Built using GatsbyJS</li>
-                  <li>Each post is accessing markdown queries written in GraphQL</li>
-                  <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
-                  <li>Deployed to Netlify</li>
-                </ul>
-                <a
-                  className="proj-desc-a__button-link"
-                  href="https://unruffled-bartik-96bf86.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
-                </a>
-                <a
-                  className="proj-desc-a__button-link"
-                  href="https://github.com/valdezDev/gatsby-blog"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-a__git-button">
-                    <i className="fas fa-code proj-desc-a__code-icon" />
-                      GitHub
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <hr className="proj-break align-self-center" />
-        <Row>
-          <Col sm="7">
-            <Card className="proj-gif">
-            <CardImg top src={portGif} />
             <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
-            </Card>
-          </Col>
-          <Col sm="5">
-            <Card className="proj-desc-b">
-              <CardBody className="proj-desc-b__body">
-                <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
-                <ul className="proj-desc-b__list">
-                  <li>Built using GatsbyJS</li>
-                  <li>Incorporates the same blog functionality using GraphQL to fetch queries from the Developer Blog Project.</li>
-                  <li>Designed the styles using SASS and JSX.</li>
-                  <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
-                </ul>
-                <a
-                  className="proj-desc-b__button-link"
-                  href="https://github.com/valdezDev/gatsby-portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-b__git-button">
-                    <i class="fas fa-code proj-desc-b__code-icon" />
-                    Github
-                  </Button>
+            <CardBody className="proj-desc-b__body">
+              <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
+              <ul className="proj-desc-b__list">
+                <li>Built using GatsbyJS</li>
+                <li>Incorporates the same blog functionality using GraphQL to fetch queries from the Developer Blog Project.</li>
+                <li>Designed the styles using SASS and JSX.</li>
+                <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
+              </ul>
+              <a
+                className="proj-desc-b__button-link"
+                href="https://github.com/valdezDev/gatsby-portfolio"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-b__git-button">
+                  <i class="fas fa-code proj-desc-b__code-icon" />
+                  Github
+                </Button>
+              </a>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <hr className="proj-break align-self-center" />
+      <Row>
+        <Col sm="7">
+          <Card className="proj-gif-card-a">
+            <CardImg className="projGif" top src={chessGif} />
+            <div class="base-overlay-a">
+              <div class="demo-btn">
+                <a href="https://spenserkearns.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+                  Try Demo
                 </a>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <hr className="proj-break align-self-center" />
-        <Row>
-          <Col sm="7">
-            <Card className="proj-gif">
-              <CardImg top src={chessGif} />
-              <CardTitle className="proj-desc-a__title text-center text-white"># spenserkearns.com </CardTitle>
-            </Card>
-          </Col>
-          <Col sm="5">
-            <Card className="proj-desc-a">
+              </div>
+              <div class="source-btn">
+                <a href="https://github.com/valdezDev/gatsby-spenser-teaches-chess" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-desc-a__code-icon" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col sm="5">
+          <Card className="proj-desc-a">
+            <CardTitle className="proj-desc-a__title text-center text-white"># spenserkearns.com </CardTitle>
               <CardBody className="proj-desc-a__body">
                 <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>
                 <ul className="proj-desc-a__list">
