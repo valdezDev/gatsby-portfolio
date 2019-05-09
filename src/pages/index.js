@@ -315,7 +315,7 @@ const IndexPage = () => (
           </Card>
         </Col>
         <Col sm="5">
-            <Card className="proj-desc-b">
+          <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
             <CardBody className="proj-desc-b__body">
               <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>

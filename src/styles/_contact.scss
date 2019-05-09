@@ -66,6 +66,7 @@
     border-width: 2px;
     color: white;
     box-shadow: 8px 12px darken($blue, 60%);
+    transition: all ease 0.3s;
     &:hover{
       color: white;
       background-color: darken($rose, 10%);

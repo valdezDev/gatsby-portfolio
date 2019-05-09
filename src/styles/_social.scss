@@ -14,19 +14,15 @@
         display: inline-block;
 
         a {
-          color: darken($yellow, 6%);
+          color: darken(white, 6%);
           transition: color 0.5s ease;
           &.github:hover {
             color: $git-violet;
+            transform: scale(1.0125);
           }
           &.linkedin:hover {
             color: rgb(0, 119, 181);
-          }
-          &.twitter:hover {
-            color: rgb(56, 161, 243);
-          }
-          &.reddit:hover {
-            color: #ff4500;
+            transform: scale(1.0125);
           }
         }
       }
