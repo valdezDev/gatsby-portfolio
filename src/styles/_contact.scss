@@ -65,7 +65,7 @@
     border-color: darken($rose, 10%) !important;
     border-width: 2px;
     color: white;
-    box-shadow: 8px 12px darken($blue, 60%);
+    
     transition: all ease 0.3s;
     &:hover{
       color: white;
@@ -85,7 +85,6 @@
     font-family: $Neucha;
     font-size: 1.75rem;
     width: 100%;
-    box-shadow: 8px 12px darken($blue, 60%);
   }
 
   & textarea::placeholder {

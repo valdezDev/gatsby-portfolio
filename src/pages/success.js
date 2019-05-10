@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import SuccessEmail from '../images/success.gif';
 import Layout from "../components/layout";
 import SocialButtons from "../components/SocialButtons";
 import {

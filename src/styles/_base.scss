@@ -4,7 +4,8 @@
 
 body {
   font-family: $Lato;
-  background-image: linear-gradient(to bottom, $dark-gray, darken($blue, 45%));
+  //background-image: linear-gradient(to bottom, $dark-gray, darken($blue, 45%));
+  background: $dark-gray;
 }
 
 .navbar {
