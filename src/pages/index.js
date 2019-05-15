@@ -44,7 +44,7 @@ const IndexPage = () => (
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={1250}
+                duration={1100}
               >
                 Get in Touch!
               </Link>
@@ -62,6 +62,9 @@ const IndexPage = () => (
             <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
             <CardText className="about-me__text">
             Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
+            </CardText>
+            <CardText className="about-me__text text-center">
+            View my <a href="#">Resume</a>
             </CardText>
           </CardBody>
         </Card>
@@ -165,13 +168,14 @@ const IndexPage = () => (
           <Card className="proj-desc-a">
           <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
             <CardBody className="proj-desc-a__body">
-              <CardSubtitle className="proj-desc-a__subtitle text-center">Where developers can come together to discuss career information.</CardSubtitle> <br/>
+              <CardSubtitle className="proj-desc-a__subtitle text-center">A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
-                <li>Built on a MERN Stack.</li>
-                <li>A simple social media app that allows user registration, login.</li>
-                <li>Performs various asynchronous, CRUD functionalities using JavaScript.</li>
-                <li>State management using Redux.</li>
-                <li>Database is hosted on mLab and the app is deployed to Heroku.</li>
+                <li>Developed this larger scale CRUD application on top of a MERN stack.</li>
+                <li>This fullstack app is interfaced with a RESTful API backend written in Node and Express.</li>
+                <li>Constructed and hosted a Mongoose Database that takes developer profiles and posts obtained from the REST API.</li>
+                <li>Utilized JSON Web Tokens to register, log in/out, and time users out of a session.</li>
+                <li>Integrated state management functionaliy using React / Redux.</li>
+                <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
                 className="proj-desc-a__button-link"
@@ -218,11 +222,12 @@ const IndexPage = () => (
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             <CardBody className="proj-desc-b__body">
-              <CardSubtitle className="proj-desc-b__subtitle text-center">Search for articles and posts on Hacker News.</CardSubtitle> <br/>
+              <CardSubtitle className="proj-desc-b__subtitle text-center">A React application that is optimized to let a user search and sort through articles posted on Hacker News.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
-                <li>Built using create-react-app.</li>
-                <li>Integrated with the Hacker News, Algolia Search API.</li>
-                <li>Has state management functionality, ideally will filter search results using Redux in the future.</li>
+                <li>Integrated Axios to fetch JSON from the Hacker News, Algolioa Search API.</li>
+                <li>Lifted substates throughout the application to its various child components to keep the app lightweight.</li>
+                <li>Conducted snapshot and unit tests by running both Jest and Enzyme.</li>
+                <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
                 className="proj-desc-b__button-link"
@@ -271,12 +276,13 @@ const IndexPage = () => (
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
             <CardBody className="proj-desc-a__body">
-              <CardSubtitle className="proj-desc-a__subtitle text-center">A blog application that developers can use to provide and share their ideas to the world.</CardSubtitle> <br/>
+              <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
-                <li>Built using GatsbyJS</li>
-                <li>Each post is accessing markdown queries written in GraphQL</li>
-                <li>Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
-                <li>Deployed to Netlify</li>
+                <li>Built using GatsbyJS.</li>
+                <li>Optimized to display and paginate markdown that grabbed from the GraphQL queries in the backend.</li>
+                <li> . . . . . .Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
+                <li>Constructed a Disqus component that allows users to comment on and/or share a blog post.</li>
+                <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
                 className="proj-desc-a__button-link"
@@ -305,6 +311,11 @@ const IndexPage = () => (
           <Card className="proj-gif-card-b">
             <CardImg className="projGif" top src={portGif} />
             <div class="base-overlay-b">
+            <div class="demo-btn">
+                <a href="https://spenserkearns.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+                  Try Other Example
+                </a>
+              </div>
               <div class="source-btn">
                 <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-desc-a__code-icon" />
@@ -318,13 +329,21 @@ const IndexPage = () => (
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
             <CardBody className="proj-desc-b__body">
-              <CardSubtitle className="proj-desc-b__subtitle text-center">You're already here! Take your time to look around and reach out.</CardSubtitle> <br/>
+              <CardSubtitle className="proj-desc-b__subtitle text-center">A static portfolio template one can use to broadcast their work.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
-                <li>Built using GatsbyJS</li>
-                <li>Incorporates the same blog functionality using GraphQL to fetch queries from the Developer Blog Project.</li>
-                <li>Designed the styles using SASS and JSX.</li>
-                <li>This website has been deployed to Netlify where the contact form submissions are routed to my personal email account, the domain is customized, and automatic TLS certificates are enabled to allow for security and higher Search Engine results.</li>
+                <li>Built these static websites using GatsbyJS.</li>
+                <li>Incorporated smooth scroll animations using React Scroll.</li>
+                <li>Applied form validation that's being carried out with Netlify.</li>
+                <li>Deployed and secured these domains with TLS certificates using Netlify.</li>
+                <li>Designed the layouts and components using Sass and Bootstrap.</li>
               </ul>
+              <a
+                className="proj-desc-a__button-link"
+                href="https://spenserkearns.com"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-a__demo-button">Try Other Example</Button>
+              </a>
               <a
                 className="proj-desc-b__button-link"
                 href="https://github.com/valdezDev/gatsby-portfolio"
@@ -339,58 +358,6 @@ const IndexPage = () => (
           </Card>
         </Col>
       </Row>
-      <hr className="proj-break align-self-center" />
-      <Row>
-        <Col sm="7">
-          <Card className="proj-gif-card-a">
-            <CardImg className="projGif" top src={chessGif} />
-            <div class="base-overlay-a">
-              <div class="demo-btn">
-                <a href="https://spenserkearns.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
-                  Try Demo
-                </a>
-              </div>
-              <div class="source-btn">
-                <a href="https://github.com/valdezDev/gatsby-spenser-teaches-chess" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </Card>
-        </Col>
-        <Col sm="5">
-          <Card className="proj-desc-a">
-            <CardTitle className="proj-desc-a__title text-center text-white"># spenserkearns.com </CardTitle>
-              <CardBody className="proj-desc-a__body">
-                <CardSubtitle className="proj-desc-a__subtitle text-center">A very simple portfolio I made for a RVA based private chess tutor</CardSubtitle> <br/>
-                <ul className="proj-desc-a__list">
-                  <li>Built using GatsbyJS</li>
-                  <li>Uses the React Scroll package to add smooth scroll animations to the proper locations when using the navbar.</li>
-                  <li>Designed using bootstrap, SASS, and JSX.</li>
-                  <li>This portfolio and its domain have been deployed and secured using Netlify. It's also wired up to access the form submssion functionality that Netlify offers its users.</li>
-                </ul>
-                <a
-                  className="proj-desc-a__button-link"
-                  href="https://spenserkearns.com"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-a__demo-button">Try Demo</Button>
-                </a>
-                <a
-                  className="proj-desc-a__button-link"
-                  href="https://github.com/valdezDev/gatsby-spenser-teaches-chess"
-                  target="_blank"
-                  rel="noopener noreferrer" >
-                  <Button className="proj-desc-a__git-button">
-                    <i className="fas fa-code proj-desc-a__code-icon" />
-                      GitHub
-                  </Button>
-                </a>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
     </Container>
 
     <Container className="contact-container">
