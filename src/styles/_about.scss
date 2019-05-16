@@ -1,5 +1,5 @@
 // About Page
-.about-row, .dev-row {
+.about-row {
   justify-content: center !important;
 }
 
@@ -31,6 +31,7 @@
   }
 }
 
+// Skills
 .frontend {
   background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 43%));
   margin-top: 2rem;
@@ -77,7 +78,7 @@
   }
 }
 
-.tools, .soft-skills {
+.tools, .soft-skills, .frameworks {
   background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 43%));
   margin: auto;
   margin-top: 2rem;

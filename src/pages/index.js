@@ -35,7 +35,7 @@ const IndexPage = () => (
           <Row>
             <Col sm="12" className="text-center">
               <h1 className="display-3 mb-4 index-intro">Paul Valdez</h1>
-              <p className="lead index-intro__subtitle">Full Stack Developer</p>
+              <p className="lead index-intro__subtitle"> Developer</p>
               <SocialButtons />
               <Link
                 className="index-intro__contact-button btn btn-outline"
@@ -73,18 +73,17 @@ const IndexPage = () => (
     <hr className="about-break col-md-4" />
     <h3 className="skills-header text-center"># Developer Skills</h3>
     <Container className="about-container">
-      <Row className="dev-row">
+      <Row className="about-row">
         <Col sm="4">
           <Card className="frontend">
             <CardTitle className="frontend__title text-center"># Frontend</CardTitle>
             <CardText className="frontend__list-wrapper">
               <ul className="frontend__list">
-                <li>//  React / Redux</li>
-                <li>//  JSX / ES6 </li>
-                <li>//  Gatsby</li>
-                <li>//  Sass</li>
-                <li>//  Bootstrap / Reactstrap</li>
-                <li>//  jQuery</li>
+                <li>//  JavaScript ES6 / jQuery</li>
+                <li>//  CSS / Sass </li>
+                <li>//  HTML / JSX</li>
+                <li>//  Webpack</li>
+                <li>//  Babel</li>
               </ul>
             </CardText>
           </Card>
@@ -94,48 +93,48 @@ const IndexPage = () => (
             <CardTitle className="backend__title text-center"># Backend</CardTitle>
             <CardText className="backend__list-wrapper">
               <ul className="backend__list">
-                <li>// RESTful APIs</li>
+                <li>// REST APIs</li>
                 <li>// MongoDB</li>
                 <li>// NodeJS</li>
-                <li>// GraphQL</li>
                 <li>// ExpressJS</li>
-                <li>// Python / Django</li>
+                <li>// GraphQL</li>
+                <li>// Python</li>
               </ul>
             </CardText>
           </Card>
         </Col>
       </Row>
-      <Row className="dev-row">
+      <Row className="about-row">
         <Col sm="5">
-          <Card className="tools">
-            <CardTitle className="tools__title text-center"># Toolkit</CardTitle>
-            <CardText className="tools__list-wrapper">
-              <ul className="tools__list">
-                <li>Git / Bash </li>
-                <li>Visual Studio Code</li>
-                <li>PostMan</li>
-                <li>Enzyme, JEST</li>
-                <li>mLab</li>
-                <li>Heroku, Digital Ocean, Netlify</li>
-                <li>NameCheap</li>
-                <li>KanbanFlow, WakaTime</li>
-                
+          <Card className="frameworks">
+            <CardTitle className="frameworks__title text-center"># Frameworks & Libraries</CardTitle>
+            <CardText className="frameworks__list-wrapper">
+              <ul className="frameworks__list">
+                <li>React / Gatsby </li>
+                <li>Redux / Thunk</li>
+                <li>Bootstrap / Reactstrap</li>
+                <li>Mongoose</li>
+                <li>Axios</li>
+                <li>Lodash</li>
+                <li>Jest / Enzyme</li>
+                <li>Django</li> 
               </ul>
             </CardText>
           </Card>
         </Col>
         <Col sm="5">
-          <Card className="soft-skills">
-            <CardTitle className="soft-skills__title text-center"># Soft Skills</CardTitle>
-            <CardText className="soft-skills__list-wrapper">
-              <ul className="soft-skills__list">
-                <li>Strict Time Management using the Pomodoro Technique</li>
-                <li>Excellent Team Communication / Collaboration </li>
-                <li>Customer Service Experience</li>
-                <li>Experienced in Management</li>
-                <li>Lorem ipsum dolor sit amet </li>
-                <li>Lorem ipsum dolor sit amet </li>
-                <li>Lorem ipsum dolor sit amet </li>
+          <Card className="tools">
+            <CardTitle className="tools__title text-center"># Dev Toolkit</CardTitle>
+            <CardText className="tools__list-wrapper">
+              <ul className="tools__list">
+                <li>Git / Bash / Git Flow</li>
+                <li>Visual Studio Code</li>
+                <li>mLab</li>
+                <li>Postman</li>
+                <li>Heroku / Netlify / Digital Ocean</li>
+                <li>KanbanFlow</li>
+                <li>WakaTime</li>
+                <li>PuTTY</li>
               </ul>
             </CardText>
           </Card>
@@ -225,8 +224,9 @@ const IndexPage = () => (
               <CardSubtitle className="proj-desc-b__subtitle text-center">A React application that is optimized to let a user search and sort through articles posted on Hacker News.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
                 <li>Integrated Axios to fetch JSON from the Hacker News, Algolioa Search API.</li>
-                <li>Lifted substates throughout the application to its various child components to keep the app lightweight.</li>
-                <li>Conducted snapshot and unit tests by running both Jest and Enzyme.</li>
+                <li>Lifted state throughout the application to its various child components to keep the app lightweight.</li>
+                <li>Utilized Lodash to help the user sort results based on the title, author, number of comments and points.</li>
+                <li>Practiced snapshot and unit tests by running both Jest and Enzyme.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -278,10 +278,10 @@ const IndexPage = () => (
             <CardBody className="proj-desc-a__body">
               <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
-                <li>Built using GatsbyJS.</li>
+                <li>Built using GatsbyJS and wired up an API using GraphQL.</li>
                 <li>Optimized to display and paginate markdown that grabbed from the GraphQL queries in the backend.</li>
-                <li> . . . . . .Every post uses Node functionality to pass and asign a unique slug based on the blog title.</li>
-                <li>Constructed a Disqus component that allows users to comment on and/or share a blog post.</li>
+                <li>Assigned a unique slug based on an individual blog title using Node functionality.</li>
+                <li>Constructed a Disqus component that allows users to comment on and/or share a blog post to various social media platforms.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a

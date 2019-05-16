@@ -53,7 +53,7 @@ class Header extends React.Component{
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={1250}
+                    duration={1100}
                   >
                     About
                   </Link>
@@ -67,7 +67,7 @@ class Header extends React.Component{
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={1250}
+                    duration={1100}
                   >
                     Projects
                   </Link>
@@ -81,7 +81,7 @@ class Header extends React.Component{
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={1250}
+                    duration={1100}
                   >
                     Contact
                   </Link>
