@@ -140,10 +140,18 @@
 .proj-desc-a {
   margin: 2rem auto 2rem;
   background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 37%));
-  border-radius: 6px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 42.75%);
+  border-left-color: darken($blue, 42.75%);
+  border-right-color: darken($blue, 43%);
+  border-bottom-color: darken($blue, 45%);
 
   &__title {
     font-family: $Josefin;
+    border-radius: 0 !important;
     font-weight: bold;
     font-size: 1.75rem;
     background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 41.5%));
@@ -213,9 +221,16 @@
 
 .proj-desc-b {
   margin: 2rem auto 2rem;
-  background-image: linear-gradient(to bottom, lighten($dark-gray, 0.5%), lighten($dark-gray, 1.1%));
+  background-image: linear-gradient(to bottom, lighten($dark-gray, 0.75%), lighten($dark-gray, 1.2%));
   border-radius: 0px;
-  border-width: 0px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: lighten($dark-gray, 0.6%);
+  border-left-color: lighten($dark-gray, 0.6%);
+  border-right-color: lighten($dark-gray, 0.8%);
+  border-bottom-color: lighten($dark-gray, 0.75%);
 
   &__title {
     background-image: linear-gradient(to bottom, lighten($dark-gray, 0.01%), lighten($dark-gray, 0.05%));

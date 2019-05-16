@@ -157,7 +157,7 @@ const IndexPage = () => (
               <div class="source-btn">
                 <a href="https://github.com/valdezDev/devgab" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                  GitHub
+                  Source
                 </a>
               </div>
             </div>
@@ -165,15 +165,15 @@ const IndexPage = () => (
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
-          <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
+            <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
             <CardBody className="proj-desc-a__body">
               <CardSubtitle className="proj-desc-a__subtitle text-center">A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
-                <li>Developed this larger scale CRUD application on top of a MERN stack.</li>
-                <li>This fullstack app is interfaced with a RESTful API backend written in Node and Express.</li>
-                <li>Constructed and hosted a Mongoose Database that takes developer profiles and posts obtained from the REST API.</li>
-                <li>Utilized JSON Web Tokens to register, log in/out, and time users out of a session.</li>
-                <li>Integrated state management functionaliy using React / Redux.</li>
+                <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
+                <li>Interfaced with a RESTful API-based backend written in NodeJS, ExpressJS. </li>
+                <li>Hosted a Mongoose Database on mLab that grabs profiles, posts, and comments obtained from the REST API.</li>
+                <li>Utilized JSON Web Tokens to register, authenticate, and time users out of a session.</li>
+                <li>Conducted state management using React / Redux and Redux Thunk.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -190,7 +190,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-a__git-button">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                    GitHub
+                    Source
                 </Button>
               </a>
             </CardBody>
@@ -211,7 +211,7 @@ const IndexPage = () => (
               <div class="source-btn">
                 <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                  GitHub
+                  Source
                 </a>
               </div>
             </div>
@@ -223,9 +223,9 @@ const IndexPage = () => (
             <CardBody className="proj-desc-b__body">
               <CardSubtitle className="proj-desc-b__subtitle text-center">A React application that is optimized to let a user search and sort through articles posted on Hacker News.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
-                <li>Integrated Axios to fetch JSON from the Hacker News, Algolioa Search API.</li>
-                <li>Lifted state throughout the application to its various child components to keep the app lightweight.</li>
-                <li>Utilized Lodash to help the user sort results based on the title, author, number of comments and points.</li>
+                <li>Incorporated Axios within this React application to fetch and render JSON from the Hacker News, Algolia Search API.</li>
+                <li>Lifted state throughout the application into its various child components to keep them lightweight.</li>
+                <li>Utilized Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
                 <li>Practiced snapshot and unit tests by running both Jest and Enzyme.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
@@ -245,7 +245,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-b__git-button">
                   <i class="fas fa-code proj-desc-b__code-icon" />
-                  Github
+                  Source
                 </Button>
               </a>
             </CardBody>
@@ -266,7 +266,7 @@ const IndexPage = () => (
               <div class="source-btn">
                 <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                  GitHub
+                  Source
                 </a>
               </div>
             </div>
@@ -274,14 +274,14 @@ const IndexPage = () => (
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
-            <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog</CardTitle>
+            <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog Template</CardTitle>
             <CardBody className="proj-desc-a__body">
               <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
-                <li>Built using GatsbyJS and wired up an API using GraphQL.</li>
-                <li>Optimized to display and paginate markdown that grabbed from the GraphQL queries in the backend.</li>
-                <li>Assigned a unique slug based on an individual blog title using Node functionality.</li>
-                <li>Constructed a Disqus component that allows users to comment on and/or share a blog post to various social media platforms.</li>
+                <li>Constructed using GatsbyJS and set up an API using GraphQL.</li>
+                <li>Optimized to display and paginate through markdown files that are taken from the API.</li>
+                <li>Assigned a unique slug based on an individual blog title using Node.</li>
+                <li>Assembled a Disqus component that allows users to comment on and/or share blog posts to their social media.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -298,7 +298,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-a__git-button">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                    GitHub
+                    Source
                 </Button>
               </a>
             </CardBody>
@@ -319,7 +319,7 @@ const IndexPage = () => (
               <div class="source-btn">
                 <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-desc-a__code-icon" />
-                  GitHub
+                  Source
                 </a>
               </div>
             </div>
@@ -327,13 +327,13 @@ const IndexPage = () => (
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
-            <CardTitle className="proj-desc-b__title text-center text-white"># valdezDev.com</CardTitle>
+            <CardTitle className="proj-desc-b__title text-center text-white"># Portfolio Templates</CardTitle>
             <CardBody className="proj-desc-b__body">
               <CardSubtitle className="proj-desc-b__subtitle text-center">A static portfolio template one can use to broadcast their work.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
-                <li>Incorporated smooth scroll animations using React Scroll.</li>
-                <li>Applied form validation that's being carried out with Netlify.</li>
+                <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
+                <li>Applied form validation that gets carried out with Netlify.</li>
                 <li>Deployed and secured these domains with TLS certificates using Netlify.</li>
                 <li>Designed the layouts and components using Sass and Bootstrap.</li>
               </ul>

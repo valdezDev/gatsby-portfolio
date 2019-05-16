@@ -27,7 +27,7 @@
     display: block;
     margin: 1rem auto 1rem;
     padding: 8px;
-    background: darken($blue, 48%);
+    background: darken($dark-gray, 0.6%);
     color: lighten($blue, 30%);
     border-color: $blue;
     border-radius: 4px;
@@ -43,14 +43,13 @@
     display: block;
     margin: 1rem auto 1rem;
     padding: 8px;
-    background: darken($blue, 48%);
+    background: darken($dark-gray, 0.6%);
     color: lighten($blue, 30%);
     border-color: $blue;
     border-radius: 4px;
     font-family: $Neucha;
     font-size: 1.5rem;
     width: 50%;
-    box-shadow: 8px 12px darken($blue, 60%);
     &::placeholder {
       color: darken($blue, 10%);
     }
@@ -74,7 +73,7 @@
   }
 
   & textarea {
-    background: darken($blue, 48%);
+    background: darken($dark-gray, 0.6%);
     color: lighten($blue, 30%);
     border-color: $blue;
     border-radius: 4px;
