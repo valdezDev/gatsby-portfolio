@@ -87,6 +87,11 @@ class Header extends React.Component{
                   </Link>
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/resume" target="_blank" rel="noopener noreferrer">
+                  Resume
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
           </Container>

@@ -63,9 +63,6 @@ const IndexPage = () => (
             <CardText className="about-me__text">
             Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
             </CardText>
-            <CardText className="about-me__text text-center">
-            View my <a href="#">Resume</a>
-            </CardText>
           </CardBody>
         </Card>
       </Col>
@@ -170,10 +167,10 @@ const IndexPage = () => (
               <CardSubtitle className="proj-desc-a__subtitle text-center">A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
                 <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
+                <li>Executed React & Redux front-end in ES6 with Node.</li>
                 <li>Interfaced with a RESTful API-based backend written in NodeJS, ExpressJS. </li>
                 <li>Hosted a Mongoose Database on mLab that grabs profiles, posts, and comments obtained from the REST API.</li>
                 <li>Utilized JSON Web Tokens to register, authenticate, and time users out of a session.</li>
-                <li>Conducted state management using React / Redux and Redux Thunk.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a

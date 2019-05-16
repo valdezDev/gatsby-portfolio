@@ -33,11 +33,19 @@
 
 // Skills
 .frontend {
-  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 43%));
+  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: block;
-  border-radius: 24px;
+  border-radius: 16px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 42%);
+  border-left-color: darken($blue, 42%);
+  border-right-color: darken($blue, 43%);
+  border-bottom-color: darken($blue, 44%);
 
   &__title {
     background: darken($blue, 42%);
@@ -56,11 +64,19 @@
 }
 
 .backend {
-  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 43%));
+  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: block;
-  border-radius: 24px;
+  border-radius: 16px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 42%);
+  border-left-color: darken($blue, 42%);
+  border-right-color: darken($blue, 43%);
+  border-bottom-color: darken($blue, 44%);
 
   &__title {
     background: darken($blue, 42%);
@@ -78,11 +94,21 @@
   }
 }
 
-.tools, .soft-skills, .frameworks {
-  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 43%));
+.tools, .frameworks {
+  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  border-radius: 16px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 42%);
+  border-left-color: darken($blue, 42%);
+  border-right-color: darken($blue, 43%);
+  border-bottom-color: darken($blue, 44%);
 
   &__title {
     background: darken($blue, 42%);
