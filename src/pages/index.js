@@ -152,7 +152,7 @@ const IndexPage = () => (
               </div>
               <div className="proj-gif-card-a__source-btn">
                 <a href="https://github.com/valdezDev/devgab" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-a____code-icon" />
+                  <i className="fas fa-code proj-gif-card-a__code-icon" />
                   Source
                 </a>
               </div>
@@ -208,7 +208,7 @@ const IndexPage = () => (
               </div>
               <div className="proj-gif-card-b__source-btn">
                 <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-b____code-icon" />
+                  <i className="fas fa-code proj-gif-card-b__code-icon" />
                   Source
                 </a>
               </div>
@@ -265,7 +265,7 @@ const IndexPage = () => (
               </div>
               <div className="proj-gif-card-a__source-btn">
                 <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-a____code-icon" />
+                  <i className="fas fa-code proj-gif-card-a__code-icon" />
                   Source
                 </a>
               </div>
@@ -318,7 +318,7 @@ const IndexPage = () => (
               </div>
               <div className="proj-gif-card-b__source-btn">
                 <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-b____code-icon" />
+                  <i className="fas fa-code proj-gif-card-b__code-icon" />
                   Source
                 </a>
               </div>
@@ -351,7 +351,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-b__git-button">
                   <i class="fas fa-code proj-desc-b__code-icon" />
-                  Github
+                  Source
                 </Button>
               </a>
             </CardBody>
