@@ -223,9 +223,10 @@ const Success = () => (
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
-                <li>Incorporated Axios within this React application to fetch and render JSON from the Hacker News, Algolia Search API.</li>
-                <li>Lifted state throughout the application into its various child components to keep them lightweight.</li>
-                <li>Utilized Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
+              <li>Incorporated Axios within this React application to fetch and render JSON from the Hacker News, Algolia Search API.</li>
+                <li>Lifted state throughout the application into its various child components to keep them sleek and lightweight.</li>
+                <li>Applied Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
+                <li>Employed the API to cache paginated data to allow the client to make only one API request when searching.</li>
                 <li>Practiced snapshot and unit tests by running both Jest and Enzyme.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
@@ -278,10 +279,10 @@ const Success = () => (
             <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog Template</CardTitle>
             <CardBody className="proj-desc-a__body">
               <ul className="proj-desc-a__list">
-                <li>Constructed using GatsbyJS and set up an API using GraphQL.</li>
+                <li>Constructed this application using GatsbyJS and set up an API using GraphQL.</li>
                 <li>Optimized to display and paginate through markdown files that are taken from the API.</li>
-                <li>Assigned a unique slug based on an individual blog title using Node.</li>
-                <li>Assembled a Disqus component that allows users to comment on and/or share blog posts to their social media.</li>
+                <li>Assigned routes with a unique slug based on an individual markdown file’s title or its unique tags using Node.</li>
+                <li>Included a Disqus plugin that allows users to comment on and/or share blog posts to their social media.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -334,7 +335,7 @@ const Success = () => (
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
                 <li>Applied form validation that gets carried out with Netlify.</li>
-                <li>Deployed and secured these domains with TLS certificates using Netlify.</li>
+                <li>Deployed and secured the domains with TLS certificates using Netlify.</li>
                 <li>Designed the layouts and components using Sass and Bootstrap.</li>
               </ul>
               <a
