@@ -60,14 +60,14 @@ const IndexPage = () => (
           <CardBody className="about-me__body">
             <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
             <CardText className="about-me__text">
-            Full Stack Web Developer using MongoDB, Express, React, Node.js (MERN) with an emphasis on Frontend web development and mobile using React & React Native. Experienced in building CRUD applications, RESTful APIs using Node.js and express, User Auth and oAuth with PassportJS and Firebase. Common libraries of use: Axios, Redux, Mongoose, Lodash, Express, body-parser, socket.io, react-router, redux- thunk. Common use of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS, Material-UI, Elemental-UI and Native-Base for React Native.
+            I'm a highly adaptable, self-motivated, and lifelong learner with a deep passion experimenting with React and the MERN stack. I strive to learn new programming technologies with a constant emphasis on self-improvement.
             </CardText>
           </CardBody>
         </Card>
       </Col>
     </Row>
     <hr className="about-break col-md-4" />
-    <h3 className="skills-header text-center"># Developer Skills</h3>
+    <h4 className="skills-header text-center"># Developer Skills</h4>
     <Container className="about-container">
       <Row className="about-row">
         <Col sm="4">
@@ -206,7 +206,7 @@ const IndexPage = () => (
                   Try Demo
                 </a>
               </div>
-              <div className="source-btn">
+              <div className="proj-gif-card-b__source-btn">
                 <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-code proj-gif-card-b____code-icon" />
                   Source

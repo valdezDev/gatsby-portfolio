@@ -50,8 +50,8 @@
   &__title {
     background: darken($blue, 42%);
     font-family: $Josefin;
-    font-size: 24px;
-    color: $rose;
+    font-size: 22px;
+    color: white;
   }
   
   &__list {
@@ -81,8 +81,8 @@
   &__title {
     background: darken($blue, 42%);
     font-family: $Josefin;
-    font-size: 24px;
-    color: $rose;
+    font-size: 22px;
+    color: white;
   }
   
   &__list {
@@ -95,7 +95,7 @@
 }
 
 .tools, .frameworks {
-  background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
+  background-image: linear-gradient(to bottom, darken($rose, 81%), darken($rose, 80%));
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -105,16 +105,15 @@
   border-left-width: 8px;
   border-right-width: 8px;
   border-bottom-width: 8px;
-  border-top-color: darken($blue, 42%);
-  border-left-color: darken($blue, 42%);
-  border-right-color: darken($blue, 43%);
-  border-bottom-color: darken($blue, 44%);
+  border-top-color: darken($rose, 74%);
+  border-left-color: darken($rose, 74%);
+  border-right-color: darken($rose, 75%);
+  border-bottom-color: darken($rose, 76%);
 
   &__title {
-    background: darken($blue, 42%);
+    background: darken($rose, 74%);
     font-family: $Josefin;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
     color: white;
   }
   

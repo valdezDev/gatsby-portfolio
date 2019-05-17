@@ -226,96 +226,12 @@
   margin-right: auto;
 }
 
-
-// Project Overlay
-.base-overlay-a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: darken($rose, 78%);
-}
-
-.base-overlay-b {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: darken($blue, 46%);
-}
-
 .proj-gif-card-a, 
 .proj-gif-card-b, 
 .proj-gif-card-a__base-overlay-a, 
 .proj-gif-card-b__base-overlay-b {
   &:hover {
     opacity: .94;
-  }
-}
-
-.demo-btn {
-  font-family: $Josefin;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0 auto 1em;
-  text-align: center;
-}
-
-.demo-link-btn {
-  color: white;
-  border-color: $blue;
-  border-width: 4px;
-  font-size: 2em;
-  font-weight: bold;
-  transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-  &:hover {
-    color: white;
-    background-color: lighten($blue, 8%);
-    box-shadow: 2px 4px darken($blue, 50%);
-    text-shadow: 1px 2px darken($blue, 50%);
-    transform: scale(1.05);
-  }
-}
-
-.source-btn {
-  font-family: $Josefin;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 1em auto;
-}
-
-.source-link-btn {
-  color: white;
-  border-color: $git-violet;
-  border-width: 4px;
-  font-size: 2em;
-  font-weight: bold;
-  transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-  &:hover {
-    color: white;
-    background-color: lighten($git-violet, 8%);
-    box-shadow: 2px 4px darken($blue, 50%);
-    text-shadow: 1px 2px darken($blue, 50%);
-    transform: scale(1.05);
   }
 }
 
