@@ -60,7 +60,7 @@ const IndexPage = () => (
           <CardBody className="about-me__body">
             <CardTitle className="about-me__title text-center"># About Paul</CardTitle>
             <CardText className="about-me__text">
-            I'm a highly adaptable, self-motivated, and lifelong learner with a deep passion experimenting with React and the MERN stack. I strive to learn new programming technologies with a constant emphasis on self-improvement.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul is a highly adaptable, self-motivated, and lifelong learner with a deep passion for building applications using React and MERN technologies. Every day is a new opportunity to get up early in order to tackle problems that need solving with a constant emphasis on self-improvement and efficiency.
             </CardText>
           </CardBody>
         </Card>
