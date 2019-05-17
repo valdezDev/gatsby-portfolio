@@ -19,7 +19,6 @@ import dgGif from '../images/dgGif.gif';
 import hnGif from '../images/hnGif.gif';
 import blogGif from '../images/blogGif.gif';
 import portGif from '../images/portGif.gif';
-import chessGif from '../images/chessGif.gif';
 import '../styles/index.scss';
 import { Link } from "react-scroll";
 
@@ -28,7 +27,7 @@ import { Link } from "react-scroll";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `web developer`, `fullstack`,`javascript`]} />
+    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `javascript`]} />
     <div className="landing">
       <div className="dark-overlay landing-inner text-light">
         <Container>
@@ -144,8 +143,8 @@ const IndexPage = () => (
       <Row>
         <Col sm="7">
           <Card className="proj-gif-card-a">
-            <CardImg className="projGif" top src={dgGif} />
-            <div class="base-overlay-a">
+            <CardImg className="proj-gif-card-a__projGif" top src={dgGif} />
+            {/*<div class="base-overlay-a">
               <div class="demo-btn">
                 <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
                   Try Demo
@@ -157,14 +156,17 @@ const IndexPage = () => (
                   Source
                 </a>
               </div>
-            </div>
+</div>*/}
+            <CardSubtitle className="proj-gif-card-a__subtitle text-center">
+            A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.
+            </CardSubtitle>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
             <CardBody className="proj-desc-a__body">
-              <CardSubtitle className="proj-desc-a__subtitle text-center">A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.</CardSubtitle> <br/>
+              
               <ul className="proj-desc-a__list">
                 <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
                 <li>Executed React & Redux front-end in ES6 with Node.</li>
