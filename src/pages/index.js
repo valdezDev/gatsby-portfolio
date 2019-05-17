@@ -144,19 +144,19 @@ const IndexPage = () => (
         <Col sm="7">
           <Card className="proj-gif-card-a">
             <CardImg className="proj-gif-card-a__projGif" top src={dgGif} />
-            {/*<div class="base-overlay-a">
-              <div class="demo-btn">
-                <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+            <div class="proj-gif-card-a__base-overlay-a">
+              <div class="proj-gif-card-a__demo-btn">
+                <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline proj-gif-card-a__demo-link-btn" target="_blank" rel="noopener noreferrer">
                   Try Demo
                 </a>
               </div>
-              <div class="source-btn">
-                <a href="https://github.com/valdezDev/devgab" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
+              <div className="proj-gif-card-a__source-btn">
+                <a href="https://github.com/valdezDev/devgab" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-gif-card-a____code-icon" />
                   Source
                 </a>
               </div>
-</div>*/}
+            </div>
             <CardSubtitle className="proj-gif-card-a__subtitle text-center">
             A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.
             </CardSubtitle>
@@ -166,7 +166,6 @@ const IndexPage = () => (
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
             <CardBody className="proj-desc-a__body">
-              
               <ul className="proj-desc-a__list">
                 <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
                 <li>Executed React & Redux front-end in ES6 with Node.</li>
@@ -200,27 +199,29 @@ const IndexPage = () => (
       <Row>
         <Col sm="7">
           <Card className="proj-gif-card-b">
-            <CardImg className="projGif" top src={hnGif} />
-            <div class="base-overlay-b">
-              <div class="demo-btn">
-                <a href="https://inspiring-swanson-53922f.netlify.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+            <CardImg className="proj-gif-card-b__projGif" top src={hnGif} />
+            <div class="proj-gif-card-b__base-overlay-b">
+              <div class="proj-gif-card-b__demo-btn">
+                <a href="https://inspiring-swanson-53922f.netlify.com/" className="btn btn-outline proj-gif-card-b__demo-link-btn" target="_blank" rel="noopener noreferrer">
                   Try Demo
                 </a>
               </div>
-              <div class="source-btn">
-                <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
+              <div className="source-btn">
+                <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-gif-card-b____code-icon" />
                   Source
                 </a>
               </div>
             </div>
+            <CardSubtitle className="proj-gif-card-b__subtitle text-center">
+            A React application that is optimized to let a user search and sort through articles posted on Hacker News.
+            </CardSubtitle>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             <CardBody className="proj-desc-b__body">
-              <CardSubtitle className="proj-desc-b__subtitle text-center">A React application that is optimized to let a user search and sort through articles posted on Hacker News.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
                 <li>Incorporated Axios within this React application to fetch and render JSON from the Hacker News, Algolia Search API.</li>
                 <li>Lifted state throughout the application into its various child components to keep them lightweight.</li>
@@ -243,7 +244,7 @@ const IndexPage = () => (
                 target="_blank"
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
+                  <i className="fas fa-code proj-desc-b__code-icon" />
                   Source
                 </Button>
               </a>
@@ -255,27 +256,27 @@ const IndexPage = () => (
       <Row className="row-a">
         <Col sm="7">
           <Card className="proj-gif-card-a">
-            <CardImg className="projGif" top src={blogGif} />
-            <div class="base-overlay-a">
-              <div class="demo-btn">
-                <a href="https://unruffled-bartik-96bf86.netlify.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+            <CardImg className="proj-gif-card-a__projGif" top src={blogGif} />
+            <div class="proj-gif-card-a__base-overlay-a">
+              <div class="proj-gif-card-a__demo-btn">
+                <a href="https://unruffled-bartik-96bf86.netlify.com/" className="btn btn-outline proj-gif-card-a__demo-link-btn" target="_blank" rel="noopener noreferrer">
                   Try Demo
                 </a>
               </div>
-              <div class="source-btn">
-                <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
+              <div className="proj-gif-card-a__source-btn">
+                <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-gif-card-a____code-icon" />
                   Source
                 </a>
               </div>
             </div>
+            <CardSubtitle className="proj-gif-card-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog Template</CardTitle>
             <CardBody className="proj-desc-a__body">
-              <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle> <br/>
               <ul className="proj-desc-a__list">
                 <li>Constructed using GatsbyJS and set up an API using GraphQL.</li>
                 <li>Optimized to display and paginate through markdown files that are taken from the API.</li>
@@ -308,27 +309,27 @@ const IndexPage = () => (
       <Row>
         <Col sm="7">
           <Card className="proj-gif-card-b">
-            <CardImg className="projGif" top src={portGif} />
-            <div class="base-overlay-b">
-            <div class="demo-btn">
-                <a href="https://spenserkearns.com/" className="btn btn-outline demo-link-btn" target="_blank" rel="noopener noreferrer">
+            <CardImg className="proj-gif-card-b__projGif" top src={portGif} />
+            <div class="proj-gif-card-b__base-overlay-b">
+              <div class="proj-gif-card-b__demo-btn">
+                <a href="https://spenserkearns.com/" className="btn btn-outline proj-gif-card-b__demo-link-btn" target="_blank" rel="noopener noreferrer">
                   Try Other Example
                 </a>
               </div>
-              <div class="source-btn">
-                <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
+              <div className="proj-gif-card-b__source-btn">
+                <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code proj-gif-card-b____code-icon" />
                   Source
                 </a>
               </div>
             </div>
+            <CardSubtitle className="proj-gif-card-b__subtitle text-center">A static portfolio template one can use to broadcast their work.</CardSubtitle>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Portfolio Templates</CardTitle>
             <CardBody className="proj-desc-b__body">
-              <CardSubtitle className="proj-desc-b__subtitle text-center">A static portfolio template one can use to broadcast their work.</CardSubtitle> <br/>
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
