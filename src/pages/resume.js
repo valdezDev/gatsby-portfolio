@@ -1,10 +1,8 @@
-import React from "react"
-import valdezResume from "../resume/valdezResume.pdf"
-import Layout from "../components/layout"
-
+import React from "react";
+import valdezResume from "../resume/valdezResume.pdf";
 
 const Resume = () => (
-    <iframe src={valdezResume} width="100%" height="1000"></iframe>
-)
+  <iframe src={valdezResume} title="resume" width="100%" height="1000"></iframe>
+);
 
 export default Resume;

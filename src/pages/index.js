@@ -324,7 +324,7 @@ const IndexPage = () => (
                 </a>
               </div>
             </div>
-            <CardSubtitle className="proj-gif-card-b__subtitle text-center">A static portfolio template one can use to broadcast their work.</CardSubtitle>
+            <CardSubtitle className="proj-gif-card-b__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
           </Card>
         </Col>
         <Col sm="5">

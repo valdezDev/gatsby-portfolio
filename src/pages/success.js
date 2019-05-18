@@ -18,7 +18,6 @@ import dgGif from '../images/dgGif.gif';
 import hnGif from '../images/hnGif.gif';
 import blogGif from '../images/blogGif.gif';
 import portGif from '../images/portGif.gif';
-import chessGif from '../images/chessGif.gif';
 import '../styles/index.scss';
 
 /* eslint-disable */
