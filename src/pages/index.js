@@ -336,7 +336,7 @@ const IndexPage = () => (
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
                 <li>Laid out a contact form that's carried out with Netlify's form submission services.</li>
-                <li>Enabled automatic TLS certificates with Let's Encrypt to secure the domain.</li>
+                <li>Enabled automatic TLS certificates with Let's Encrypt to secure the domains.</li>
                 <li>Custom SCSS styling written with BEM-IT naming conventions in mind.</li>
               </ul>
               <a
