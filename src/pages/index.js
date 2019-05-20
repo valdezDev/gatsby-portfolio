@@ -172,7 +172,7 @@ const IndexPage = () => (
                 <li>Interfaced Axios to carry out requests to a RESTful API-based backend written in NodeJS, ExpressJS, Mongoose.</li>
                 <li>Achieved form validation with specific parameters using backend services provided in the API.</li>
                 <li>Hosted a Mongoose Database on mLab that holds onto profiles, posts, and comments obtained from the REST API.</li>
-                <li>↳Utilized JSON Web Tokens and Bcrypt to register, authenticate, provide hashes, and time users out of a session. </li>
+                <li>Utilized JSON Web Tokens and Bcrypt to register, authenticate, provide hashes, and time users out of a session. </li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -335,8 +335,8 @@ const IndexPage = () => (
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
-                <li>Laid out a contact form that has carried out with Netlify.</li>
-                <li>Deployed and secured the domains with TLS certificates using Netlify.</li>
+                <li>Laid out a contact form that's carried out with Netlify's form submission services.</li>
+                <li>Enabled automatic TLS certificates with Let's Encrypt to secure the domain.</li>
                 <li>Custom SCSS styling written with BEM-IT naming conventions in mind.</li>
               </ul>
               <a
