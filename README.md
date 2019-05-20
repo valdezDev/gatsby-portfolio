@@ -16,12 +16,12 @@ Static page portfolio that can be used to broadcast projects and an optional blo
 
 My portfolio was built from scratch using GatsbyJS. I spend my time adding my flavor to the dark-themed design.
 
-Biggest Challenge: Setting up the contact form. I had to restructure the entire site to go from being split up into several static pages into one single page to make sure my contact form would function properly.
+***Biggest Challenge:*** Setting up the contact form. I had to restructure the entire site to go from being split up into several static pages into one single page to make sure my contact form would function properly.
 
-Current Objective: Add my blog! It would be built upon from my Developer's Blog Application [here.](https://unruffled-bartik-96bf86.netlify.com/). The master branch of this portfolio is already equipped with the blog, it would just need to need to be styled and be added as a route in a navlink.
+***Current Objective:*** Add my blog! It would be built upon from my Developer's Blog Application [here.](https://unruffled-bartik-96bf86.netlify.com/). The master branch of this portfolio is already equipped with the blog, it would just need to need to be styled and be added as a route in a navlink.
 
 Live Demo can be found [here.](https://valdezdev.com)
-(I also have a smaller scale [Demo](https://spenserkearns.com)
+(I also have a smaller scale [Demo](https://spenserkearns.com))
 
 ## INSTRUCTIONS
 * In a terminal, change to the directory: ```cd gatsby-portfolio``` and launch the command: ```gatsby develop```
