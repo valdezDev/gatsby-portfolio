@@ -21,7 +21,7 @@ Biggest Challenge: Setting up the contact form. I had to restructure the entire 
 Current Objective: Add my blog! It would be built upon from my Developer's Blog Application [here.](https://unruffled-bartik-96bf86.netlify.com/). The master branch of this portfolio is already equipped with the blog, it would just need to need to be styled and be added as a route in a navlink.
 
 Live Demo can be found [here.](https://valdezdev.com)
-A smaller scale [Demo](https://spenserkearns.com).
+(I also have a smaller scale [Demo](https://spenserkearns.com)
 
 ## INSTRUCTIONS
 * In a terminal, change to the directory: ```cd gatsby-portfolio``` and launch the command: ```gatsby develop```
