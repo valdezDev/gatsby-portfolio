@@ -169,9 +169,10 @@ const IndexPage = () => (
               <ul className="proj-desc-a__list">
                 <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
                 <li>Executed React & Redux front-end in ES6 with Node.</li>
-                <li>Interfaced with a RESTful API-based backend written in NodeJS, ExpressJS.</li>
-                <li>Hosted a Mongoose Database on mLab that grabs profiles, posts, and comments obtained from the REST API.</li>
-                <li>Utilized JSON Web Tokens to register, authenticate, and time users out of a session.</li>
+                <li>Interfaced Axios to carry out requests to a RESTful API-based backend written in NodeJS, ExpressJS, Mongoose.</li>
+                <li>Achieved form validation with specific parameters using backend services provided in the API.</li>
+                <li>Hosted a Mongoose Database on mLab that holds onto profiles, posts, and comments obtained from the REST API.</li>
+                <li>↳Utilized JSON Web Tokens and Bcrypt to register, authenticate, provide hashes, and time users out of a session. </li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
               <a
@@ -223,7 +224,7 @@ const IndexPage = () => (
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
-                <li>Incorporated Axios within this React application to fetch and render JSON from the Hacker News, Algolia Search API.</li>
+                <li>Incorporated Axios within this React application to make requests to the Hacker News, Algolia Search API.</li>
                 <li>Lifted state throughout the application into its various child components to keep them sleek and lightweight.</li>
                 <li>Applied Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
                 <li>Employed the API to cache paginated data to allow the client to make only one API request when searching.</li>
@@ -281,7 +282,7 @@ const IndexPage = () => (
               <ul className="proj-desc-a__list">
                 <li>Constructed this application using GatsbyJS and set up an API using GraphQL.</li>
                 <li>Optimized to display and paginate through markdown files that are taken from the API.</li>
-                <li>Assigned routes with a unique slug based on an individual markdown file’s title or its unique tags using Node.</li>
+                <li>Assigned routes with a unique slug based on an individual markdown file’s title as well as its unique tags using Node.</li>
                 <li>Included a Disqus plugin that allows users to comment on and/or share blog posts to their social media.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
@@ -334,9 +335,9 @@ const IndexPage = () => (
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
-                <li>Applied form validation that gets carried out with Netlify.</li>
+                <li>Laid out a contact form that has carried out with Netlify.</li>
                 <li>Deployed and secured the domains with TLS certificates using Netlify.</li>
-                <li>Designed the layouts and components using Sass and Bootstrap.</li>
+                <li>Custom SCSS styling written with BEM-IT naming conventions in mind.</li>
               </ul>
               <a
                 className="proj-desc-a__button-link"
