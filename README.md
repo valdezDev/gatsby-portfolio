@@ -24,5 +24,5 @@ Live Demo can be found [here.](https://valdezdev.com)
 A smaller scale [Demo](https://spenserkearns.com).
 
 ## INSTRUCTIONS
-* In a terminal, change to the directory: ```cd gatsby-portfolio``` and launch the command: ```gatsby develop``
+* In a terminal, change to the directory: ```cd gatsby-portfolio``` and launch the command: ```gatsby develop```
 * Once the development server starts up, it should route the browser over to ```localhost:8000```. Feel free to test it out and experiment with the blog!
