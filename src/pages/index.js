@@ -142,8 +142,21 @@ const IndexPage = () => (
       <h1 className="proj-header text-center"># Projects</h1>
       <Row>
         <Col sm="7">
-          <Card className="proj-gif-card-a">
-            <CardImg className="proj-gif-card-a__projGif" top src={dgGif} />
+          <Card className="proj-items-a">
+            <CardImg className="proj-items-a__proj-gif" top src={dgGif} alt="Project"/>
+              {/*<a href="https://afternoon-waters-74578.herokuapp.com/" className="proj-item-a__demo-link" target="_blank" rel="noopener noreferrer">
+                <span className="proj-items-a__demo-btn">
+                  Demo
+                  <i className="fas fa-laptop-code proj-items-a__demo-icon" />
+                </span>
+              </a>
+              <hr className="proj-items-a__break"/>
+              <a href="https://github.com/valdezDev/devgab" className="proj-item-a__source-link" target="_blank" rel="noopener noreferrer">
+                <span className="proj-items-a__source-btn">
+                  Source
+                  <i className="fas fa-github proj-items-a__source-icon" />
+                </span>
+              </a>*/}
             <div class="proj-gif-card-a__base-overlay-a">
               <div class="proj-gif-card-a__demo-btn">
                 <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline proj-gif-card-a__demo-link-btn" target="_blank" rel="noopener noreferrer">
@@ -173,7 +186,7 @@ const IndexPage = () => (
                 <li>Achieved form validation with specific parameters using backend services provided in the API.</li>
                 <li>Hosted a Mongoose Database on mLab that holds onto profiles, posts, and comments obtained from the REST API.</li>
                 <li>Utilized JSON Web Tokens and Bcrypt to register, authenticate, provide hashes, and time users out of a session. </li>
-                <li>Designed the layout and components using Sass and Bootstrap.</li>
+                <li>Designed database with Mongoose that utilized models / schema.</li>
               </ul>
               <a
                 className="proj-desc-a__button-link"

@@ -4,6 +4,60 @@
   color: $rose;
 }
 
+// --- In production ---
+.project-items-a {
+    
+  &__proj-gif {
+
+  }
+
+  &__demo-link, &__source-link {
+    font-size: 2rem;
+    padding: 5px;
+    background-color: #B63F55;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: #222;
+      background-color: #fff; 
+    }
+  }
+  
+  @media screen and (max-width: 1250px) {
+    &__demo-link {
+      font-size: 1.5rem; 
+    } 
+  }
+
+  &__demo-btn {
+    text-align: center;
+    //margin: auto;
+  }
+
+  &__demo-icon {
+
+  }
+
+  &__source-btn {
+    font-family: $Josefin;
+  }
+
+  &__source-icon {
+    margin-right: 8px;
+  }
+
+  &__break {
+    border-width: 2px;
+    border-color: #222;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .proj-gif-card-a {
   padding: 0 0.5em 0 0.5em;
   margin-top: 2em;

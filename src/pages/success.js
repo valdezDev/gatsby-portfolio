@@ -171,7 +171,7 @@ const Success = () => (
                 <li>Interfaced with a RESTful API-based backend written in NodeJS, ExpressJS. </li>
                 <li>Hosted a Mongoose Database on mLab that grabs profiles, posts, and comments obtained from the REST API.</li>
                 <li>Utilized JSON Web Tokens to register, authenticate, and time users out of a session.</li>
-                <li>Designed the layout and components using Sass and Bootstrap.</li>
+                <li>Designed database with Mongoose that utilized models / schema.</li>
               </ul>
               <a
                 className="proj-desc-a__button-link"
