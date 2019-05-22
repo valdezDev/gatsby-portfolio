@@ -142,8 +142,9 @@ const IndexPage = () => (
       <h1 className="proj-header text-center"># Projects</h1>
       <Row>
         <Col sm="7">
-          <Card className="proj-items-a">
-            <CardImg className="proj-items-a__proj-gif" top src={dgGif} alt="Project"/>
+          {/*<Card className="proj-items-a">*/}
+          <Card className="proj-gif-card-a">
+            <CardImg className="proj-gif-card-a__projGif" top src={dgGif} alt="Project"/>
               {/*<a href="https://afternoon-waters-74578.herokuapp.com/" className="proj-item-a__demo-link" target="_blank" rel="noopener noreferrer">
                 <span className="proj-items-a__demo-btn">
                   Demo
