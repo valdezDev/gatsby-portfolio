@@ -92,6 +92,11 @@ class Header extends React.Component{
                   Resume
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/blog">
+                  Blog
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
           </Container>

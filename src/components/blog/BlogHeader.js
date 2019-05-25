@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {
   Collapse,
+  Container,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -29,8 +30,8 @@ class Header extends React.Component{
     return (
       <div>
         <Navbar fixed="top" dark expand="sm">
-          <div className="container">
-          <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle" alt="valdezDev brand img"/>{this.props.siteTitle}</NavbarBrand>
+          <Container className="container">
+            <NavbarBrand href="/"><img src={brandImg} className="brand-img rounded-circle" alt="valdezDev brand img" />{this.props.siteTitle} | Home</NavbarBrand>
           <NavbarToggler className="nav-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -39,7 +40,7 @@ class Header extends React.Component{
               </NavItem>
             </Nav>
           </Collapse>
-          </div>
+          </Container>
         </Navbar>
       </div>
     );

@@ -1,4 +1,4 @@
-// Blog Page
+// Blog Front Page
 .post-card {
   border-width: 0;
 
@@ -17,6 +17,10 @@
   &__text {
     color: $rose;
   }
+}
+.blog-page-header {
+  font-family: $Gugi;
+  color: $rose;
 }
 
 .btn-outline {

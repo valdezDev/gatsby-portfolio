@@ -27,7 +27,7 @@ import { Link } from "react-scroll";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `javascript`]} />
+    <SEO title="Paul Valdez" keywords={[`paul valdez`, `developer`, `react`, `javascript`, `valdezdev`]} />
     <div className="landing">
       <div className="dark-overlay landing-inner text-light">
         <Container>

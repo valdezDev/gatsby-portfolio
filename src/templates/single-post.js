@@ -3,7 +3,7 @@ import BlogLayout from '../components/blog/BlogLayout';
 import Sidebar from '../components/blog/Sidebar';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
-import { Card, CardBody, CardSubtitle, Row, Col } from 'reactstrap';
+import { Card, CardBody, CardSubtitle, NavItem, NavLink, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
 
@@ -24,6 +24,11 @@ const SinglePost = ({ data, pageContext }) => {
     <BlogLayout>
       <SEO title={post.title} />
       <h1 className="page-header" id="test">{post.title}</h1>
+      <NavItem>
+        <NavLink className="btn col-md-1 blog-back-btn" href="/blog">
+          Go Back
+        </NavLink>
+      </NavItem>
       <Row>
         <Col md="8">
           <Card className="single-post-card">
