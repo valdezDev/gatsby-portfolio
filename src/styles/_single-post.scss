@@ -23,8 +23,16 @@
   }
 }
 
+.nav-item {
+  list-style-type: none;
+}
+
 .blog-back-btn {
-  
+  margin: 1rem;
+}
+
+.single-post-header {
+  color: $rose;
 }
 
 .share-header {

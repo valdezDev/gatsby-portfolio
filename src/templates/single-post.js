@@ -23,9 +23,9 @@ const SinglePost = ({ data, pageContext }) => {
   return (
     <BlogLayout>
       <SEO title={post.title} />
-      <h1 className="page-header" id="test">{post.title}</h1>
+      <h1 className="single-post-header" id="test">{post.title}</h1>
       <NavItem>
-        <NavLink className="btn col-md-1 blog-back-btn" href="/blog">
+        <NavLink className="btn btn btn-outline col-md-1 blog-back-btn" href="/blog">
           Go Back
         </NavLink>
       </NavItem>
