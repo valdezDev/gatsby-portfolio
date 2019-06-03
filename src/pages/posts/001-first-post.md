@@ -4,30 +4,38 @@ date: 2019-06-01 03:19:00
 author: 'Paul Valdez'
 image: ../../images/rr-blog.jpg
 ---
-# Building a Search App with React & Redux
+# Building a Search App with React & Redux: Part 1 of X'
 
 ## Introduction
-Let me start this off with a friendly reminder to eat your vegetables and make sure that you are writing code every single day. Now, I understand that some of you might have found yourself frantically troubleshooting your React / Redux application and trying to wrap your head around state management. I can assure you, that you *will* find great value from understanding the inner workings of your Redux and your new boiler-plate that you can use in your own projects. You might even be thinking why you even need Redux at all. You might be thinking, *I only have one component, Redux is totally overkill!* You would be right, it is overkill. But it's important that we make the habit of using Redux whenever we can since it is in crazy demand! I figured we could start as small as possible by building a Search Application that fetches and renders news articles from Hacker News. If you haven't already, I suggest skimming and/or following along with this [book](https://roadtoreact.com/). It will go through all of the basic fundamentals and best practices of building an awesome React application. The author encourages the developer reading the book that they should try to lift the state of the application into a Redux infrastructure. For our example here, we will do just that, except we are going to strip it down to only carry out two actions from two different events. Let's keep it early 2000s Google homepage simple, here.
+ I understand that some of us might have found ourselves frantically troubleshooting our React / Redux applications and trying to wrap our heads around state management. I can assure that we can find great value from understanding the inner workings of Redux with our new boiler-plate set up that we can use on future projects. Some of us might even be thinking why developers even need Redux at all. 
+ 
+ I can hear it now, *I only have one component, Redux is totally overkill!* Hey, that's right, it is overkill. But it's important that we make the habit of using Redux whenever we can since it is far easier to work with than maintaining very disorganized local states by just using React. 
+ 
+ I figured we could start as small as possible by building a Search Application using the [Hacker News API](https://hn.algolia.com/api) which will end up fetching and rendering the most relevant news articles based on the term the user is looking for. 
+ 
+ For those of us rusty or unfamiliar with React, I suggest skimming and/or following along with this [book](https://roadtoreact.com/). It will go through all of the basic fundamentals and best practices of building an awesome React application. The author encourages the developer reading the book that they should try to lift the state of the application into a Redux infrastructure. For our example here, we will do just that, except we are going to strip it down to only carry out two actions from two different events. 
+ 
+ Let's keep things early 2000s Google homepage simple, here. For reference, I will provide my [Github Repository](https://github.com/valdezDev/react-redux-hacker-news-search) for this project.
 
 ![coding](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif) 
 
 ## Let's build this thing.
-Building out our boilerplate will be the most daunting task we face, but once it's all set up, adding actions is profoundly simple. Keep in mind that the Redux store is going to be our *single source of Truth* referring the the state of our components in the application. To keep things as simple as possible, we will be using [create-react-app](https://facebook.github.io/create-react-app/docs/getting-started). After your terminal renders the 'Happy hacking!' message, let's open our favorite text editor and install our project's dependencies.
+Building out our boilerplate will be the most daunting task we encounter, but once it's all set up, adding actions is profoundly simple. Keep in mind that the [Redux store](https://stackoverflow.com/questions/47182888/what-does-the-single-source-of-truth-mean) is going to be our *single source of Truth* referring the the state of our components in the application. To keep things as simple as possible, we will be using [create-react-app](https://facebook.github.io/create-react-app/docs/getting-started) to kickstart our application. After our terminals render out the 'Happy hacking!' message, let's open our favorite text editor and install our project's dependencies.
 ```
 npm install redux react-redux redux-thunk bootstrap node-sass
 ```
-Now, if you've worked with create-react-app before, you'll know that running `npm start` will run your developer server and open your browser to `localhost:3000`. 
+Now, for those of us that have worked with create-react-app before, we know that running `npm start` will run the developer server and open up a web browser to `localhost:3000`. 
 
-*(I'm sure you've worked with SASS and/or Bootstrap before so we won't go into too much detail about it here since our UI isn't going to matter too much. However, I personally find that these technologies make it vastly easier to create responsive designs that look great. You can design your app in any way that makes you happy so don't let me stop you.)*
+*(I'm sure many of us have worked with SASS and/or Bootstrap before so we won't go into too much detail about it here since our UI isn't going to matter too much at this point. However, I personally find that these technologies make it vastly easier to create responsive designs that look great. Anyone can design their apps in any way that makes them happy so don't let me stop that from happening.)*
 
-For those of us writing our code with Visual Studio Code and/or using Google Chrome, I suggest you download the following extensions to keep things looking nice: 
-- ◽ ES7 React/Redux by dsznajder
+For those of us writing our code with Visual Studio Code and/or using Google Chrome, I suggest downloading the following extensions to keep things looking nice and to make it easier to follow along: 
+- ◽ ES7 React/Redux snippets by dsznajder
 - ◽ Prettier - Code Formatter by Esben Petersen
-- ◽ WakaTime by WakaTime (allows you to keep track of how much time you are spending on your coding. You can link your account with your Github. This tool is absolutley amazing)
+- ◽ WakaTime by WakaTime (allows us to keep track of how much time we are spending on coding. It's also super easy to link to our Github profiles.)
 - ◽ (Chrome) Redux DevTools
 
 Let's clean up a bit. Open up the `src` folder and delete the `App.css`, `index.css`, `logo.svg`, and `App.test.js` files. Open up `App.js` and erase `import './App.css';` and `import logo from './logo.svg';`. Replace all the content inside the main "App" `<div>` so the entire file ends up looking something like this:
-
+###### src/App.js
 ```javascript
 import React from 'react';
 
@@ -42,8 +50,9 @@ function App() {
 export default App;
 ```
 
-Inside of the `index.js` file delete the CSS import and the comments referring to the serviceworker so you end up with a nice clean file that looks like this: 
+Inside of the `index.js` file delete the CSS import and the comments referring to the serviceworker so we end up with a nice clean file that looks like this: 
 
+###### src/index.js
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -55,17 +64,17 @@ ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
 ```
 
-Now, when you run `npm start` you should be able to see the content being rendered from our `App.js` file.
+Now, when we run `npm start` we should be able to see the content being rendered from our `App.js` file.
 
-Now, we can start setting up our Redux boiler-plate. As I said earlier, this will be our most intimidating task but once everything is set up, we will be able to add actions like absolute professionals!
+At this point, we can start setting up our Redux boiler-plate. As I said earlier, this will be our most intimidating task but once everything is set up, we will be able to add actions like absolute professionals!
 
 Personally, I like to set up all of our folders and files ahead of time, just to keep things organized. So, that's what we are going to do here. In the `src` directory, add 4 new folders: `components`,  `actions`, `reducers`, and `styles`. In the same directory, create a new file, `store.js`.
 
-For the sake of immense simplicity, we will be working with 1 component for now, so in our `components` folder, we can make a new file called `Search.js`. For those unfamiliar with React, it's common practice to start the file name of every component with a capital letter. Ultimately, React is indifferent to how you name your files but we want to make sure we are building good developer habits and being as specific as possible. For now, let's write up the skeleton for our Search component.
+For the sake of immense simplicity, we will be working with 1 component for now, so in our `components` folder, we can make a new file called `Search.js`. For those unfamiliar with React, it's common practice to start the file name of every component with a capital letter. Ultimately, React is indifferent to how we name our files but we want to make sure we are building good developer habits and being as specific as possible. For now, let's write up the skeleton for our Search component.
 
-🐝 *valdezDev Tips: Remember our VSCode Redux plugin? In our empty `Search.js` file, we can type `rcc` + Tab key to build a quick layout for a React Class Component!*
+🐝 *valdezDev Tips: Remember our VSCode React/Redux extension? In our empty `Search.js` file, we can type `rcc` + Tab key to build a quick layout for a React Class Component!*
 
-##### Search.js
+###### component/Search.js
 ```javascript
 import React, { Component } from 'react';
 
@@ -82,21 +91,19 @@ class Search extends Component {
 
 export default Search;
 ```  
-Now, we are going to want to open our `actions` file in the `src` directory so we can create 2 new files called `searchActions.js` -- where we will keep our action functionality -- and `types.js` -- where we will store our 2 action types.
+Looking good! Now, we are going to want to open our `actions` file in the `src` directory so we can create 2 new files called `searchActions.js` – where we will keep our action functionality – and `types.js` – where we will store our 2 action types.
 
 Back in our `reducers` folder, we want to make `index.js` and `searchReducer.js` and we wrap up our file layout by adding `index.scss` to our `styles` folder.
 
 ## 🛑 PAUSE 🛑
 
-Take a breath and set aside a minute to look over the architecture of the files, here. Drink it in because this is as basic as it can get. In the `src` directory, we have our `store.js` which is purposely adjacent to our `App.js`. What the heck is a store?
+Take a breath and set aside a few moments to look over the architecture of the files, here. Drink it in because this is as basic as it can get. In the `src` directory, we have our `store.js` which is purposely adjacent to our `App.js`. What the heck is a store?
 
-#### Store - an object that holds the entire state of an application. The only we way will be able to change the state within our **store** is going to be to **dispatch** one of our 2 **actions** to it.
+##### Store - an object that holds the entire state of an application. The only we way will be able to change the state within our **store** is going to be to **dispatch** one of our 2 **actions** to it. The store will be our **Single Source of Truth**.
 
+The `store.js` file is where we will set up our `store` object and empty `initialState` object. We will also import our middleware, `redux-thunk`. For those of us unaware of the magic behind [**Redux Thunk**](https://github.com/reduxjs/redux-thunk), it's a middleware that will help us call action creators that return a function instead of an action object. That function is going to be what will end up receiving our store's `dispatch({})` method which we'll be running into when we make our actions. Let's write it up the store, first.
 
-
-The `store.js` file is where we will set up our `store` object and empty `initialState` object. We will also import our middleware, `redux-thunk`. For those of us unfamiliar with **Redux Thunk** , it's a middleware that will help us call action creators that return a function instead of an action object. That function is going to be what will end up receiving our store's `dispatch({})` method which we'll be running into when we make our actions. Let's write it up the store, first.
-
-#### store.js
+##### src/store.js
 ```javascript
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -117,11 +124,11 @@ const store = createStore(
 
 export default store;
 ```
-*Along with composing our Redux Thunk middleware, we are are setting up syntax that will allow us to use our Redux DevTools extension in the browser. Check your Chrome menu out. If the Redux Icon is glowing green then you're good to go. These DevTools will help us visualize how our state is moving throughout our Redux infrastructure.*
+*Along with composing our Redux Thunk middleware, we are are setting up syntax that will allow us to use our Redux DevTools extension in the browser. Check out the Chrome menu bar. If the Redux Icon is glowing green then we're good to go. These DevTools will help us visualize how our state is moving throughout our Redux infrastructure.*
 
-So what's up with the `reducers` folder? Do we really need a root `index.js` *and* `searchReducers.js`? I admit, at this point it's overkill, but it will come in handy as we increase the scale and functionality of our application that we will explore in later editions of this series. Besides, we can begin to build the good habit of combining reducers.
+So what's up with the `reducers` folder? Do we really need a root `index.js` *and* `searchReducers.js`? I admit, at this point it's overkill, but it will come in handy as we increase the scale and functionality of our application that we will explore in later editions of this series. Besides, we can begin to start up the good habit of combining reducers.
 
-#####reducers/index.js
+###### reducers/index.js
 ```javascript
 import { combineReducers } from 'redux';
 import searchReducer from './searchReducer';
@@ -130,18 +137,18 @@ export default combineReducers({
   results: searchReducer,
 });
 ```
-*When we render and map out our search results, `'results'` we will call each object carrying `'hits'` data from the API. You can name `'results'` whatever you want just be sure to keep track.*
+*When we render and map out our search results, `'results'` we will call each object carrying `'hits'` data from the API. We can name `'results'` whatever we want just be sure to keep track.*
 
-##### **Reducer:** specifies *how* our application's state changes in response to actions that are being sent to the **store**. Our app's actions will only describe *what happened*. 
+###### **Reducer:** specifies *how* our application's state changes in response to actions that are being sent to the **store**. Our app's actions will only describe *what happened*. 
 
-We can think of our reducer as a Microwave Oven. It takes in an old, cold slice of pineapple pizza, heats it up, and gives our hungry tummies a different, but warm slice of 'Za. It is taking something old like, say, an `initialState`, and radiates energy into it to make it feel fresh. 
+We can think of our reducer as a Microwave Oven. It takes in an old, cold slice of pineapple pizza, heats it up, and gives our hungry tummies a warmer slice of 'Za (dipping sauce not included). It is taking something old like, say, an `initialState`, and radiates energy into it to make it feel fresh. Keep in mind, it's not a totally different slice, but it's a copy of the same slice, only warmer.
 
 ![pizza](https://sparkpeo.hs.llnwd.net/e1/resize/630m620/e4/7/1/l719944983.jpg)
 *(Focus, buddy.)*
 
 For now, let's write up the outline of our reducer function. We'll also declare our initial state which will be empty.
 
-##### reducers/searchReducer.js
+###### reducers/searchReducer.js
 ```javascript
 const initialState = {
   text: '', // text that the user will input to the Search Bar
@@ -157,7 +164,7 @@ export default function (state = initialState, action) {
 }
 ```
 
-In our `actions` folder, we can quickly write up the outlines of our `types.js` and `searchActions.js` files. For now, we will only have 2 action types. 
+In our `actions` folder, we can quickly write up the outlines of our `types.js` and `searchActions.js` files.
 
 ###### actions/types.js
 ```javascript
@@ -168,7 +175,7 @@ In our extremely small scale case, we only have two action types.
 
 - `FETCH_STORIES` will be dispatched 
 
-**Actions**: payloads of information that will send data from our Search Bar to our store.
+###### **Actions**: payloads of information that will send data from our Search Bar to our store.
 
 Simple enough! Now, we have enough of our infrastructure set up to write out our entire `searchActions.js`. 
 
@@ -200,7 +207,7 @@ export const fetchStories = text => dispatch => {
   }));
 }
 ```
-Alright, this might look like more work than expected but don't be overwhelmed. Walk with me, here. Let's take a look at `searchStories`. It's fired off as soon as the user begins typing and it takes in the user's search query text data (what they're looking for). We will use the forementioned `dispatch` to send our **action type** and data **payload** to our `store`. 
+Alright, this might look like more work than expected but don't be overwhelmed. Walk with me, here. Let's take a look at `searchStories`. It will be fired off as soon as the user begins typing and it takes in the user's search query text data (what they're looking for). We will use the forementioned `dispatch` method to send our **action type** and data **payload** to the `store`. 
 
 In `fetchStories`, we are taking in the user's search term, `text`, and setting it equal to `query` at the end of our fetched API URL. We THEN make two promises. The first promise is to essentially ask our fetched API to respond with the JSON that makes up our search results based on the `text` that was searched. With those results, we THEN `dispatch` our action type and data payload over to our `store`.
 
@@ -242,8 +249,22 @@ So, what is all this new mumbo jumbo we just added? I'll go over it here in deta
 
 ❗ **Important** ❗
 
-Every reducer function we ever write absolutley *has* to be a pure function,no exceptions. For those of us unfamiliar with what a **pure function** is,it's a function that accepts an input and returns a value without modifying any data outside of it's scope. Its return value MUST depend on the input/arguments. 
+Every reducer function we ever write absolutley *has* to be a pure function,no exceptions. For those of us unfamiliar with what a **pure function** is,it's a function that accepts an input and returns a value without modifying any data outside of it's scope. Its return value MUST depend on the input/arguments.
 
+Remember the pizza anaology:
+```javascript
+export default function (pizza = coldPizza, action) {
+  switch (action.type) {
+    case REHEAT_PIZZA:
+      return {
+        ...state,
+        timeInterval: action.payload,
+      };
+    default:
+      return state;
+  }
+}
+```
 Our reducer functions should **NEVER**:
 
 - ◽ Mutate its arguments
@@ -260,7 +281,7 @@ In the case of our reducer, the arguments will be our `state` and our `action`. 
 
 ## 🛑 PAUSE 🛑
 
-Hey! We're almost done with our infrastructure. This has been a ton of set up for only two possible actions that the user can set off, and we haven't even built our component, yet. We can do that right now.
+Hey! We're almost done with our Redux infrastructure. This has been a ton of set up for only two possible actions that the user can set off, and we haven't even built our component, yet. We can do that right now.
 
 ###### components/Search.js
 ```javascript
@@ -323,7 +344,7 @@ class SearchBar extends Component {
 
 The first function, `onChange` is an *event* that is triggered when the value inside our input form changes. So when the user begins to type in the form, that is an *event* that fires `onChange`. Similarly, `onSubmit` describes the event of pressing the search button. These two functions will make it so a user searches for something, and the results will render after the query is submitted. 
 
-If you've worked with React before, you might remember that this is usually the chunk of the function where we write out the constructor and declare our local state and properties. Then we make things messier by writing out the data binds and then finally writing out our functionality. Since we are using Redux, we can keep things clean and not have to worry about any of that. Perfect!
+For us React veterans, remember that this is usually the chunk of the function where we write out the constructor and declare our local state and properties. Then we make things messier by writing out the data binds and then finally writing out our functionality. Since we are using Redux, we can keep things clean and not have to worry about any of that. Perfect!
 
 Let's fill some more in:
 ###### components/Search.js
@@ -421,3 +442,9 @@ function App() {
 
 export default App;
 ```
+
+In the browser, open up the Redux DevTools and/or the console. Notice how typing into the Search Bar fires off our first action `SEARCH_STORIES` and pressing the Search button will call our `FETCH_STORIES` action. Redux saves our search terms in the Redux state. Perfect!
+
+In future editions to this project, we can easily add more actions like, say, sorting the results in a table based on the Title, Author, Comments, or Points. What makes Redux so great is that we don't have to worry about maintaining messy components' local states in separate files. As we add more components, Redux will be **absolutley crucial**.
+
+We did it. Our React Redux app is starting to look sharp. I hope we can all come together and learn more moving forward. If there are any suggestions/solutions, feel free to comment down below. I'm alway happy to learn different ways of doing things. Let's be colloborative and encouraging, here.
