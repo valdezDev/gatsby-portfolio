@@ -7,7 +7,7 @@ import Post from '../components/blog/Post';
 const BlogPage = () => (
   <BlogLayout>
     <SEO title="Blog" keywords={[`paul valdez`, `valdezdev`, `developer`]} />
-    <h1 className="blog-page-header text-center">Blog (In Progress)</h1>
+    <h1 className="blog-page-header text-center">valdezDev Blog</h1>
     <StaticQuery
       query={blogQuery}
       render={data => {

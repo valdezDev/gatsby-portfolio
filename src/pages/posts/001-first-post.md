@@ -1,10 +1,10 @@
 ---
-title: 'Building a Search App with React & Redux: Part 1 of X'
+title: 'Building a Search App with React & Redux: Part 1 of X '
 date: 2019-06-01 03:19:00
 author: 'Paul Valdez'
 image: ../../images/rr-blog.jpg
 ---
-# Building a Search App with React & Redux: Part 1 of X'
+# Building a Search App with React & Redux: Part 1 of X
 
 ## Introduction
  I understand that some of us might have found ourselves frantically troubleshooting our React / Redux applications and trying to wrap our heads around state management. I can assure that we can find great value from understanding the inner workings of Redux with our new boiler-plate set up that we can use on future projects. Some of us might even be thinking why developers even need Redux at all. 
