@@ -71,4 +71,4 @@ const sidebarQuery = graphql`
   }
 `
 
-export default Sidebar
+export default Sidebar;

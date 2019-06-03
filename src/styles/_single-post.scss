@@ -17,7 +17,9 @@
   }
 
   &__text {
-    color: $rose;
+    color: lighten($rose, 18%);
+    font-size: 18px;
+    font-family: $Josefin;
   }
 }
 

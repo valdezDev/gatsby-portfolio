@@ -30,7 +30,7 @@ const SinglePost = ({ data, pageContext }) => {
         </NavLink>
       </NavItem>
       <Row>
-        <Col md="8">
+        <Col md="9">
           <Card className="single-post-card">
             <Img
               className="card-image-top"
@@ -45,7 +45,7 @@ const SinglePost = ({ data, pageContext }) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="4">
+        <Col md="3">
           <Sidebar/>
         </Col>
       </Row>
