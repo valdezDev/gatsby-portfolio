@@ -295,3 +295,129 @@ We first document our propTypes, two of which are our action functions, and the 
 Then, we want to map our `state` to the properties of the reducer. In this case, the only things we need to map are the `hits` and `text` as declared in the reducer. Remember, `results` is what we named the `searchReducer` in our root reducer in `reducers/index.js`.
 
 At the very end of the file, we export our component that's wrapped in the `connect()` function. Again, this is what will connect our `state` and actions to the component.
+
+Now, we can write out our component's functions
+
+###### components/Search.js
+```javascript
+class SearchBar extends Component {
+
+  onChange = e => {
+    this.props.searchStories(e.target.value)
+  }
+
+  onSubmit = e => {
+    e.preventDefault();
+    this.props.fetchStories(this.props.text);
+  }
+
+  render() {
+    return (
+      . . .
+    )
+  }
+}
+
+. . .
+```
+
+The first function, `onChange` is an *event* that is triggered when the value inside our input form changes. So when the user begins to type in the form, that is an *event* that fires `onChange`. Similarly, `onSubmit` describes the event of pressing the search button. These two functions will make it so a user searches for something, and the results will render after the query is submitted. 
+
+If you've worked with React before, you might remember that this is usually the chunk of the function where we write out the constructor and declare our local state and properties. Then we make things messier by writing out the data binds and then finally writing out our functionality. Since we are using Redux, we can keep things clean and not have to worry about any of that. Perfect!
+
+Let's fill some more in:
+###### components/Search.js
+```javascript
+class SearchBar extends Component {
+
+  . . . 
+
+  render() {
+    const searchResults = this.props.hits.map(hit => (
+      <ul key={hit.id}>
+        <a
+          href={hit.url}
+          className="text-blue"
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          <li className="search-result">
+            {hit.title}
+          </li>  
+        </a>
+      </ul>
+    return (
+      . . .
+    )
+  }
+}
+
+. . .
+```
+Here, we declare that `searchResults` is going to render and map through the `hits` and convert them into unordered lists based on the `id`, `title`, and `url`, all properties from the Hacker News API. We're almost done!
+
+###### components/Search.js
+```javascript
+class SearchBar extends Component {
+
+  . . . 
+
+  render() {
+    . . .
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <h1 className="text-center">Search Hacker News</h1>
+            <form className="text-center" onSubmit={this.onSubmit}>
+              <input
+                type="text"
+                className="search-bar-input col-md-7"
+                name="searchQuery"
+                placeholder="Start typing..."
+                onChange={this.onChange}
+              />
+              <br /><br />
+              <button className="btn btn-primary" type='submit'>Search</button>
+            </form>           
+            <br /><br />
+            <h3 className="text-white text-center results-header">Results....</h3>
+            <br />
+            <div className="text-white col-md-8 search-results">
+              { searchResults }
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+```
+
+I would like to encourage taking creative liberties here. It doesn't matter what our Search Bar looks like as long as it has a piece of the component to render out `searchResults`. 
+
+## Wrapping Up
+
+We've reached the end of our journey. All we need to do now is wrap up the entire application in the `provider`. Similar to `connect`, it will link up the entire app to the Redux `store`. The syntax is simple:
+
+###### src/App.js
+```javascript
+import React from 'react';
+
+import SearchBar from './components/SearchBar';
+
+import { Provider } from 'react-redux';
+import store from './store';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+        <SearchBar />
+      </div>
+    </Provider>
+  );
+}
+
+export default App;
+```
