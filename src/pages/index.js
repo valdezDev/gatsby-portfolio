@@ -247,7 +247,7 @@ const IndexPage = () => (
               </ul>
               <a
                 className="proj-desc-b__button-link"
-                href="https://valdezdev.com/blog/building-a-search-app-with-react-redux"
+                href="https://valdezdev.com/building-a-search-app-with-react-redux"
                 target="_blank"
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-b__demo-button">
