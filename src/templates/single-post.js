@@ -26,7 +26,7 @@ const SinglePost = ({ data, pageContext }) => {
       <h1 className="single-post-header" id="test">{post.title}</h1>
       <NavItem>
         <NavLink className="btn btn btn-outline col-md-1 blog-back-btn" href="/blog">
-          Go Back
+          Back
         </NavLink>
       </NavItem>
       <Row>
@@ -100,24 +100,24 @@ const SinglePost = ({ data, pageContext }) => {
 }
 
 export const postQuery = graphql`
-  query blogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      frontmatter{
-        title
-        author
-        date(formatString: "MMM Do YYYY")
-        image {
-          childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
+query blogPostBySlug ($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+    id
+    html
+    frontmatter{
+      title
+      author
+      date(formatString: "MMM Do YYYY")
+      image {
+        childImageSharp {
+          fluid(maxWidth: 700) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   }
+}
 `
 
 export default SinglePost;

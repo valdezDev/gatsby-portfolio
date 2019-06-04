@@ -1,8 +1,8 @@
 ---
-title: 'Building a Search App with React & Redux: Part 3 of X'
-date: 2019-05-30 04:00:00
+title: 'Search Application Redux'
+date: 2019-04-01 03:19:00
 author: 'Paul Valdez'
-image: ../../images/css.jpg
+image: ../../images/time.jpg
 ---
 
-# In Progress . . .
+# Coming Soon . . . .

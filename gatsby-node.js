@@ -15,9 +15,9 @@ exports.onCreateNode = ({ node, actions }) => {
   };
 };
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = ({ actions, graphql }) => { // plural pages?
   const { createPage } = actions;
-  const singlePostTemplate = path.resolve('src/templates/single-post.js');
+  const singlePostTemplate = path.resolve('./src/templates/single-post.js');
 
   return graphql(`
     {

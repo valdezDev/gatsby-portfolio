@@ -1,5 +1,5 @@
 ---
-title: 'Building a Search App with React & Redux: Part 1 of X '
+title: 'Building a Search App with React & Redux'
 date: 2019-06-01 03:19:00
 author: 'Paul Valdez'
 image: ../../images/rr-blog.jpg

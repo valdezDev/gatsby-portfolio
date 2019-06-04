@@ -1,6 +1,15 @@
 .sidecard {
-  border-width: 0px;
-  background-image: linear-gradient(to bottom, darken($blue, 50%), darken($blue, 45%));
+  margin: 2rem auto 2rem;
+  background-image: linear-gradient(to bottom, darken($rose, 76%), darken($rose, 78%));
+  border-radius: 10px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($rose, 72.25%);
+  border-left-color: darken($rose, 72.25%);
+  border-right-color: darken($rose, 73%);
+  border-bottom-color: darken($rose, 74%);
   &__body {
     margin-top: -16px;
   }
@@ -12,9 +21,19 @@
 
   &__querycard {
     //background-image: linear-gradient(to bottom, darken($blue, 40%), darken($blue, 38%));
-    background-image: linear-gradient(to bottom, lighten($dark-gray, 2%), lighten($dark-gray, 3.8%));
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
+    background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  border-radius: 16px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 42%);
+  border-left-color: darken($blue, 42%);
+  border-right-color: darken($blue, 43%);
+  border-bottom-color: darken($blue, 44%);
     //box-shadow: 4px 4px darken($blue, 40%);
   }
 

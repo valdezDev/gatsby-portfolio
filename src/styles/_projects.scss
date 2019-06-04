@@ -445,11 +445,45 @@
       background-color: lighten($git-violet, 10%);
       border-color: $git-violet;
       transform: scale(1.05);
-      text-shadow: 1px 2px darken($blue, 50%);
+      text-shadow: 1px 2px darken($git-violet, 50%);
     }
   }
   
   &__code-icon {
     margin-right: 12px;
+  }
+
+  &__blog-button {
+    font-family: $Josefin;
+    font-weight: bold;
+    background: transparent;
+    border-color: darken($rose, 10%);
+    border-width: 2px;
+    margin: 1rem 1rem;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: darken($rose, 8%);
+      border-color: $rose;
+      transform: scale(1.05);
+      text-shadow: 1px 2px darken($rose, 50%);
+    }
+  }
+
+  &__yt-button {
+    font-family: $Josefin;
+    font-weight: bold;
+    background: transparent;
+    border-color: #ff0000;
+    border-width: 2px;
+    margin: 1rem 1rem;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: darken(#ff0000, 8%);
+      border-color: #ff0000;
+      transform: scale(1.05);
+      text-shadow: 1px 2px darken(#ff0000, 50%);
+    }
   }
 }

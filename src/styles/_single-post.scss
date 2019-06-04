@@ -20,7 +20,37 @@
     color: lighten($rose, 18%);
     font-size: 18px;
     font-family: $Josefin;
+    & a {
+      color: $blue;
+    }
   }
+}
+
+em {
+  color: $yellow;
+}
+
+strong {
+  color: $rose;
+}
+
+code {
+  //color: lighten($dark-gray, 50%);
+  //color: greenyellow;
+  color: darken($rose, 15%);
+}
+
+pre {
+  padding: 1.5rem;
+  color: lighten($blue, 24%);
+  border-style: double;
+  border-left-width: 4px;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-color: lighten($blue, 24%);
+  display: block;
+  background: darken($blue, 46%);
 }
 
 .nav-item {

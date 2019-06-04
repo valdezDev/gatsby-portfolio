@@ -32,21 +32,7 @@
 .btn-outline:hover {
   border-color: $blue;
   background-color: $blue;
-  color: white;
-}
-
-// Code Snippets in blog posts
-pre {
-  padding: 1.5rem;
-  color: lighten($blue, 24%);
-  border-style: double;
-  border-left-width: 4px;
-  border-right-width: 0;
-  border-top-width: 0;
-  border-bottom-width: 0;
-  border-color: lighten($blue, 24%);
-  display: block;
-  background: darken($blue, 46%);
+  color: white
 }
 
 .alert--error, .alert--warning {

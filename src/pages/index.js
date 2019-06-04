@@ -247,11 +247,14 @@ const IndexPage = () => (
               </ul>
               <a
                 className="proj-desc-b__button-link"
-                href="https://inspiring-swanson-53922f.netlify.com/"
+                href="https://valdezdev.com/blog/building-a-search-app-with-react-redux"
                 target="_blank"
                 rel="noopener noreferrer" >
                 <Button className="proj-desc-b__demo-button">
                   Try Demo
+                </Button>
+                <Button className="proj-desc-b__blog-button">
+                  Blog Post
                 </Button>
               </a>
               <a
@@ -262,6 +265,15 @@ const IndexPage = () => (
                 <Button className="proj-desc-b__git-button">
                   <i className="fas fa-code proj-desc-b__code-icon" />
                   Source
+                </Button>
+              </a>
+              <a
+                className="proj-desc-b__button-link"
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer" >
+                <Button className="proj-desc-b__yt-button">
+                  Video
                 </Button>
               </a>
             </CardBody>
