@@ -242,7 +242,7 @@ const IndexPage = () => (
                 <li>Lifted state throughout the application into its various child components to keep them sleek and lightweight.</li>
                 <li>Applied Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
                 <li>Employed the API to cache paginated data to allow the client to make only one API request when searching.</li>
-                <li>Wrote a blog entry explaining how to reconstruct the application and save user search queries as well as fetch results from the API in the Redux state.</li>
+                <li>Wrote a blog entry explaining how to rebuild the app and fetch data from the API as well as save search queries in the Redux state.</li>
                 <li>(In Progress) Recording an Intro to Redux tutorial video series and rebuilding the application by lifting the local React state to Redux.</li>
               </ul>
               <a
