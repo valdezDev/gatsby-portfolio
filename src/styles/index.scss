@@ -12,6 +12,11 @@
 @import './sidebar';
 @import './links';
 
+
+html, body {
+  overflow-x: hidden;
+}
+
 // Index & Success Page
 .landing {
   position: relative;
