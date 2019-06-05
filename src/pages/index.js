@@ -242,8 +242,8 @@ const IndexPage = () => (
                 <li>Lifted state throughout the application into its various child components to keep them sleek and lightweight.</li>
                 <li>Applied Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
                 <li>Employed the API to cache paginated data to allow the client to make only one API request when searching.</li>
-                <li>Practiced snapshot and unit tests by running both Jest and Enzyme.</li>
-                <li>Designed the layout and components using Sass and Bootstrap.</li>
+                <li>Wrote a blog entry explaining how to reconstruct the application and save user search queries as well as fetch results from the API in the Redux state.</li>
+                <li>(In Progress) Recording an Intro to Redux tutorial video series and rebuilding the application by lifting the local React state to Redux.</li>
               </ul>
               <a
                 className="proj-desc-b__button-link"
@@ -267,15 +267,9 @@ const IndexPage = () => (
                   Source
                 </Button>
               </a>
-              <a
-                className="proj-desc-b__button-link"
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer" >
                 <Button className="proj-desc-b__yt-button">
-                  Video
+                  Videos Coming Soon!
                 </Button>
-              </a>
             </CardBody>
           </Card>
         </Col>
@@ -360,7 +354,7 @@ const IndexPage = () => (
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
-                <li>Arranged for the UI to include smooth scroll functionality using React Scroll.</li>
+                <li>Equipped with the aforementioned Blog Template in order to write blog entries explaining how to build applications.</li>
                 <li>Laid out a contact form that's carried out with Netlify's form submission services.</li>
                 <li>Enabled automatic TLS certificates with Let's Encrypt to secure the domains.</li>
                 <li>Custom SCSS styling written with BEM-IT naming conventions in mind.</li>
@@ -411,7 +405,7 @@ const IndexPage = () => (
                   </div>
                 </div>
                 <ul className="contact-card__actions">
-                  <li><input className="contact-card__send-message btn btn-outline" type="submit" value="Send Message" /></li>
+                  <li><input className="contact-card__send-message btn" type="submit" value="Send Message" /></li>
                 </ul>
               </form>
             </CardBody>
