@@ -53,7 +53,6 @@ const IndexPage = () => (
       </div>
     </div>
 
-    
     <Row className="about-row">
       <Col sm="6">
         <Card className="about-me">
@@ -142,43 +141,29 @@ const IndexPage = () => (
       <h1 className="proj-header text-center"># Projects</h1>
       <Row>
         <Col sm="7">
-          {/*<Card className="proj-items-a">*/}
-          <Card className="proj-gif-card-a">
-            <CardImg className="proj-gif-card-a__projGif" top src={dgGif} alt="Project"/>
-              {/*<a href="https://afternoon-waters-74578.herokuapp.com/" className="proj-item-a__demo-link" target="_blank" rel="noopener noreferrer">
-                <span className="proj-items-a__demo-btn">
-                  Demo
-                  <i className="fas fa-laptop-code proj-items-a__demo-icon" />
-                </span>
-              </a>
-              <hr className="proj-items-a__break"/>
-              <a href="https://github.com/valdezDev/devgab" className="proj-item-a__source-link" target="_blank" rel="noopener noreferrer">
-                <span className="proj-items-a__source-btn">
-                  Source
-                  <i className="fas fa-github proj-items-a__source-icon" />
-                </span>
-              </a>*/}
-            <div class="proj-gif-card-a__base-overlay-a">
-              <div class="proj-gif-card-a__demo-btn">
-                <a href="https://afternoon-waters-74578.herokuapp.com/" className="btn btn-outline proj-gif-card-a__demo-link-btn" target="_blank" rel="noopener noreferrer">
-                  Try Demo
-                </a>
-              </div>
-              <div className="proj-gif-card-a__source-btn">
-                <a href="https://github.com/valdezDev/devgab" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-a__code-icon" />
-                  Source
-                </a>
-              </div>
-            </div>
-            <CardSubtitle className="proj-gif-card-a__subtitle text-center">
-            A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.
-            </CardSubtitle>
+          <Card className="project-items-a hideme" >
+            <CardImg src={dgGif} className="project-items-a__img" alt="DevGab Gif" />
+            <a href="https://github.com/valdezDev/devgab" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Source Code 
+                <i className="fab fa-github project-items-a__icon"  />
+              </span>
+            </a>
+            <hr className="project-items-a__break" />
+            <a href="https://afternoon-waters-74578.herokuapp.com/" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Preview Demo 
+                <i class="fas fa-laptop-code project-items-a__icon" />
+              </span>
+            </a>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># DevGab</CardTitle>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">
+            A social media platform meant to be a miniature version of a Linkedin and Twitter for Developers.
+            </CardSubtitle>
             <CardBody className="proj-desc-a__body">
               <ul className="proj-desc-a__list">
                 <li>Developed this larger scale social media CRUD application on top of a MERN stack.</li>
@@ -189,23 +174,6 @@ const IndexPage = () => (
                 <li>Utilized JSON Web Tokens and Bcrypt to register, authenticate, provide hashes, and time users out of a session. </li>
                 <li>Designed database with Mongoose that utilized models / schema.</li>
               </ul>
-              <a
-                className="proj-desc-a__button-link"
-                href="https://afternoon-waters-74578.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-a__demo-button">Try Demo</Button>
-              </a>
-              <a
-                className="proj-desc-a__button-link"
-                href="https://github.com/valdezDev/devgab"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-a__git-button">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
-                    Source
-                </Button>
-              </a>
             </CardBody>
           </Card>
         </Col>
@@ -213,29 +181,43 @@ const IndexPage = () => (
       <hr className="proj-break align-self-center" />
       <Row>
         <Col sm="7">
-          <Card className="proj-gif-card-b">
-            <CardImg className="proj-gif-card-b__projGif" top src={hnGif} />
-            <div class="proj-gif-card-b__base-overlay-b">
-              <div class="proj-gif-card-b__demo-btn">
-                <a href="https://inspiring-swanson-53922f.netlify.com/" className="btn btn-outline proj-gif-card-b__demo-link-btn" target="_blank" rel="noopener noreferrer">
-                  Try Demo
-                </a>
-              </div>
-              <div className="proj-gif-card-b__source-btn">
-                <a href="https://github.com/valdezDev/hacker-news-search-app" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-b__code-icon" />
-                  Source
-                </a>
-              </div>
-            </div>
-            <CardSubtitle className="proj-gif-card-b__subtitle text-center">
-            A React application that is optimized to let a user search and sort through articles posted on Hacker News.
-            </CardSubtitle>
+          <Card className="project-items-b hideme" >
+            <CardImg src={hnGif} className="project-items-b__img" alt="DevGab Gif" />
+            <a href="https://github.com/valdezDev/hacker-news-search-app" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                Source Code 
+                <i className="fab fa-github project-items-b__icon"  />
+              </span>
+            </a>
+            <hr className="project-items-b__break" />
+            <a href="https://inspiring-swanson-53922f.netlify.com/" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                Preview Demo 
+                <i class="fas fa-laptop-code project-items-b__icon" />
+              </span>
+            </a>
+            <hr className="project-items-b__break" />
+            <a href="https://valdezdev.com/building-a-search-app-with-react-redux" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                View Blog Post
+                <i class="fas fa-pen-nib project-items-b__icon" />
+              </span>
+            </a>
+            <hr className="project-items-b__break" />
+            <a className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                Video Series Coming Soon 
+                <i class="fab fa-youtube project-items-b__icon" />
+              </span>
+            </a>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
+            <CardSubtitle className="proj-desc-b__subtitle text-center">
+            A React application that is optimized to let a user search and sort through articles posted on Hacker News.
+            </CardSubtitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
                 <li>Incorporated Axios within this React application to make requests to the Hacker News, Algolia Search API.</li>
@@ -245,31 +227,6 @@ const IndexPage = () => (
                 <li>Wrote a blog entry explaining how to rebuild the app and fetch data from the API as well as save search queries in the Redux state.</li>
                 <li>(In Progress) Recording an Intro to Redux tutorial video series and rebuilding the application by lifting the local React state to Redux.</li>
               </ul>
-              <a
-                className="proj-desc-b__button-link"
-                href="https://valdezdev.com/building-a-search-app-with-react-redux"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-b__demo-button">
-                  Try Demo
-                </Button>
-                <Button className="proj-desc-b__blog-button">
-                  Blog Post
-                </Button>
-              </a>
-              <a
-                className="proj-desc-b__button-link"
-                href="https://github.com/valdezDev/hacker-news-search-app"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-b__git-button">
-                  <i className="fas fa-code proj-desc-b__code-icon" />
-                  Source
-                </Button>
-              </a>
-                <Button className="proj-desc-b__yt-button">
-                  Videos Coming Soon!
-                </Button>
             </CardBody>
           </Card>
         </Col>
@@ -277,27 +234,27 @@ const IndexPage = () => (
       <hr className="proj-break align-self-center" />
       <Row className="row-a">
         <Col sm="7">
-          <Card className="proj-gif-card-a">
-            <CardImg className="proj-gif-card-a__projGif" top src={blogGif} />
-            <div class="proj-gif-card-a__base-overlay-a">
-              <div class="proj-gif-card-a__demo-btn">
-                <a href="https://unruffled-bartik-96bf86.netlify.com/" className="btn btn-outline proj-gif-card-a__demo-link-btn" target="_blank" rel="noopener noreferrer">
-                  Try Demo
-                </a>
-              </div>
-              <div className="proj-gif-card-a__source-btn">
-                <a href="https://github.com/valdezDev/gatsby-blog" className="btn btn-outline proj-gif-card-a__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-a__code-icon" />
-                  Source
-                </a>
-              </div>
-            </div>
-            <CardSubtitle className="proj-gif-card-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle>
+          <Card className="project-items-a hideme" >
+            <CardImg src={dgGif} className="project-items-a__img" alt="DevGab Gif" />
+            <a href="https://github.com/valdezDev/gatsby-blog" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Source Code 
+                <i className="fab fa-github project-items-a__icon"  />
+              </span>
+            </a>
+            <hr className="project-items-a__break" />
+            <a href="https://unruffled-bartik-96bf86.netlify.com/" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Preview Demo 
+                <i class="fas fa-laptop-code project-items-a__icon" />
+              </span>
+            </a>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-a">
             <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog Template</CardTitle>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle>
             <CardBody className="proj-desc-a__body">
               <ul className="proj-desc-a__list">
                 <li>Constructed this application using GatsbyJS and set up an API using GraphQL.</li>
@@ -306,23 +263,6 @@ const IndexPage = () => (
                 <li>Included a Disqus plugin that allows users to comment on and/or share blog posts to their social media.</li>
                 <li>Designed the layout and components using Sass and Bootstrap.</li>
               </ul>
-              <a
-                className="proj-desc-a__button-link"
-                href="https://unruffled-bartik-96bf86.netlify.com/"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-a__demo-button">Try Demo</Button>
-              </a>
-              <a
-                className="proj-desc-a__button-link"
-                href="https://github.com/valdezDev/gatsby-blog"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-a__git-button">
-                  <i className="fas fa-code proj-desc-a__code-icon" />
-                    Source
-                </Button>
-              </a>
             </CardBody>
           </Card>
         </Col>
@@ -330,27 +270,27 @@ const IndexPage = () => (
       <hr className="proj-break align-self-center" />
       <Row>
         <Col sm="7">
-          <Card className="proj-gif-card-b">
-            <CardImg className="proj-gif-card-b__projGif" top src={portGif} />
-            <div class="proj-gif-card-b__base-overlay-b">
-              <div class="proj-gif-card-b__demo-btn">
-                <a href="https://spenserkearns.com/" className="btn btn-outline proj-gif-card-b__demo-link-btn" target="_blank" rel="noopener noreferrer">
-                  Try Other Example
-                </a>
-              </div>
-              <div className="proj-gif-card-b__source-btn">
-                <a href="https://github.com/valdezDev/gatsby-portfolio" className="btn btn-outline proj-gif-card-b__source-link-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-code proj-gif-card-b__code-icon" />
-                  Source
-                </a>
-              </div>
-            </div>
-            <CardSubtitle className="proj-gif-card-b__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
+          <Card className="project-items-b hideme" >
+            <CardImg src={dgGif} className="project-items-b__img" alt="DevGab Gif" />
+            <a href="https://github.com/valdezDev/gatsby-portfolio" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                Source Code 
+                <i className="fab fa-github project-items-b__icon"  />
+              </span>
+            </a>
+            <hr className="project-items-b__break" />
+            <a href="https://spenserkearns.com" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
+                Preview Alternate Demo 
+                <i class="fas fa-laptop-code project-items-b__icon" />
+              </span>
+            </a>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Portfolio Templates</CardTitle>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
@@ -359,23 +299,6 @@ const IndexPage = () => (
                 <li>Enabled automatic TLS certificates with Let's Encrypt to secure the domains.</li>
                 <li>Custom SCSS styling written with BEM-IT naming conventions in mind.</li>
               </ul>
-              <a
-                className="proj-desc-a__button-link"
-                href="https://spenserkearns.com"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-a__demo-button">Try Other Example</Button>
-              </a>
-              <a
-                className="proj-desc-b__button-link"
-                href="https://github.com/valdezDev/gatsby-portfolio"
-                target="_blank"
-                rel="noopener noreferrer" >
-                <Button className="proj-desc-b__git-button">
-                  <i class="fas fa-code proj-desc-b__code-icon" />
-                  Source
-                </Button>
-              </a>
             </CardBody>
           </Card>
         </Col>

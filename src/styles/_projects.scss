@@ -5,268 +5,89 @@
 }
 
 // --- In production ---
-.project-items-a {
-    
-  &__proj-gif {
 
+.project-items-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid darken($rose, 19%);
+  border-radius: 10px;
+  margin: 20px auto;
+  flex-direction: column;
+
+  &__img {
+    border-bottom: 5px solid black;
+    transition: all 0.3s;
   }
 
-  &__demo-link, &__source-link {
+  &__link {
     font-size: 2rem;
     padding: 5px;
-    background-color: #B63F55;
+    background-color: darken($rose, 15%);
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: white;
     transition: all 0.3s;
     cursor: pointer;
     text-decoration: none;
     &:hover {
-      color: #222;
-      background-color: #fff; 
+      color: white;
+      background-color: darken($rose, 10%);
     }
   }
-  
-  @media screen and (max-width: 1250px) {
-    &__demo-link {
-      font-size: 1.5rem; 
-    } 
-  }
 
-  &__demo-btn {
-    text-align: center;
-    //margin: auto;
-  }
-
-  &__demo-icon {
-
-  }
-
-  &__source-btn {
-    font-family: $Josefin;
-  }
-
-  &__source-icon {
-    margin-right: 8px;
+  &__icon {
+    margin-left: 12px;
   }
 
   &__break {
-    border-width: 2px;
-    border-color: #222;
+    border-width: 4px;
+    border-color: darken($rose, 18%);
     width: 100%;
     margin: 0;
   }
+
 }
 
-.proj-gif-card-a {
-  padding: 0 0.5em 0 0.5em;
-  margin-top: 2em;
-  transition: all ease-in-out 0.3s;
-  border-width: 0px;
+.project-items-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid darken($blue, 19%);
   border-radius: 10px;
-  background: darken($rose, 72%);
+  margin: 20px auto;
+  flex-direction: column;
 
-  &__projGif {
-    background: darken($rose, 78%);
-    margin: 1em auto 2em;
-    border-width: 0px;
-    background: transparent;
-    display: block;
+  &__img {
+    border-bottom: 5px solid black;
+    transition: all 0.3s;
+  }
+
+  &__link {
+    font-size: 2rem;
+    padding: 5px;
+    background-color: darken($blue, 15%);
     width: 100%;
-    height: auto;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      background-color: darken($blue, 10%);
+    }
   }
 
-  &__base-overlay-a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+  &__icon {
+    margin-left: 12px;
+  }
+
+  &__break {
+    border-width: 4px;
+    border-color: darken($blue, 18%);
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: darken($rose, 78%);
-  }
-
-  &__demo-btn {
-    font-family: $Josefin;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    margin: 0 auto 1em;
-    text-align: center;
-  }
-
-  &__demo-link-btn {
-    color: white;
-    border-color: $blue;
-    border-width: 4px;
-    font-size: 2em;
-    font-weight: bold;
-    transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-    &:hover {
-      color: white;
-      background-color: lighten($blue, 8%);
-      box-shadow: 2px 4px darken($blue, 50%);
-      text-shadow: 1px 2px darken($blue, 50%);
-      transform: scale(1.05);
-    }
-  }
-
-  &__source-btn {
-    font-family: $Josefin;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin: 1em auto;
-  }
-
-  &__source-link-btn {
-    color: white;
-    border-color: $git-violet;
-    border-width: 4px;
-    font-size: 2em;
-    font-weight: bold;
-    transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-    &:hover {
-      color: white;
-      background-color: lighten($git-violet, 8%);
-      box-shadow: 2px 4px darken($blue, 50%);
-      text-shadow: 1px 2px darken($blue, 50%);
-      transform: scale(1.05);
-    }
-  }
-
-  &__code-icon {
-    margin-right: 8px;
-  }
-
-  &__subtitle {
-    margin: -2em auto 0.5em;
-    padding: 8px;
-    background: darken($rose, 78%);
-    color: lighten($yellow, 6%);
-    font-size: 1em;
-    font-style: italic;
-  }
-
-  &:hover {
-    box-shadow: 0 0 15px lighten($rose, 8%);
-    transform: scale(1.0125);
-  }
-}
-
-.proj-gif-card-b {
-  padding: 0 0.5em 0 0.5em;
-  margin-top: 2em;
-  transition: all ease-in-out 0.3s;
-  border-width: 0px;
-  border-radius: 10px;
-  background: darken($blue, 36%);
-
-  &__projGif {
-    background: darken($blue, 42%);
-    margin: 1rem auto 2rem;
-    border-width: 0px;
-    background: transparent;
-    display: block;
-    width:100%;
-    height: auto;
-  }
-  // Hover Overlay, Buttons & Links
-  &__base-overlay-b {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: darken($blue, 46%);
-  }
-
-  &__demo-btn {
-    font-family: $Josefin;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    margin: 0 auto 1em;
-    text-align: center;
-  }
-
-  &__demo-link-btn {
-    color: white;
-    border-color: $blue;
-    border-width: 4px;
-    font-size: 2em;
-    font-weight: bold;
-    transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-    &:hover {
-      color: white;
-      background-color: lighten($blue, 8%);
-      box-shadow: 2px 4px darken($blue, 50%);
-      text-shadow: 1px 2px darken($blue, 50%);
-      transform: scale(1.05);
-    }
-  }
-
-  &__source-btn {
-    font-family: $Josefin;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin: 1em auto;
-  }
-
-  &__source-link-btn {
-    color: white;
-    border-color: $git-violet;
-    border-width: 4px;
-    font-size: 2em;
-    font-weight: bold;
-    transition: all ease-in-out 0.3s, color ease-in-out 0.3s;
-    &:hover {
-      color: white;
-      background-color: lighten($git-violet, 8%);
-      box-shadow: 2px 4px darken($blue, 50%);
-      text-shadow: 1px 2px darken($blue, 50%);
-      transform: scale(1.05);
-    }
-  }
-
-  &__code-icon {
-    margin-right: 8px;
-  }
-
-  &__subtitle {
-    margin: -2em auto 0.5em;
-    padding: 8px;
-    background: darken($blue, 42%);
-    color: lighten($yellow, 4%);
-    font-size: 1em;
-    font-style: italic;
-  }
-
-  &:hover {
-    box-shadow: 0 0 15px lighten($blue, 32%);
-    transform: scale(1.0125);
+    margin: 0;
   }
 }
 
@@ -280,18 +101,9 @@
   margin-right: auto;
 }
 
-.proj-gif-card-a, 
-.proj-gif-card-b, 
-.proj-gif-card-a__base-overlay-a, 
-.proj-gif-card-b__base-overlay-b {
-  &:hover {
-    opacity: .94;
-  }
-}
-
 // Project Description
 .proj-desc-a {
-  margin: 2rem auto 2rem;
+  margin: 1.25rem auto 2rem;
   background-image: linear-gradient(to bottom, darken($blue, 42%), darken($blue, 41.1%));
   border-radius: 10px;
   border-top-width: 8px;
@@ -316,6 +128,7 @@
   }
 
   &__subtitle {
+    margin-top: 10px;
     color: lighten($yellow, 4%);
     font-size: 1em;
     font-style: italic;
@@ -374,7 +187,7 @@
 }
 
 .proj-desc-b {
-  margin: 2rem auto 2rem;
+  margin: 1.25rem auto 2rem;
   background-image: linear-gradient(to bottom, darken($rose, 76%), darken($rose, 78%));
   border-radius: 10px;
   border-top-width: 8px;
