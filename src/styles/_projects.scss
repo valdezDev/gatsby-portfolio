@@ -4,13 +4,20 @@
   color: $rose;
 }
 
-// --- In production ---
-
+// Image and Links
 .project-items-a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid darken($rose, 19%);
+  border-radius: 10px;
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($rose, 72.25%);
+  border-left-color: darken($rose, 72.25%);
+  border-right-color: darken($rose, 73%);
+  border-bottom-color: darken($rose, 74%);
   border-radius: 10px;
   margin: 20px auto;
   flex-direction: column;
@@ -23,16 +30,17 @@
   &__link {
     font-size: 2rem;
     padding: 5px;
-    background-color: darken($rose, 15%);
+    background-color: darken($rose, 77%);
     width: 100%;
     text-align: center;
     color: white;
-    transition: all 0.3s;
+    transition: color 0.5s ease-in-out, all 0.3s ease-in-out;
     cursor: pointer;
     text-decoration: none;
     &:hover {
+      text-decoration: none;
       color: white;
-      background-color: darken($rose, 10%);
+      background-color: darken($rose, 72%);
     }
   }
 
@@ -42,7 +50,7 @@
 
   &__break {
     border-width: 4px;
-    border-color: darken($rose, 18%);
+    border-color:darken($rose, 72.25%);
     width: 100%;
     margin: 0;
   }
@@ -53,7 +61,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid darken($blue, 19%);
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-top-color: darken($blue, 36%);
+  border-left-color: darken($blue, 36.5%);
+  border-right-color: darken($blue, 37%);
+  border-bottom-color: darken($blue, 38%);
   border-radius: 10px;
   margin: 20px auto;
   flex-direction: column;
@@ -66,7 +81,7 @@
   &__link {
     font-size: 2rem;
     padding: 5px;
-    background-color: darken($blue, 15%);
+    background-color: darken($blue, 41.5%);
     width: 100%;
     text-align: center;
     color: white;
@@ -74,9 +89,13 @@
     cursor: pointer;
     text-decoration: none;
     &:hover {
+      text-decoration: none;
       color: white;
-      background-color: darken($blue, 10%);
+      background-color: darken($blue, 36.5%);
     }
+  }
+  &__span-vid {
+    color: darken(white, 60%);
   }
 
   &__icon {
@@ -85,7 +104,7 @@
 
   &__break {
     border-width: 4px;
-    border-color: darken($blue, 18%);
+    border-color: darken($blue, 37.25%);
     width: 100%;
     margin: 0;
   }
@@ -141,49 +160,6 @@
       list-style-type: square;
     }
   }
-
-  &__button-link {
-    color: white;
-    &:hover{
-      color: white;
-    }
-  }
-
-  &__demo-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: $blue;
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: lighten($blue, 10%);
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken($blue, 50%);
-    }
-  }
-
-  &__git-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: $git-violet;
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: lighten($git-violet, 10%);
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken($git-violet, 50%);
-    }
-  }
-  
-  &__code-icon {
-    margin-right: 12px;
-  }
 }
 
 .proj-desc-b {
@@ -218,85 +194,6 @@
     margin-left: 16px;
     & li {
       list-style-type: square;
-    }
-  }
-
-  &__button-link {
-    color: white;
-    &:hover{
-      color: white;
-    }
-  }
-
-  &__demo-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: $blue;
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: lighten($blue, 10%);
-      border-color: $blue;
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken($blue, 50%);
-    }
-  }
-
-  &__git-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: $git-violet;
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: lighten($git-violet, 10%);
-      border-color: $git-violet;
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken($git-violet, 50%);
-    }
-  }
-  
-  &__code-icon {
-    margin-right: 12px;
-  }
-
-  &__blog-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: darken($rose, 10%);
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: darken($rose, 8%);
-      border-color: $rose;
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken($rose, 50%);
-    }
-  }
-
-  &__yt-button {
-    font-family: $Josefin;
-    font-weight: bold;
-    background: transparent;
-    border-color: #ff0000;
-    border-width: 2px;
-    margin: 1rem 1rem;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-    &:hover {
-      background-color: darken(#ff0000, 8%);
-      border-color: #ff0000;
-      transform: scale(1.05);
-      text-shadow: 1px 2px darken(#ff0000, 50%);
     }
   }
 }

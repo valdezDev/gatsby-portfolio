@@ -205,7 +205,7 @@ const IndexPage = () => (
             </a>
             <hr className="project-items-b__break" />
             <a className="project-items-b__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-b__span">
+              <span className="project-items-b__span-vid">
                 Video Series Coming Soon 
                 <i class="fab fa-youtube project-items-b__icon" />
               </span>
@@ -235,7 +235,7 @@ const IndexPage = () => (
       <Row className="row-a">
         <Col sm="7">
           <Card className="project-items-a hideme" >
-            <CardImg src={dgGif} className="project-items-a__img" alt="DevGab Gif" />
+            <CardImg src={blogGif} className="project-items-a__img" alt="DevGab Gif" />
             <a href="https://github.com/valdezDev/gatsby-blog" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
               <span className="project-items-a__span">
                 Source Code 
@@ -271,7 +271,7 @@ const IndexPage = () => (
       <Row>
         <Col sm="7">
           <Card className="project-items-b hideme" >
-            <CardImg src={dgGif} className="project-items-b__img" alt="DevGab Gif" />
+            <CardImg src={portGif} className="project-items-b__img" alt="DevGab Gif" />
             <a href="https://github.com/valdezDev/gatsby-portfolio" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
               <span className="project-items-b__span">
                 Source Code 
@@ -290,7 +290,7 @@ const IndexPage = () => (
         <Col sm="5">
           <Card className="proj-desc-b">
             <CardTitle className="proj-desc-b__title text-center text-white"># Portfolio Templates</CardTitle>
-            <CardSubtitle className="proj-desc-a__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
+            <CardSubtitle className="proj-desc-b__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
                 <li>Built these static websites using GatsbyJS.</li>
