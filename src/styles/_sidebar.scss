@@ -20,27 +20,22 @@
   }
 
   &__querycard {
-    //background-image: linear-gradient(to bottom, darken($blue, 40%), darken($blue, 38%));
     background-image: linear-gradient(to bottom, darken($blue, 47%), darken($blue, 45%));
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: block;
-  border-radius: 16px;
-  border-top-width: 8px;
-  border-left-width: 8px;
-  border-right-width: 8px;
-  border-bottom-width: 8px;
-  border-top-color: darken($blue, 42%);
-  border-left-color: darken($blue, 42%);
-  border-right-color: darken($blue, 43%);
-  border-bottom-color: darken($blue, 44%);
-    //box-shadow: 4px 4px darken($blue, 40%);
-  }
-
-  &__minibody {
-    transition: color 0.5s ease;
-    &:hover {
-    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    border-radius: 16px;
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-top-color: darken($blue, 42%);
+    border-left-color: darken($blue, 42%);
+    border-right-color: darken($blue, 43%);
+    border-bottom-color: darken($blue, 44%);
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.01);
     }
   }
 
@@ -51,8 +46,10 @@
   &__link {
     color: $blue;
     transition: color 0.5s ease;
+    text-decoration: none !important;
     &:hover {
-      color: lighten($blue, 15%);
+      text-decoration: none !important;
+      color: lighten($blue, 18%);
     }
   }
 }

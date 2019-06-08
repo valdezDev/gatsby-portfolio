@@ -59,6 +59,18 @@ pre {
 
 .blog-back-btn {
   margin: 1rem;
+
+    color: $blue;
+    border-color: $blue;
+    background: transparent;
+    border-radius: 2px;
+    transition: color 0.5s ease-in-out, all 0.3s ease-in-out;
+    &:hover {
+      border-color: $blue;
+      background-color: $blue;
+      color: white
+    }
+  
 }
 
 .single-post-header {

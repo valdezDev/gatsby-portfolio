@@ -22,8 +22,8 @@ const Post = ({ title, author, slug, date, body, fluid }) => (
       <CardText className="post-card__text">{body}</CardText>
       <Link
         to={slug}
-        className="btn btn-outline float-right">
-          Read more
+        className="btn float-right read-more-btn">
+          Read more...
       </Link>
     </CardBody>
   </Card>

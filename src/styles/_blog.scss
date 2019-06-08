@@ -6,7 +6,7 @@
     background-color: lighten($dark-gray, 1%);
   }
   
-  &__post-links{
+  &__post-links {
     color: $blue;
   }
 
@@ -18,21 +18,23 @@
     color: $rose;
   }
 }
+
 .blog-page-header {
   font-family: $Gugi;
   color: $rose;
 }
 
-.btn-outline {
+.read-more-btn {
   color: $blue;
   border-color: $blue;
+  background: transparent;
   border-radius: 2px;
-}
-
-.btn-outline:hover {
-  border-color: $blue;
-  background-color: $blue;
-  color: white
+  transition: color 0.5s ease-in-out, all 0.3s ease-in-out;
+  &:hover {
+    border-color: $blue;
+    background-color: $blue;
+    color: white
+  }
 }
 
 .alert--error, .alert--warning {

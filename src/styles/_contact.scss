@@ -63,7 +63,7 @@
     font-size: 1.25rem;
     border-color: darken($rose, 10%) !important;
     border-width: 2px;
-    color: white;
+    color: darken($rose, 8%);
     transition: all ease 0.3s;
     &:hover{
       color: white;

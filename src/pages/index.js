@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SocialButtons from "../components/SocialButtons";
 import SEO from "../components/seo";
 import {
-  Button,
   Card,
   CardBody,
   CardImg,
