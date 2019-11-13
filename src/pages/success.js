@@ -14,6 +14,7 @@ import {
   Row
 } from "reactstrap";
 import dgGif from '../images/dgGif.gif';
+import calcGif from '../images/calcGif.gif';
 import hnGif from '../images/hnGif.gif';
 import blogGif from '../images/blogGif.gif';
 import portGif from '../images/portGif.gif';
@@ -34,7 +35,7 @@ const Success = () => (
           <Row>
             <Col sm="12" className="text-center">
               <h1 className="display-3 mb-4 index-intro">Paul Valdez</h1>
-              <p className="lead index-intro__subtitle">Developer</p>
+              <p className="lead index-intro__subtitle">Developer | Engineer | Full Time Hustler</p>
               <SocialButtons />
             </Col>
           </Row>
@@ -181,44 +182,81 @@ const Success = () => (
       <Row>
         <Col sm="7">
           <Card className="project-items-b hideme" >
-            <CardImg src={hnGif} className="project-items-b__img" alt="DevGab Gif" />
-            <a href="https://github.com/valdezDev/hacker-news-search-app" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+            <CardImg src={calcGif} className="project-items-b__img" alt="Budget Calc Gif" />
+            <a href="https://github.com/valdezDev/react-hooks-budget-calculator" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
               <span className="project-items-b__span">
                 Source Code 
                 <i className="fab fa-github project-items-b__icon"  />
               </span>
             </a>
             <hr className="project-items-b__break" />
-            <a href="https://inspiring-swanson-53922f.netlify.com/" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+            <a href="https://suspicious-pasteur-6d0ba0.netlify.com/" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
               <span className="project-items-b__span">
                 Preview Demo 
                 <i class="fas fa-laptop-code project-items-b__icon" />
-              </span>
-            </a>
-            <hr className="project-items-b__break" />
-            <a href="https://valdezdev.com/building-a-search-app-with-react-redux" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-b__span">
-                View Blog Post
-                <i class="fas fa-pen-nib project-items-b__icon" />
-              </span>
-            </a>
-            <hr className="project-items-b__break" />
-            <a className="project-items-b__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-b__span-vid">
-                Video Series Coming Soon 
-                <i class="fab fa-youtube project-items-b__icon" />
               </span>
             </a>
           </Card>
         </Col>
         <Col sm="5">
           <Card className="proj-desc-b">
-            <CardTitle className="proj-desc-b__title text-center text-white"># Hacker News Search</CardTitle>
+            <CardTitle className="proj-desc-b__title text-center text-white"># Budget Calculator</CardTitle>
             <CardSubtitle className="proj-desc-b__subtitle text-center">
-            A React application that is optimized to let a user search and sort through articles posted on Hacker News.
+            A Calculator to help you control your spending habits and make planning ahead much easier.
             </CardSubtitle>
             <CardBody className="proj-desc-b__body">
               <ul className="proj-desc-b__list">
+                <li>Implemented React Hook syntax to contain a dynamic local state that allows for CRUD functionality.</li>
+                <li>Designed user-friendly form validation logic to keep the application free of bugs.</li>
+                <li>Stringified JSON and side effect functionality that saves the user’s information to Local Storage.</li>
+                <li>Ascribed each individual user expense with a Universally Unique Identifier.</li>
+              </ul>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <hr className="proj-break align-self-center" />
+      <Row className="row-a">
+        <Col sm="7">
+          <Card className="project-items-a hideme" >
+            <CardImg src={hnGif} className="project-items-a__img" alt="Hacker Gif" />
+            <a href="https://github.com/valdezDev/hacker-news-search-app" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Source Code 
+                <i className="fab fa-github project-items-a__icon"  />
+              </span>
+            </a>
+            <hr className="project-items-a__break" />
+            <a href="https://inspiring-swanson-53922f.netlify.com/" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                Preview Demo 
+                <i class="fas fa-laptop-code project-items-a__icon" />
+              </span>
+            </a>
+            <hr className="project-items-a__break" />
+            <a href="https://valdezdev.com/building-a-search-app-with-react-redux" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
+                View Blog Post
+                <i class="fas fa-pen-nib project-items-a__icon" />
+              </span>
+            </a>
+            <hr className="project-items-a__break" />
+            <a className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span-vid">
+                Video Series Coming Soon 
+                <i class="fab fa-youtube project-items-a__icon" />
+              </span>
+            </a>
+          </Card>
+        </Col>
+        <Col sm="5">
+          <Card className="proj-desc-a">
+            <CardTitle className="proj-desc-a__title text-center text-white"># Hacker News Search</CardTitle>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">
+            A React application that is optimized to let a user search and sort through articles posted on Hacker News.
+            </CardSubtitle>
+            <CardBody className="proj-desc-a__body">
+              <ul className="proj-desc-a__list">
                 <li>Incorporated Axios within this React application to make requests to the Hacker News, Algolia Search API.</li>
                 <li>Lifted state throughout the application into its various child components to keep them sleek and lightweight.</li>
                 <li>Applied Lodash to allow for the user to sort results based on the title, author, number of comments, and points.</li>
@@ -231,31 +269,31 @@ const Success = () => (
         </Col>
       </Row>
       <hr className="proj-break align-self-center" />
-      <Row className="row-a">
+      <Row>
         <Col sm="7">
-          <Card className="project-items-a hideme" >
-            <CardImg src={blogGif} className="project-items-a__img" alt="DevGab Gif" />
-            <a href="https://github.com/valdezDev/gatsby-blog" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-a__span">
+          <Card className="project-items-b hideme" >
+            <CardImg src={blogGif} className="project-items-b__img" alt="Blog Gif" />
+            <a href="https://github.com/valdezDev/gatsby-blog" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
                 Source Code 
-                <i className="fab fa-github project-items-a__icon"  />
+                <i className="fab fa-github project-items-b__icon"  />
               </span>
             </a>
-            <hr className="project-items-a__break" />
-            <a href="https://unruffled-bartik-96bf86.netlify.com/" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-a__span">
+            <hr className="project-items-b__break" />
+            <a href="https://unruffled-bartik-96bf86.netlify.com/" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-b__span">
                 Preview Demo 
-                <i class="fas fa-laptop-code project-items-a__icon" />
+                <i class="fas fa-laptop-code project-items-b__icon" />
               </span>
             </a>
           </Card>
         </Col>
         <Col sm="5">
-          <Card className="proj-desc-a">
-            <CardTitle className="proj-desc-a__title text-center text-white"># Developer Blog Template</CardTitle>
-            <CardSubtitle className="proj-desc-a__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle>
-            <CardBody className="proj-desc-a__body">
-              <ul className="proj-desc-a__list">
+          <Card className="proj-desc-b">
+            <CardTitle className="proj-desc-b__title text-center text-white"># Developer Blog Template</CardTitle>
+            <CardSubtitle className="proj-desc-b__subtitle text-center">A simple template for a blog application that one can use to get their ideas out to their readers.</CardSubtitle>
+            <CardBody className="proj-desc-b__body">
+              <ul className="proj-desc-b__list">
                 <li>Constructed this application using GatsbyJS and set up an API using GraphQL.</li>
                 <li>Optimized to display and paginate through markdown files that are taken from the API.</li>
                 <li>Assigned routes with a unique slug based on an individual markdown file’s title as well as its unique tags using Node.</li>
@@ -267,31 +305,31 @@ const Success = () => (
         </Col>
       </Row>
       <hr className="proj-break align-self-center" />
-      <Row>
+      <Row className="row-a">
         <Col sm="7">
-          <Card className="project-items-b hideme" >
-            <CardImg src={portGif} className="project-items-b__img" alt="DevGab Gif" />
-            <a href="https://github.com/valdezDev/gatsby-portfolio" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-b__span">
+          <Card className="project-items-a hideme" >
+            <CardImg src={portGif} className="project-items-a__img" alt="Portfolio Gif" />
+            <a href="https://github.com/valdezDev/gatsby-portfolio" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
                 Source Code 
-                <i className="fab fa-github project-items-b__icon"  />
+                <i className="fab fa-github project-items-a__icon"  />
               </span>
             </a>
-            <hr className="project-items-b__break" />
-            <a href="https://spenserkearns.com" className="project-items-b__link" target="_blank" rel="noopener noreferrer">
-              <span className="project-items-b__span">
+            <hr className="project-items-a__break" />
+            <a href="https://spenserkearns.com" className="project-items-a__link" target="_blank" rel="noopener noreferrer">
+              <span className="project-items-a__span">
                 Preview Alternate Demo 
-                <i class="fas fa-laptop-code project-items-b__icon" />
+                <i class="fas fa-laptop-code project-items-a__icon" />
               </span>
             </a>
           </Card>
         </Col>
         <Col sm="5">
-          <Card className="proj-desc-b">
-            <CardTitle className="proj-desc-b__title text-center text-white"># Portfolio Templates</CardTitle>
-            <CardSubtitle className="proj-desc-b__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
-            <CardBody className="proj-desc-b__body">
-              <ul className="proj-desc-b__list">
+          <Card className="proj-desc-a">
+            <CardTitle className="proj-desc-a__title text-center text-white"># Portfolio Templates</CardTitle>
+            <CardSubtitle className="proj-desc-a__subtitle text-center">Static page portfolio templates one can use to broadcast their work. Can come equipped with a blog.</CardSubtitle>
+            <CardBody className="proj-desc-a__body">
+              <ul className="proj-desc-a__list">
                 <li>Built these static websites using GatsbyJS.</li>
                 <li>Equipped with the aforementioned Blog Template in order to write blog entries explaining how to build applications.</li>
                 <li>Laid out a contact form that's carried out with Netlify's form submission services.</li>
