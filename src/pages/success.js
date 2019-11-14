@@ -79,6 +79,7 @@ const Success = () => (
                 <li>//  HTML / JSX</li>
                 <li>//  Webpack</li>
                 <li>//  Babel</li>
+                <li>//  TypeScript</li>
               </ul>
             </CardText>
           </Card>

@@ -93,7 +93,7 @@ class Header extends React.Component{
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/blog">
+                <NavLink href="/blog" target="_blank" rel="noopener noreferrer">
                   Blog
                 </NavLink>
               </NavItem>
